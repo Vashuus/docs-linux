@@ -1,0 +1,35 @@
+name: Solicitud de script
+description: Pedir un script que todavía no existe.
+title: "[Script] "
+labels: ["script-request"]
+body:
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre / objetivo
+      description: ¿Qué debería hacer el script?
+      placeholder: "ej: respaldar /home a un disco externo"
+    validations:
+      required: true
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Detalle
+      description: Pasos, parámetros, distribuciones, requisitos.
+    validations:
+      required: true
+  - type: input
+    id: icono
+    attributes:
+      label: Icono sugerido
+      description: Ver svg/icons.txt para los disponibles.
+      placeholder: "ej: backup"
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmacion
+    attributes:
+      label: Confirmación
+      options:
+        - label: Entiendo que el script será revisado por la comunidad antes de publicarse.
+          required: true

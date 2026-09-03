@@ -1,0 +1,34 @@
+name: Solicitud de comando
+description: Pedir un comando que todavía no está documentado.
+title: "[Comando] "
+labels: ["command-request"]
+body:
+  - type: input
+    id: comando
+    attributes:
+      label: Comando
+      description: ¿Qué comando querés que se documente?
+      placeholder: "ej: rsync"
+    validations:
+      required: true
+  - type: textarea
+    id: para-que
+    attributes:
+      label: ¿Para qué lo necesitás?
+      description: Contá el caso de uso o el problema que resuelve.
+    validations:
+      required: true
+  - type: input
+    id: seccion
+    attributes:
+      label: Sección sugerida
+      placeholder: "ej: Archivos, Redes, Seguridad..."
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Información adicional
+      placeholder: Enlaces, ejemplos, distribuciones donde aplica...
+    validations:
+      required: false
