@@ -1,0 +1,11 @@
+.git
+.gitignore
+.github
+node_modules
+npm-debug.log*
+*.md
+LICENSE
+docker-compose.yml
+Dockerfile
+.dockerignore
+tools

@@ -1,0 +1,31 @@
+services:
+  web:
+    build: .
+    container_name: docs-linux
+    user: "1000:1000"
+    ports:
+      - "127.0.0.1:8090:8080"
+    volumes:
+      - ./browser-sync.config.js:/app/browser-sync.config.js:ro
+      - ./html:/app/html:ro
+      - ./css:/app/css:ro
+      - ./js:/app/js:ro
+      - ./data:/app/data:ro
+      - ./svg:/app/svg:ro
+      - ./scripts:/app/scripts:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 200
+    mem_limit: 256m
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
