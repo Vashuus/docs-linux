@@ -1,0 +1,59 @@
+:root {
+  --bg: #0f1115;
+  --panel: rgba(28, 32, 44, 0.72);
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e7eaf0;
+  --text-dim: #8b93a7;
+  --accent: #6d8bff;
+  --accent-soft: rgba(109, 139, 255, 0.14);
+  --radius: 22px;
+  --hover: rgba(255, 255, 255, 0.04);
+  --surface: rgba(255, 255, 255, 0.03);
+  --code-bg: rgba(0, 0, 0, 0.35);
+  --code-text: #cdd6f4;
+  --code-str: #a6e3a1;
+  --syn-flag: #7fd88f;
+  --syn-arg: #e2b07a;
+  --syn-opt: #c9a1ff;
+  --shadow: rgba(0, 0, 0, 0.45);
+  --menu-bg: #171a22;
+  --field-bg: #1b1f29;
+}
+
+:root[data-theme="light"] {
+  --bg: #eef1f8;
+  --panel: rgba(255, 255, 255, 0.72);
+  --border: rgba(20, 25, 40, 0.1);
+  --text: #1b2030;
+  --text-dim: #5f6879;
+  --accent: #4f6dff;
+  --accent-soft: rgba(79, 109, 255, 0.12);
+  --hover: rgba(20, 25, 40, 0.05);
+  --surface: rgba(20, 25, 40, 0.035);
+  --code-bg: rgba(20, 25, 40, 0.06);
+  --code-text: #2a3346;
+  --code-str: #2f8f4e;
+  --syn-flag: #2f8f4e;
+  --syn-arg: #a15c00;
+  --syn-opt: #7a52cc;
+  --shadow: rgba(30, 40, 80, 0.18);
+  --menu-bg: #ffffff;
+  --field-bg: #e9edf7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 80% -10%, var(--accent-soft), transparent 60%),
+    radial-gradient(700px 500px at 0% 100%, var(--accent-soft), transparent 55%),
+    var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

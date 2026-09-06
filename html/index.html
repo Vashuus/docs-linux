@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShellLinux</title>
+  <meta name="description" content="Documentación de comandos de Linux y scripts de mantenimiento." />
+  <meta name="theme-color" content="#0f1115" />
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/search.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__brand">
+      <span class="header__logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2.5 0-4 2-4 5 0 2-.5 3-1.5 4.5C5.4 14.2 5 15.5 5 17c0 2.2 3.1 4 7 4s7-1.8 7-4c0-1.5-.4-2.8-1.5-4.5C16.5 11 16 10 16 8c0-3-1.5-5-4-5z"/><circle cx="10" cy="8" r="0.8" fill="currentColor" stroke="none"/><circle cx="14" cy="8" r="0.8" fill="currentColor" stroke="none"/><path d="M10.5 11h3"/></svg>
+      </span>
+      <span class="header__name">ShellLinux</span>
+    </div>
+
+    <div class="search" id="search">
+      <span class="search__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      </span>
+      <input
+        class="search__input"
+        id="search-input"
+        type="search"
+        placeholder="Buscar... (ej: actualizar #scripts #lang:bash)"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Buscar"
+        aria-expanded="false"
+        aria-autocomplete="list"
+        aria-controls="search-panel"
+      />
+      <kbd class="search__kbd">/</kbd>
+      <button class="search__clear" id="search-clear" type="button" aria-label="Limpiar búsqueda" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+      <div class="search__panel" id="search-panel" role="listbox" hidden></div>
+    </div>
+
+    <div class="header__actions">
+      <div class="theme-toggle" id="theme">
+        <button class="theme-toggle__btn" type="button" data-theme="light" aria-label="Tema claro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.9" y1="4.9" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.1" y2="19.1"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.9" y1="19.1" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.1" y2="4.9"/></svg>
+        </button>
+        <button class="theme-toggle__btn" type="button" data-theme="dark" aria-label="Tema oscuro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <button class="header-toggle" id="header-toggle" type="button" aria-label="Ocultar cabecera">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 15 12 9 18 15"/></svg>
+  </button>
+
+  <button class="sidebar-toggle" id="toggle" type="button" aria-label="Ocultar menú">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar__nav" id="nav"></nav>
+    <div class="sidebar__footer">
+      <a class="sidebar__credit" href="https://github.com/Vashuus" target="_blank" rel="noopener noreferrer">
+        <svg class="sidebar__credit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.5 0-4 2-4 5 0 2-.5 3-1.5 4.5C5.4 14.2 5 15.5 5 17c0 2.2 3.1 4 7 4s7-1.8 7-4c0-1.5-.4-2.8-1.5-4.5C16.5 11 16 10 16 8c0-3-1.5-5-4-5z"/><circle cx="10" cy="8" r="0.8" fill="currentColor" stroke="none"/><circle cx="14" cy="8" r="0.8" fill="currentColor" stroke="none"/><path d="M10.5 11h3"/></svg>
+        <span class="sidebar__credit-handle">Vashuus</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="content" id="content">
+    <div class="content__empty">
+      <p>Selecciona un comando del menú</p>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <a class="footer__link" href="https://github.com/Vashuus" target="_blank" rel="noopener noreferrer">
+      <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.5 0-4 2-4 5 0 2-.5 3-1.5 4.5C5.4 14.2 5 15.5 5 17c0 2.2 3.1 4 7 4s7-1.8 7-4c0-1.5-.4-2.8-1.5-4.5C16.5 11 16 10 16 8c0-3-1.5-5-4-5z"/><circle cx="10" cy="8" r="0.8" fill="currentColor" stroke="none"/><circle cx="14" cy="8" r="0.8" fill="currentColor" stroke="none"/><path d="M10.5 11h3"/></svg>
+      <span class="footer__handle">Vashuus</span>
+    </a>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <aside class="modal__left" id="modal-left"></aside>
+
+      <section class="modal__right">
+        <header class="modal__bar">
+          <span class="modal__path" id="modal-path"></span>
+          <span class="modal__lines" id="modal-lines"></span>
+          <div class="modal__bar-actions">
+            <button class="mbtn" type="button" id="modal-copy">Copiar código</button>
+            <button class="mbtn mbtn--primary" type="button" id="modal-download">Descargar script</button>
+            <button class="modal__close" type="button" data-close aria-label="Cerrar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="modal__code" id="modal-code"></div>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
