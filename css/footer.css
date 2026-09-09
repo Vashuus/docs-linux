@@ -1,0 +1,35 @@
+/* ---------- Footer ---------- */
+.footer {
+  margin-left: 320px;
+  padding: 0 56px 40px;
+  display: flex;
+  justify-content: center;
+  transition: margin-left 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer.is-wide {
+  margin-left: 56px;
+}
+
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.footer__link:hover {
+  color: var(--accent);
+}
+
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__handle {
+  font-weight: 600;
+}
