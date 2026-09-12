@@ -1,0 +1,343 @@
+/* ---------- Contenido principal ---------- */
+.content {
+  margin-left: 320px;
+  padding: 108px 56px 48px;
+  min-height: 100vh;
+  transition: margin-left 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    padding-top 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content.is-wide {
+  margin-left: 56px;
+}
+
+.content.is-header-hidden {
+  padding-top: 48px;
+}
+
+.content__empty {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  color: var(--text-dim);
+}
+
+/* ---------- Cabecera de sección ---------- */
+.section-view {
+  width: 100%;
+  max-width: 1000px;
+  transition: max-width 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-view__head,
+.cmd-list {
+  width: 100%;
+}
+
+.content.is-wide .section-view {
+  max-width: 1340px;
+}
+
+.content.is-header-hidden .section-view {
+  max-width: 1120px;
+}
+
+.content.is-wide.is-header-hidden .section-view {
+  max-width: 1520px;
+}
+
+.section-view__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.section-view__head h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.section-view__count {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* ---------- Lista de comandos (acordeón) ---------- */
+.cmd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cmd-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.cmd-card:hover {
+  border-color: rgba(109, 139, 255, 0.4);
+}
+
+.cmd-card.is-open {
+  background: transparent;
+  border-color: var(--accent);
+}
+
+.cmd-card__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cmd-card__icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cmd-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cmd-card__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.cmd-card__title {
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cmd-card__desc {
+  margin-top: 2px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cmd-card__chevron {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-dim);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cmd-card.is-open .cmd-card__chevron {
+  color: var(--accent);
+  transform: rotate(180deg);
+}
+
+/* Apertura suave (grid 0fr -> 1fr, sin alto fijo) */
+.cmd-card__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.34s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cmd-card.is-open .cmd-card__body {
+  grid-template-rows: 1fr;
+}
+
+.cmd-card__inner {
+  overflow: hidden;
+}
+
+.cmd-card__content {
+  padding: 2px 14px 14px;
+}
+
+.cmd-block {
+  margin-top: 12px;
+}
+
+.cmd-block h4 {
+  margin-bottom: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* ---------- Bloques de código ---------- */
+.syntax,
+.script {
+  position: relative;
+}
+
+.syntax pre,
+.script pre {
+  padding-right: 78px;
+}
+
+.copy--corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Coloreado de la sintaxis */
+.syn-cmd {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.syn-flag {
+  color: var(--syn-flag);
+}
+
+.syn-arg {
+  color: var(--syn-arg);
+}
+
+.syn-opt {
+  color: var(--syn-opt);
+}
+
+pre {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+code {
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  color: var(--code-text);
+}
+
+/* Ejemplos */
+.examples {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example {
+  position: relative;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.example:hover {
+  border-color: var(--accent);
+}
+
+.example__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.example__copy {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  color: var(--text-dim);
+  opacity: 0;
+  transition: opacity 0.16s ease, color 0.16s ease;
+}
+
+.example__copy svg {
+  width: 15px;
+  height: 15px;
+}
+
+.example:hover .example__copy {
+  opacity: 1;
+}
+
+.example__copy.is-done {
+  opacity: 1;
+  color: var(--syn-flag);
+}
+
+.example__head code {
+  color: var(--code-str);
+}
+
+.copy {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+.copy:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.example p {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* Opciones */
+.options {
+  display: grid;
+  gap: 5px;
+}
+
+.option {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 4px 10px;
+  border-radius: 9px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.option code {
+  min-width: 90px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.option span {
+  font-size: 13px;
+  color: var(--text-dim);
+}
