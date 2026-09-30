@@ -1,0 +1,17 @@
+{
+  "id": "wc",
+  "title": "wc — Contar líneas, palabras y bytes",
+  "description": "Cuenta líneas, palabras y caracteres de archivos o de la entrada estándar.",
+  "syntax": "wc [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "wc archivo.txt", "desc": "Muestra líneas, palabras y bytes." },
+    { "cmd": "wc -l archivo.txt", "desc": "Cuenta solo las líneas." },
+    { "cmd": "ls | wc -l", "desc": "Cuenta cuántos archivos hay." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Cuenta líneas." },
+    { "flag": "-w", "desc": "Cuenta palabras." },
+    { "flag": "-c", "desc": "Cuenta bytes." },
+    { "flag": "-m", "desc": "Cuenta caracteres." }
+  ]
+}

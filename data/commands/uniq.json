@@ -1,0 +1,18 @@
+{
+  "id": "uniq",
+  "title": "uniq — Eliminar duplicados consecutivos",
+  "description": "Filtra líneas duplicadas adyacentes. Suele combinarse con sort para eliminar duplicados totalmente.",
+  "syntax": "uniq [opciones] [entrada [salida]]",
+  "examples": [
+    { "cmd": "sort archivo.txt | uniq", "desc": "Elimina duplicados tras ordenar." },
+    { "cmd": "uniq -c archivo.txt", "desc": "Cuenta cuántas veces aparece cada línea." },
+    { "cmd": "uniq -d archivo.txt", "desc": "Muestra solo las líneas repetidas." },
+    { "cmd": "uniq -u archivo.txt", "desc": "Muestra solo las líneas únicas." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Prefija cada línea con el número de repeticiones." },
+    { "flag": "-d", "desc": "Muestra solo líneas duplicadas." },
+    { "flag": "-u", "desc": "Muestra solo líneas no repetidas." },
+    { "flag": "-i", "desc": "Ignora mayúsculas/minúsculas." }
+  ]
+}

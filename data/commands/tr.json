@@ -1,0 +1,16 @@
+{
+  "id": "tr",
+  "title": "tr — Traducir o eliminar caracteres",
+  "description": "Transforma caracteres de la entrada estándar: cambia mayúsculas, elimina, o reemplaza caracteres.",
+  "syntax": "tr [opciones] conjunto1 [conjunto2]",
+  "examples": [
+    { "cmd": "echo hola | tr a-z A-Z", "desc": "Convierte a mayúsculas." },
+    { "cmd": "tr -d '\\n' < archivo", "desc": "Elimina los saltos de línea." },
+    { "cmd": "tr -s ' ' < archivo", "desc": "Comprime espacios repetidos en uno." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Elimina los caracteres del conjunto." },
+    { "flag": "-s", "desc": "Comprime repeticiones consecutivas." },
+    { "flag": "-c", "desc": "Complementa el conjunto (todos menos esos)." }
+  ]
+}

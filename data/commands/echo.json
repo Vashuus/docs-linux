@@ -1,0 +1,16 @@
+{
+  "id": "echo",
+  "title": "echo — Imprimir texto",
+  "description": "Muestra texto o el valor de variables en la salida estándar. Es un builtin del shell.",
+  "syntax": "echo [opciones] [texto...]",
+  "examples": [
+    { "cmd": "echo Hola mundo", "desc": "Imprime texto." },
+    { "cmd": "echo \"$HOME\"", "desc": "Imprime el valor de una variable." },
+    { "cmd": "echo -e 'linea1\\nlinea2'", "desc": "Interpreta secuencias de escape como \\n." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "No imprime el salto de línea final." },
+    { "flag": "-e", "desc": "Interpreta secuencias de escape (\\n, \\t, etc.)." },
+    { "flag": "-E", "desc": "No interpreta secuencias de escape (por defecto)." }
+  ]
+}

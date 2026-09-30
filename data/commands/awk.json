@@ -1,0 +1,17 @@
+{
+  "id": "awk",
+  "title": "awk — Procesar texto por columnas",
+  "description": "Lenguaje de procesamiento de texto orientado a campos. Ideal para extraer columnas, sumar y generar reportes.",
+  "syntax": "awk [opciones] 'programa' [archivo...]",
+  "examples": [
+    { "cmd": "awk '{print $1}' archivo.txt", "desc": "Imprime la primera columna." },
+    { "cmd": "awk -F: '{print $1}' /etc/passwd", "desc": "Usa ':' como separador de campos." },
+    { "cmd": "awk '$3 > 100 {print $1, $3}' datos.txt", "desc": "Filtra filas por una condición." },
+    { "cmd": "awk '{suma += $2} END {print suma}' datos.txt", "desc": "Suma la columna 2 y la muestra al final." }
+  ],
+  "options": [
+    { "flag": "-F sep", "desc": "Define el separador de campos." },
+    { "flag": "-v var=valor", "desc": "Asigna variables antes de ejecutar." },
+    { "flag": "-f archivo", "desc": "Lee el programa desde un archivo." }
+  ]
+}

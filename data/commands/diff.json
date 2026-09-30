@@ -1,0 +1,17 @@
+{
+  "id": "diff",
+  "title": "diff — Comparar archivos línea a línea",
+  "description": "Muestra las diferencias entre dos archivos. Base de parches y control de versiones.",
+  "syntax": "diff [opciones] archivo1 archivo2",
+  "examples": [
+    { "cmd": "diff a.txt b.txt", "desc": "Muestra las diferencias." },
+    { "cmd": "diff -u a.txt b.txt", "desc": "Formato unificado (como los parches)." },
+    { "cmd": "diff -r dir1/ dir2/", "desc": "Compara dos directorios recursivamente." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Formato unificado con contexto." },
+    { "flag": "-i", "desc": "Ignora mayúsculas/minúsculas." },
+    { "flag": "-w", "desc": "Ignora diferencias de espacios en blanco." },
+    { "flag": "-r", "desc": "Compara directorios recursivamente." }
+  ]
+}

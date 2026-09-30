@@ -1,0 +1,19 @@
+{
+  "id": "sudo",
+  "title": "sudo — Ejecutar comandos como otro usuario",
+  "description": "Ejecuta un comando con privilegios de otro usuario (normalmente root) según las reglas de /etc/sudoers.",
+  "syntax": "sudo [opciones] comando",
+  "examples": [
+    { "cmd": "sudo apt update", "desc": "Ejecuta el comando como root." },
+    { "cmd": "sudo -i", "desc": "Abre un shell de login como root." },
+    { "cmd": "sudo -u www-data whoami", "desc": "Ejecuta como otro usuario." },
+    { "cmd": "sudo -l", "desc": "Lista los comandos permitidos para tu usuario." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Shell de login del usuario destino." },
+    { "flag": "-u", "desc": "Ejecuta como el usuario indicado." },
+    { "flag": "-l", "desc": "Lista los privilegios sudo." },
+    { "flag": "-k", "desc": "Invalida la contraseña cacheada." },
+    { "flag": "-E", "desc": "Preserva las variables de entorno." }
+  ]
+}

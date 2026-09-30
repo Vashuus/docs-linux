@@ -1,0 +1,17 @@
+{
+  "id": "touch",
+  "title": "touch — Crear archivos vacíos o actualizar tiempos",
+  "description": "Crea archivos vacíos si no existen o actualiza su fecha de modificación y acceso.",
+  "syntax": "touch [opciones] archivo...",
+  "examples": [
+    { "cmd": "touch nuevo.txt", "desc": "Crea un archivo vacío." },
+    { "cmd": "touch -c existente.txt", "desc": "Actualiza la fecha sin crear el archivo si no existe." },
+    { "cmd": "touch -t 202601011200 archivo", "desc": "Fija una fecha de modificación concreta." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "No crea el archivo si no existe." },
+    { "flag": "-a", "desc": "Cambia solo el tiempo de acceso." },
+    { "flag": "-m", "desc": "Cambia solo el tiempo de modificación." },
+    { "flag": "-t", "desc": "Usa una marca de tiempo [[CC]YY]MMDDhhmm[.ss]." }
+  ]
+}

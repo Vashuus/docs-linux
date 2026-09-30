@@ -1,0 +1,16 @@
+{
+  "id": "paste",
+  "title": "paste — Combinar archivos por columnas",
+  "description": "Une líneas de varios archivos lado a lado, separadas por tabulador.",
+  "syntax": "paste [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "paste a.txt b.txt", "desc": "Une las líneas de ambos archivos en columnas." },
+    { "cmd": "paste -d, a.txt b.txt", "desc": "Usa ',' como separador." },
+    { "cmd": "paste -s archivo.txt", "desc": "Une todas las líneas en una sola." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Especifica el separador entre columnas." },
+    { "flag": "-s", "desc": "Modo serial: una línea por archivo." },
+    { "flag": "-", "desc": "Lee de la entrada estándar." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "comm",
+  "title": "comm — Comparar archivos ordenados línea a línea",
+  "description": "Compara dos archivos ordenados y muestra tres columnas: solo en el primero, solo en el segundo y comunes.",
+  "syntax": "comm [opciones] archivo1 archivo2",
+  "examples": [
+    { "cmd": "comm a.txt b.txt", "desc": "Muestra las tres columnas de comparación." },
+    { "cmd": "comm -12 a.txt b.txt", "desc": "Muestra solo las líneas comunes." },
+    { "cmd": "comm -23 a.txt b.txt", "desc": "Líneas solo en el primer archivo." }
+  ],
+  "options": [
+    { "flag": "-1", "desc": "Suprime la columna 'solo en el primero'." },
+    { "flag": "-2", "desc": "Suprime la columna 'solo en el segundo'." },
+    { "flag": "-3", "desc": "Suprime la columna 'común'." }
+  ]
+}

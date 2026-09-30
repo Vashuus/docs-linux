@@ -1,0 +1,16 @@
+{
+  "id": "column",
+  "title": "column — Formatear texto en columnas",
+  "description": "Alinea la entrada en columnas. Muy útil para dar formato a salidas separadas por delimitadores.",
+  "syntax": "column [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "column -t datos.txt", "desc": "Alinea en columnas de ancho automático." },
+    { "cmd": "column -t -s, datos.csv", "desc": "Usa ',' como separador." },
+    { "cmd": "mount | column -t", "desc": "Da formato a la salida de mount." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Crea una tabla alineada." },
+    { "flag": "-s", "desc": "Define el separador de campos." },
+    { "flag": "-n", "desc": "Mantiene varias filas por celda." }
+  ]
+}

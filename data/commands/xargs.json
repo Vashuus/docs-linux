@@ -1,0 +1,17 @@
+{
+  "id": "xargs",
+  "title": "xargs — Construir y ejecutar comandos",
+  "description": "Toma la salida de un comando y la usa como argumentos de otro. Esencial en tuberías.",
+  "syntax": "comando | xargs [opciones] [comando [args]]",
+  "examples": [
+    { "cmd": "find . -name '*.tmp' | xargs rm", "desc": "Elimina todos los archivos encontrados." },
+    { "cmd": "find . -print0 | xargs -0 rm", "desc": "Seguro con nombres que contienen espacios." },
+    { "cmd": "xargs -n1 echo < lista.txt", "desc": "Pasa un argumento por invocación." }
+  ],
+  "options": [
+    { "flag": "-0", "desc": "Separa por NUL (combinar con find -print0)." },
+    { "flag": "-n N", "desc": "Máximo N argumentos por ejecución." },
+    { "flag": "-P N", "desc": "Ejecuta N procesos en paralelo." },
+    { "flag": "-I {}" , "desc": "Sustituye {} por cada línea de entrada." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "chown",
+  "title": "chown — Cambiar el propietario",
+  "description": "Cambia el usuario y/o grupo propietario de archivos y directorios.",
+  "syntax": "chown [opciones] usuario[:grupo] archivo...",
+  "examples": [
+    { "cmd": "chown juan archivo.txt", "desc": "Cambia el dueño." },
+    { "cmd": "chown juan:web /var/www", "desc": "Cambia dueño y grupo." },
+    { "cmd": "chown -R www-data:www-data /var/www", "desc": "Aplica recursivamente." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-v", "desc": "Muestra cada cambio." },
+    { "flag": "--reference", "desc": "Usa el dueño de otro archivo como referencia." },
+    { "flag": "-h", "desc": "Afecta al enlace simbólico, no al destino." }
+  ]
+}

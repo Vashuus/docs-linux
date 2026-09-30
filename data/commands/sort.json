@@ -1,0 +1,19 @@
+{
+  "id": "sort",
+  "title": "sort — Ordenar líneas",
+  "description": "Ordena las líneas de un archivo o de la entrada estándar, alfabética o numéricamente.",
+  "syntax": "sort [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "sort archivo.txt", "desc": "Ordena alfabéticamente." },
+    { "cmd": "sort -n numeros.txt", "desc": "Ordena numéricamente." },
+    { "cmd": "sort -k2 -nr datos.txt", "desc": "Ordena por la columna 2 en orden numérico inverso." },
+    { "cmd": "sort -u archivo.txt", "desc": "Ordena y elimina duplicados." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Comparación numérica." },
+    { "flag": "-r", "desc": "Orden inverso." },
+    { "flag": "-k", "desc": "Ordena por una columna concreta." },
+    { "flag": "-u", "desc": "Elimina líneas duplicadas." },
+    { "flag": "-h", "desc": "Compara tamaños legibles (KB, MB, GB)." }
+  ]
+}

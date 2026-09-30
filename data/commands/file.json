@@ -1,0 +1,16 @@
+{
+  "id": "file",
+  "title": "file — Determinar el tipo de un archivo",
+  "description": "Detecta el tipo real de un archivo inspeccionando su contenido, no su extensión.",
+  "syntax": "file [opciones] archivo...",
+  "examples": [
+    { "cmd": "file imagen.png", "desc": "Muestra el tipo detectado." },
+    { "cmd": "file *", "desc": "Analiza todos los archivos del directorio." },
+    { "cmd": "file -i archivo", "desc": "Muestra el tipo MIME." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Muestra el tipo MIME en lugar de la descripción." },
+    { "flag": "-b", "desc": "Salida breve, sin el nombre del archivo." },
+    { "flag": "-z", "desc": "Inspecciona también archivos comprimidos." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "strings",
+  "title": "strings — Extraer texto de binarios",
+  "description": "Extrae las cadenas de texto imprimibles de un archivo binario. Útil en análisis y depuración.",
+  "syntax": "strings [opciones] archivo...",
+  "examples": [
+    { "cmd": "strings binario", "desc": "Muestra las cadenas legibles del binario." },
+    { "cmd": "strings -n 8 binario", "desc": "Solo cadenas de al menos 8 caracteres." },
+    { "cmd": "strings -a binario | grep -i version", "desc": "Busca patrones dentro del binario." }
+  ],
+  "options": [
+    { "flag": "-n N", "desc": "Longitud mínima de cadena." },
+    { "flag": "-a, -", "desc": "Analiza todo el archivo, no solo secciones cargadas." },
+    { "flag": "-t", "desc": "Muestra el desplazamiento de cada cadena." }
+  ]
+}

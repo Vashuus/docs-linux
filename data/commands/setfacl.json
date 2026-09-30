@@ -1,0 +1,19 @@
+{
+  "id": "setfacl",
+  "title": "setfacl — Establecer ACLs",
+  "description": "Define listas de control de acceso extendidas, otorgando permisos a usuarios o grupos concretos.",
+  "syntax": "setfacl [opciones] reglas archivo...",
+  "examples": [
+    { "cmd": "setfacl -m u:juan:rw archivo.txt", "desc": "Da lectura/escritura a un usuario." },
+    { "cmd": "setfacl -m g:devs:rx carpeta/", "desc": "Da lectura/ejecución a un grupo." },
+    { "cmd": "setfacl -x u:juan archivo.txt", "desc": "Elimina la entrada ACL de un usuario." },
+    { "cmd": "setfacl -b archivo.txt", "desc": "Elimina todas las ACL." }
+  ],
+  "options": [
+    { "flag": "-m", "desc": "Modifica/añade una regla." },
+    { "flag": "-x", "desc": "Elimina una regla." },
+    { "flag": "-b", "desc": "Elimina todas las ACL extendidas." },
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-d", "desc": "Aplica como ACL por defecto (heredable en directorios)." }
+  ]
+}

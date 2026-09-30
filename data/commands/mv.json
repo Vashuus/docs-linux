@@ -1,0 +1,17 @@
+{
+  "id": "mv",
+  "title": "mv — Mover o renombrar",
+  "description": "Mueve archivos y directorios o los renombra dentro del mismo sistema de archivos.",
+  "syntax": "mv [opciones] origen destino",
+  "examples": [
+    { "cmd": "mv viejo.txt nuevo.txt", "desc": "Renombra un archivo." },
+    { "cmd": "mv archivo.txt /tmp/", "desc": "Mueve un archivo a otro directorio." },
+    { "cmd": "mv -i carpeta/ /backup/", "desc": "Mueve preguntando antes de sobrescribir." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Pide confirmación antes de sobrescribir." },
+    { "flag": "-f", "desc": "Fuerza la sobrescritura sin preguntar." },
+    { "flag": "-n", "desc": "No sobrescribe archivos existentes." },
+    { "flag": "-v", "desc": "Muestra lo que se mueve." }
+  ]
+}

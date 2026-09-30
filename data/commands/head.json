@@ -1,0 +1,17 @@
+{
+  "id": "head",
+  "title": "head — Ver el inicio de un archivo",
+  "description": "Muestra las primeras líneas de un archivo (10 por defecto). Útil para inspeccionar rápido.",
+  "syntax": "head [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "head archivo.txt", "desc": "Muestra las primeras 10 líneas." },
+    { "cmd": "head -n 50 archivo.log", "desc": "Muestra las primeras 50 líneas." },
+    { "cmd": "head -c 1K archivo", "desc": "Muestra los primeros 1024 bytes." }
+  ],
+  "options": [
+    { "flag": "-n N", "desc": "Muestra las primeras N líneas." },
+    { "flag": "-c N", "desc": "Muestra los primeros N bytes." },
+    { "flag": "-q", "desc": "No muestra la cabecera con el nombre del archivo." },
+    { "flag": "-v", "desc": "Muestra siempre la cabecera con el nombre." }
+  ]
+}

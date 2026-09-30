@@ -1,0 +1,18 @@
+{
+  "id": "sed",
+  "title": "sed — Editor de flujo (stream editor)",
+  "description": "Procesa y transforma texto línea a línea. Muy usado para buscar y reemplazar en scripts.",
+  "syntax": "sed [opciones] 'script' [archivo...]",
+  "examples": [
+    { "cmd": "sed 's/viejo/nuevo/' archivo.txt", "desc": "Reemplaza la primera ocurrencia por línea." },
+    { "cmd": "sed -i 's/viejo/nuevo/g' archivo.txt", "desc": "Reemplaza todas las ocurrencias editando el archivo." },
+    { "cmd": "sed -n '10,20p' archivo.txt", "desc": "Muestra solo las líneas 10 a 20." },
+    { "cmd": "sed '/^#/d' archivo.conf", "desc": "Elimina las líneas comentadas." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Edita el archivo en el lugar (in-place)." },
+    { "flag": "-n", "desc": "Suprime la salida automática; combinar con p." },
+    { "flag": "-e", "desc": "Añade varios scripts de edición." },
+    { "flag": "-E, -r", "desc": "Usa expresiones regulares extendidas." }
+  ]
+}

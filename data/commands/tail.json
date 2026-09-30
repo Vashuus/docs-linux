@@ -1,0 +1,17 @@
+{
+  "id": "tail",
+  "title": "tail — Ver el final de un archivo",
+  "description": "Muestra las últimas líneas de un archivo. Con -f sigue el archivo en tiempo real, ideal para logs.",
+  "syntax": "tail [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "tail archivo.log", "desc": "Muestra las últimas 10 líneas." },
+    { "cmd": "tail -f /var/log/syslog", "desc": "Sigue el archivo en tiempo real." },
+    { "cmd": "tail -n 100 archivo.log", "desc": "Muestra las últimas 100 líneas." }
+  ],
+  "options": [
+    { "flag": "-n N", "desc": "Muestra las últimas N líneas." },
+    { "flag": "-f", "desc": "Sigue el archivo en tiempo real." },
+    { "flag": "-F", "desc": "Como -f pero reintenta si el archivo rota." },
+    { "flag": "-c N", "desc": "Muestra los últimos N bytes." }
+  ]
+}

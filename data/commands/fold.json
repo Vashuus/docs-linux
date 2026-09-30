@@ -1,0 +1,15 @@
+{
+  "id": "fold",
+  "title": "fold — Ajustar el ancho de las líneas",
+  "description": "Corta las líneas largas a un ancho determinado, útil para texto plano.",
+  "syntax": "fold [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "fold -w 80 archivo.txt", "desc": "Corta las líneas a 80 columnas." },
+    { "cmd": "fold -s -w 80 archivo.txt", "desc": "Corta respetando los espacios." }
+  ],
+  "options": [
+    { "flag": "-w N", "desc": "Ancho máximo en columnas." },
+    { "flag": "-s", "desc": "Corta en el último espacio antes del ancho." },
+    { "flag": "-b", "desc": "Cuenta bytes en lugar de columnas." }
+  ]
+}

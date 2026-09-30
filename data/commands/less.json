@@ -1,0 +1,17 @@
+{
+  "id": "less",
+  "title": "less — Paginar archivos",
+  "description": "Muestra archivos por páginas permitiendo desplazarse hacia adelante y atrás. Es el paginador recomendado.",
+  "syntax": "less [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "less archivo.log", "desc": "Abre el archivo en el paginador." },
+    { "cmd": "less +F /var/log/syslog", "desc": "Sigue el archivo como tail -f (salir con Ctrl+C)." },
+    { "cmd": "history | less", "desc": "Pagina la salida de otro comando." }
+  ],
+  "options": [
+    { "flag": "-N", "desc": "Muestra número de línea." },
+    { "flag": "-S", "desc": "No corta las líneas largas (scroll horizontal)." },
+    { "flag": "-R", "desc": "Interpreta secuencias de color ANSI." },
+    { "flag": "+F", "desc": "Modo seguimiento, como tail -f." }
+  ]
+}

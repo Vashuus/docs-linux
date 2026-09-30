@@ -1,0 +1,17 @@
+{
+  "id": "printf",
+  "title": "printf — Imprimir con formato",
+  "description": "Imprime texto aplicando formato. Más potente y portable que echo en scripts.",
+  "syntax": "printf formato [argumentos...]",
+  "examples": [
+    { "cmd": "printf '%s\\n' hola", "desc": "Imprime una línea con salto." },
+    { "cmd": "printf '%-10s|%5.2f\\n' texto 3.14159", "desc": "Alinea texto y formatos numéricos." },
+    { "cmd": "printf '%s\\t%s\\n' a b", "desc": "Imprime varios argumentos separados por tabulador." }
+  ],
+  "options": [
+    { "flag": "%s", "desc": "Cadena de texto." },
+    { "flag": "%d", "desc": "Entero." },
+    { "flag": "%f", "desc": "Número decimal." },
+    { "flag": "%x", "desc": "Hexadecimal." }
+  ]
+}

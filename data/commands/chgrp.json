@@ -1,0 +1,15 @@
+{
+  "id": "chgrp",
+  "title": "chgrp — Cambiar el grupo propietario",
+  "description": "Cambia el grupo propietario de archivos y directorios.",
+  "syntax": "chgrp [opciones] grupo archivo...",
+  "examples": [
+    { "cmd": "chgrp devs archivo.txt", "desc": "Cambia el grupo." },
+    { "cmd": "chgrp -R www-data /var/www", "desc": "Aplica recursivamente." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-v", "desc": "Muestra cada cambio." },
+    { "flag": "--reference", "desc": "Usa el grupo de otro archivo." }
+  ]
+}

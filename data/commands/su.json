@@ -1,0 +1,16 @@
+{
+  "id": "su",
+  "title": "su — Cambiar de usuario",
+  "description": "Ejecuta un shell como otro usuario. Sin argumentos, cambia a root pidiendo su contraseña.",
+  "syntax": "su [opciones] [usuario]",
+  "examples": [
+    { "cmd": "su -", "desc": "Inicia sesión como root con su entorno." },
+    { "cmd": "su - postgres", "desc": "Cambia al usuario postgres." },
+    { "cmd": "su -c 'apt update'", "desc": "Ejecuta un comando como el otro usuario." }
+  ],
+  "options": [
+    { "flag": "-", "desc": "Carga el entorno login del usuario (recomendado)." },
+    { "flag": "-c", "desc": "Ejecuta un comando y termina." },
+    { "flag": "-s", "desc": "Especifica el shell a usar." }
+  ]
+}

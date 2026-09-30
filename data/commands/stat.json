@@ -1,0 +1,17 @@
+{
+  "id": "stat",
+  "title": "stat — Mostrar metadatos de un archivo",
+  "description": "Muestra detalles de un archivo: tamaño, inodo, permisos, propietario y tiempos.",
+  "syntax": "stat [opciones] archivo...",
+  "examples": [
+    { "cmd": "stat archivo.txt", "desc": "Muestra todos los metadatos." },
+    { "cmd": "stat -c '%A %U:%G %s' archivo", "desc": "Salida con formato personalizado." },
+    { "cmd": "stat -f /", "desc": "Muestra información del sistema de archivos." }
+  ],
+  "options": [
+    { "flag": "-c, --format", "desc": "Formato de salida personalizado." },
+    { "flag": "-f, --file-system", "desc": "Muestra información del sistema de archivos." },
+    { "flag": "-L", "desc": "Sigue enlaces simbólicos." },
+    { "flag": "-t, --terse", "desc": "Salida en formato compacto." }
+  ]
+}

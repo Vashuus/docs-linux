@@ -1,0 +1,17 @@
+{
+  "id": "chmod",
+  "title": "chmod — Cambiar permisos",
+  "description": "Modifica los permisos de lectura, escritura y ejecución de archivos y directorios.",
+  "syntax": "chmod [opciones] modo archivo...",
+  "examples": [
+    { "cmd": "chmod 755 script.sh", "desc": "rwx para el dueño, r-x para el resto." },
+    { "cmd": "chmod +x deploy.sh", "desc": "Añade permiso de ejecución." },
+    { "cmd": "chmod -R 750 carpeta/", "desc": "Aplica permisos recursivamente." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-v", "desc": "Muestra cada cambio realizado." },
+    { "flag": "+x / -x", "desc": "Añade o quita el permiso de ejecución." },
+    { "flag": "--reference", "desc": "Copia los permisos de otro archivo." }
+  ]
+}

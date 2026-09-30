@@ -1,0 +1,16 @@
+{
+  "id": "ls",
+  "title": "ls — Listar contenido",
+  "description": "Lista los archivos y directorios de una o varias rutas. Sin argumentos, muestra el directorio actual.",
+  "syntax": "ls [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "ls -la", "desc": "Muestra todos los archivos (incluidos ocultos) en formato largo." },
+    { "cmd": "ls -lh /var/log", "desc": "Lista con tamaños legibles (KB, MB, GB)." },
+    { "cmd": "ls -R", "desc": "Lista de forma recursiva por subdirectorios." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Incluye archivos ocultos (comienzan con punto)." },
+    { "flag": "-l", "desc": "Formato largo con permisos, dueño, tamaño y fecha." },
+    { "flag": "-h", "desc": "Tamaños legibles por humanos." }
+  ]
+}

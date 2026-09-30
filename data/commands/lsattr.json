@@ -1,0 +1,16 @@
+{
+  "id": "lsattr",
+  "title": "lsattr — Ver atributos extendidos",
+  "description": "Lista los atributos especiales de archivos y directorios en sistemas de archivos ext2/3/4.",
+  "syntax": "lsattr [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "lsattr archivo", "desc": "Muestra los atributos del archivo." },
+    { "cmd": "lsattr -R carpeta/", "desc": "Recursivo." },
+    { "cmd": "lsattr -a dir/", "desc": "Incluye archivos ocultos." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-a", "desc": "Incluye archivos ocultos." },
+    { "flag": "-d", "desc": "Lista directorios como tales, sin su contenido." }
+  ]
+}

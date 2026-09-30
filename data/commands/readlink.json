@@ -1,0 +1,16 @@
+{
+  "id": "readlink",
+  "title": "readlink — Mostrar el destino de un enlace",
+  "description": "Muestra a dónde apunta un enlace simbólico o resuelve su ruta canónica.",
+  "syntax": "readlink [opciones] enlace...",
+  "examples": [
+    { "cmd": "readlink enlace", "desc": "Muestra el destino del enlace." },
+    { "cmd": "readlink -f enlace", "desc": "Resuelve la ruta absoluta y todos los enlaces." },
+    { "cmd": "readlink -e enlace", "desc": "Como -f pero exige que el destino exista." }
+  ],
+  "options": [
+    { "flag": "-f, --canonicalize", "desc": "Resuelve recursivamente y devuelve la ruta absoluta." },
+    { "flag": "-e, --canonicalize-existing", "desc": "Igual que -f pero el destino debe existir." },
+    { "flag": "-n, --no-newline", "desc": "No agrega salto de línea a la salida." }
+  ]
+}

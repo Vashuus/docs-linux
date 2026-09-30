@@ -1,0 +1,17 @@
+{
+  "id": "cut",
+  "title": "cut — Extraer columnas o caracteres",
+  "description": "Recorta partes de cada línea: columnas por delimitador, o rangos de caracteres/bytes.",
+  "syntax": "cut [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "cut -d: -f1 /etc/passwd", "desc": "Extrae el primer campo separado por ':'." },
+    { "cmd": "cut -c1-10 archivo.txt", "desc": "Extrae los primeros 10 caracteres de cada línea." },
+    { "cmd": "cut -d, -f2,4 datos.csv", "desc": "Extrae las columnas 2 y 4 de un CSV." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Delimitador de campo (tab por defecto)." },
+    { "flag": "-f", "desc": "Campos a extraer (por delimitador)." },
+    { "flag": "-c", "desc": "Selecciona por caracteres." },
+    { "flag": "-b", "desc": "Selecciona por bytes." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rev",
+  "title": "rev — Invertir los caracteres de cada línea",
+  "description": "Invierte el orden de los caracteres de cada línea de la entrada.",
+  "syntax": "rev [archivo...]",
+  "examples": [
+    { "cmd": "echo hola | rev", "desc": "Imprime 'aloh'." },
+    { "cmd": "rev archivo.txt", "desc": "Invierte cada línea del archivo." }
+  ],
+  "options": [
+    { "flag": "--help", "desc": "Muestra la ayuda." },
+    { "flag": "--version", "desc": "Muestra la versión." }
+  ]
+}

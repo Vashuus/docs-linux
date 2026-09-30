@@ -1,0 +1,17 @@
+{
+  "id": "cat",
+  "title": "cat — Concatenar y mostrar archivos",
+  "description": "Muestra el contenido de uno o varios archivos y los concatena en la salida estándar.",
+  "syntax": "cat [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "cat archivo.txt", "desc": "Muestra el contenido de un archivo." },
+    { "cmd": "cat a.txt b.txt > union.txt", "desc": "Concatena dos archivos en uno nuevo." },
+    { "cmd": "cat -n archivo.txt", "desc": "Numera todas las líneas." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Numera todas las líneas de salida." },
+    { "flag": "-A", "desc": "Muestra caracteres no imprimibles y finales de línea." },
+    { "flag": "-s", "desc": "Comprime líneas vacías consecutivas." },
+    { "flag": "-b", "desc": "Numera solo las líneas no vacías." }
+  ]
+}

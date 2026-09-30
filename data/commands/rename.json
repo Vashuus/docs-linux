@@ -1,0 +1,16 @@
+{
+  "id": "rename",
+  "title": "rename — Renombrar archivos en lote",
+  "description": "Renombra varios archivos según un patrón. La sintaxis varía según la distribución (perl-rename en Debian, util-linux en otras).",
+  "syntax": "rename 's/patrón/reemplazo/' archivos...",
+  "examples": [
+    { "cmd": "rename 's/\\.txt$/.md/' *.txt", "desc": "Cambia la extensión de .txt a .md." },
+    { "cmd": "rename 's/foto/img/' foto*.jpg", "desc": "Reemplaza parte del nombre." },
+    { "cmd": "rename -n 's/ /_/g' *.pdf", "desc": "Simula el cambio sin aplicarlo." }
+  ],
+  "options": [
+    { "flag": "-n, --no-act", "desc": "Simula sin ejecutar cambios." },
+    { "flag": "-v, --verbose", "desc": "Muestra cada renombrado." },
+    { "flag": "-f, --force", "desc": "Sobrescribe destinos existentes." }
+  ]
+}

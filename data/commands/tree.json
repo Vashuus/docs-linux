@@ -1,0 +1,18 @@
+{
+  "id": "tree",
+  "title": "tree — Mostrar la estructura de directorios",
+  "description": "Muestra de forma jerárquica el contenido de directorios. Muy útil para ver la estructura de un proyecto.",
+  "syntax": "tree [opciones] [directorio]",
+  "examples": [
+    { "cmd": "tree", "desc": "Muestra el árbol del directorio actual." },
+    { "cmd": "tree -L 2 proyectos/", "desc": "Limita la profundidad a 2 niveles." },
+    { "cmd": "tree -a -I '.git|node_modules'", "desc": "Incluye ocultos y excluye carpetas." }
+  ],
+  "options": [
+    { "flag": "-L N", "desc": "Limita la profundidad a N niveles." },
+    { "flag": "-a", "desc": "Muestra también archivos ocultos." },
+    { "flag": "-d", "desc": "Muestra solo directorios." },
+    { "flag": "-I patrón", "desc": "Excluye archivos que coincidan con el patrón." },
+    { "flag": "-h", "desc": "Muestra el tamaño legible de cada archivo." }
+  ]
+}

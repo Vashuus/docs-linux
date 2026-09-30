@@ -1,0 +1,16 @@
+{
+  "id": "getfacl",
+  "title": "getfacl — Ver ACLs de un archivo",
+  "description": "Muestra las listas de control de acceso extendidas (ACL) de archivos y directorios.",
+  "syntax": "getfacl [opciones] archivo...",
+  "examples": [
+    { "cmd": "getfacl archivo.txt", "desc": "Muestra la ACL del archivo." },
+    { "cmd": "getfacl -R carpeta/", "desc": "Recursivo." },
+    { "cmd": "getfacl -p archivo.txt", "desc": "No elimina el prefijo '/' de rutas absolutas." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-p", "desc": "No quita el prefijo de ruta absoluta." },
+    { "flag": "-c", "desc": "Omite la cabecera." }
+  ]
+}

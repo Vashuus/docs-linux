@@ -1,0 +1,17 @@
+{
+  "id": "rm",
+  "title": "rm — Eliminar archivos y directorios",
+  "description": "Borra archivos o directorios. La eliminación en Linux no pasa por papelera: hay que usarlo con cuidado.",
+  "syntax": "rm [opciones] archivo...",
+  "examples": [
+    { "cmd": "rm archivo.txt", "desc": "Elimina un archivo." },
+    { "cmd": "rm -r carpeta/", "desc": "Elimina un directorio y su contenido recursivamente." },
+    { "cmd": "rm -rf /tmp/temporal/", "desc": "Fuerza el borrado recursivo sin preguntar." }
+  ],
+  "options": [
+    { "flag": "-r, -R", "desc": "Recursivo (directorios)." },
+    { "flag": "-f", "desc": "Fuerza, ignora archivos inexistentes y no pregunta." },
+    { "flag": "-i", "desc": "Pide confirmación por cada archivo." },
+    { "flag": "-v", "desc": "Muestra lo que se elimina." }
+  ]
+}

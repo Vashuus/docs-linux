@@ -1,0 +1,16 @@
+{
+  "id": "mkdir",
+  "title": "mkdir — Crear directorios",
+  "description": "Crea uno o varios directorios.",
+  "syntax": "mkdir [opciones] directorio...",
+  "examples": [
+    { "cmd": "mkdir proyectos", "desc": "Crea un directorio." },
+    { "cmd": "mkdir -p a/b/c", "desc": "Crea toda la jerarquía padre si no existe." },
+    { "cmd": "mkdir -m 700 privado", "desc": "Crea el directorio con permisos concretos." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Crea directorios padre según sea necesario y no falla si existe." },
+    { "flag": "-m", "desc": "Establece los permisos del nuevo directorio (modo)." },
+    { "flag": "-v", "desc": "Muestra cada directorio creado." }
+  ]
+}

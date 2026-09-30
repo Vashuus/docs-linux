@@ -1,0 +1,17 @@
+{
+  "id": "chattr",
+  "title": "chattr — Cambiar atributos extendidos",
+  "description": "Modifica atributos especiales de archivos en sistemas ext4, como inmutable o append-only.",
+  "syntax": "chattr [opciones] [+-atributo] archivo...",
+  "examples": [
+    { "cmd": "chattr +i archivo", "desc": "Hace el archivo inmutable (ni root lo borra sin quitarlo)." },
+    { "cmd": "chattr -i archivo", "desc": "Quita el atributo inmutable." },
+    { "cmd": "chattr +a registro.log", "desc": "Solo permite añadir texto (append-only)." }
+  ],
+  "options": [
+    { "flag": "+i / -i", "desc": "Añade/quita el atributo inmutable." },
+    { "flag": "+a / -a", "desc": "Añade/quita append-only." },
+    { "flag": "-R", "desc": "Recursivo." },
+    { "flag": "-V", "desc": "Muestra información y versión del programa." }
+  ]
+}

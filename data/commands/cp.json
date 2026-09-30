@@ -1,0 +1,18 @@
+{
+  "id": "cp",
+  "title": "cp — Copiar archivos y directorios",
+  "description": "Copia archivos o directorios de un origen a un destino.",
+  "syntax": "cp [opciones] origen destino",
+  "examples": [
+    { "cmd": "cp archivo.txt copia.txt", "desc": "Copia un archivo." },
+    { "cmd": "cp -r carpeta/ backup/", "desc": "Copia un directorio de forma recursiva." },
+    { "cmd": "cp -av origen/ destino/", "desc": "Copia preservando permisos y mostrando el progreso." }
+  ],
+  "options": [
+    { "flag": "-r, -R", "desc": "Recursivo (para directorios)." },
+    { "flag": "-a", "desc": "Modo archivo: preserva permisos, dueño, tiempos y enlaces." },
+    { "flag": "-v", "desc": "Muestra cada archivo copiado." },
+    { "flag": "-i", "desc": "Pide confirmación antes de sobrescribir." },
+    { "flag": "-u", "desc": "Solo copia si el origen es más reciente." }
+  ]
+}

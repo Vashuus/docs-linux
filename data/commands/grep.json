@@ -1,0 +1,17 @@
+{
+  "id": "grep",
+  "title": "grep — Buscar texto",
+  "description": "Busca líneas que coincidan con un patrón dentro de archivos o de la entrada estándar.",
+  "syntax": "grep [opciones] patron [archivo...]",
+  "examples": [
+    { "cmd": "grep -i error app.log", "desc": "Busca 'error' sin distinguir mayúsculas." },
+    { "cmd": "grep -rn TODO src/", "desc": "Busca recursivamente mostrando número de línea." },
+    { "cmd": "grep -v '^#' config", "desc": "Muestra las líneas que NO son comentarios." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Ignora mayúsculas y minúsculas." },
+    { "flag": "-r", "desc": "Busca de forma recursiva en directorios." },
+    { "flag": "-n", "desc": "Muestra el número de línea." },
+    { "flag": "-v", "desc": "Invierte la coincidencia." }
+  ]
+}

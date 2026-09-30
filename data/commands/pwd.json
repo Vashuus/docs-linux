@@ -1,0 +1,14 @@
+{
+  "id": "pwd",
+  "title": "pwd — Directorio de trabajo actual",
+  "description": "Muestra la ruta absoluta del directorio en el que estás. Es un builtin del shell.",
+  "syntax": "pwd [opciones]",
+  "examples": [
+    { "cmd": "pwd", "desc": "Muestra el directorio actual." },
+    { "cmd": "pwd -P", "desc": "Muestra la ruta física, resolviendo enlaces simbólicos." }
+  ],
+  "options": [
+    { "flag": "-P", "desc": "Resuelve symlinks y muestra la ruta real." },
+    { "flag": "-L", "desc": "Usa la ruta lógica (con symlinks). Por defecto." }
+  ]
+}

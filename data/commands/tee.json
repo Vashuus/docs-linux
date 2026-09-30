@@ -1,0 +1,16 @@
+{
+  "id": "tee",
+  "title": "tee — Escribir en pantalla y en archivo",
+  "description": "Duplica la salida de un comando: la muestra en pantalla y la guarda en uno o más archivos.",
+  "syntax": "comando | tee [opciones] archivo...",
+  "examples": [
+    { "cmd": "ls -l | tee listado.txt", "desc": "Muestra y guarda la salida." },
+    { "cmd": "comando | tee -a registro.log", "desc": "Agrega al archivo en lugar de sobrescribir." },
+    { "cmd": "comando | sudo tee /etc/conf", "desc": "Escribe en archivos protegidos (el pipeline se ejecuta como usuario)." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Agrega al final en lugar de truncar." },
+    { "flag": "-i", "desc": "Ignora la señal de interrupción." },
+    { "flag": "-p", "desc": "Diagnostica errores de escritura." }
+  ]
+}

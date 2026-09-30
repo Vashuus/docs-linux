@@ -1,0 +1,17 @@
+{
+  "id": "ln",
+  "title": "ln — Crear enlaces (duros y simbólicos)",
+  "description": "Crea enlaces duros o simbólicos entre archivos. Los simbólicos son como accesos directos.",
+  "syntax": "ln [opciones] destino enlace",
+  "examples": [
+    { "cmd": "ln -s /opt/app/actual app", "desc": "Crea un enlace simbólico." },
+    { "cmd": "ln original.txt duro.txt", "desc": "Crea un enlace duro al archivo." },
+    { "cmd": "ln -sf /nueva/ruta actual", "desc": "Fuerza la recreación del enlace simbólico." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Crea un enlace simbólico." },
+    { "flag": "-f", "desc": "Elimina el destino si ya existe." },
+    { "flag": "-n", "desc": "Trata el destino de enlace simbólico como archivo normal." },
+    { "flag": "-v", "desc": "Muestra cada enlace creado." }
+  ]
+}

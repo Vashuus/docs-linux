@@ -1,0 +1,15 @@
+{
+  "id": "tac",
+  "title": "tac — Mostrar un archivo al revés",
+  "description": "Muestra el contenido de un archivo invirtiendo el orden de las líneas (de la última a la primera).",
+  "syntax": "tac [opciones] [archivo...]",
+  "examples": [
+    { "cmd": "tac archivo.log", "desc": "Muestra las líneas de abajo hacia arriba." },
+    { "cmd": "tac -s ';' archivo", "desc": "Usa ';' como separador en lugar de salto de línea." }
+  ],
+  "options": [
+    { "flag": "-s, --separator", "desc": "Define el separador de registros." },
+    { "flag": "-b, --before", "desc": "Coloca el separador antes en lugar de después." },
+    { "flag": "-r, --regex", "desc": "Interpreta el separador como expresión regular." }
+  ]
+}

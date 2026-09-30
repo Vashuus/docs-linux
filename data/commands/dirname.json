@@ -1,0 +1,15 @@
+{
+  "id": "dirname",
+  "title": "dirname — Quitar el nombre final de una ruta",
+  "description": "Devuelve la parte del directorio de una ruta, complementaria a basename.",
+  "syntax": "dirname ruta...",
+  "examples": [
+    { "cmd": "dirname /etc/nginx/nginx.conf", "desc": "Devuelve /etc/nginx." },
+    { "cmd": "dirname a.txt", "desc": "Devuelve . (directorio actual)." },
+    { "cmd": "dirname -z /a/b", "desc": "Termina la salida con NUL." }
+  ],
+  "options": [
+    { "flag": "-z", "desc": "Termina cada línea con NUL en lugar de salto de línea." },
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

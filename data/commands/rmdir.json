@@ -1,0 +1,15 @@
+{
+  "id": "rmdir",
+  "title": "rmdir — Eliminar directorios vacíos",
+  "description": "Elimina directorios solo si están vacíos. Para carpetas con contenido usar rm -r.",
+  "syntax": "rmdir [opciones] directorio...",
+  "examples": [
+    { "cmd": "rmdir vacio", "desc": "Elimina un directorio vacío." },
+    { "cmd": "rmdir -p a/b/c", "desc": "Elimina el directorio y sus padres si quedan vacíos." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Elimina también los directorios padre que queden vacíos." },
+    { "flag": "--ignore-fail-on-non-empty", "desc": "No falla si el directorio no está vacío." },
+    { "flag": "-v", "desc": "Muestra lo que se elimina." }
+  ]
+}

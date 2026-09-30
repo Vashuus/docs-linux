@@ -1,0 +1,15 @@
+{
+  "id": "umask",
+  "title": "umask — Máscara de permisos por defecto",
+  "description": "Define los permisos que se quitan a los archivos y directorios nuevos. Es un builtin del shell.",
+  "syntax": "umask [modo]",
+  "examples": [
+    { "cmd": "umask", "desc": "Muestra la máscara actual (p. ej. 0022)." },
+    { "cmd": "umask 077", "desc": "Archivos nuevos solo accesibles por el dueño." },
+    { "cmd": "umask -S", "desc": "Muestra la máscara en notación simbólica." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Muestra la máscara en formato simbólico." },
+    { "flag": "-p", "desc": "Salida reutilizable como entrada." }
+  ]
+}

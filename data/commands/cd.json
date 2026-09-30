@@ -1,0 +1,15 @@
+{
+  "id": "cd",
+  "title": "cd — Cambiar de directorio",
+  "description": "Cambia el directorio de trabajo actual de la shell. Es un comando propio del shell (builtin).",
+  "syntax": "cd [ruta]",
+  "examples": [
+    { "cmd": "cd /etc/nginx", "desc": "Entra al directorio indicado." },
+    { "cmd": "cd ..", "desc": "Sube un nivel en el árbol de directorios." },
+    { "cmd": "cd ~", "desc": "Vuelve al directorio home del usuario." }
+  ],
+  "options": [
+    { "flag": "cd -", "desc": "Regresa al directorio anterior." },
+    { "flag": "cd ~user", "desc": "Va al home de otro usuario." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "realpath",
+  "title": "realpath — Resolver la ruta absoluta",
+  "description": "Convierte una ruta relativa en absoluta y resuelve enlaces simbólicos.",
+  "syntax": "realpath [opciones] ruta...",
+  "examples": [
+    { "cmd": "realpath ./archivo", "desc": "Muestra la ruta absoluta y resuelta." },
+    { "cmd": "realpath -e archivo", "desc": "Falla si algún componente no existe." },
+    { "cmd": "realpath --relative-to=/etc /etc/nginx", "desc": "Ruta relativa a otro directorio." }
+  ],
+  "options": [
+    { "flag": "-e, --canonicalize-existing", "desc": "Todos los componentes deben existir." },
+    { "flag": "--relative-to", "desc": "Calcula la ruta relativa al directorio indicado." },
+    { "flag": "-s, --strip, --no-symlinks", "desc": "No expande los enlaces simbólicos." }
+  ]
+}

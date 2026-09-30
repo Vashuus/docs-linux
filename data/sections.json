@@ -1,0 +1,77 @@
+[
+  {
+    "id": "archivos",
+    "name": "Archivos y directorios",
+    "icon": "folder",
+    "commands": [
+      "ls",
+      "cd",
+      "pwd",
+      "cp",
+      "mv",
+      "rm",
+      "mkdir",
+      "rmdir",
+      "touch",
+      "ln",
+      "tree",
+      "file",
+      "stat",
+      "basename",
+      "dirname",
+      "realpath",
+      "readlink",
+      "rename"
+    ]
+  },
+  {
+    "id": "texto",
+    "name": "Procesamiento de texto",
+    "icon": "text",
+    "commands": [
+      "cat",
+      "tac",
+      "head",
+      "tail",
+      "less",
+      "more",
+      "grep",
+      "sed",
+      "awk",
+      "cut",
+      "sort",
+      "uniq",
+      "tr",
+      "wc",
+      "diff",
+      "comm",
+      "paste",
+      "tee",
+      "xargs",
+      "printf",
+      "echo",
+      "fold",
+      "column",
+      "rev",
+      "strings"
+    ]
+  },
+  {
+    "id": "permisos",
+    "name": "Permisos y propietarios",
+    "icon": "security",
+    "commands": [
+      "chmod",
+      "chown",
+      "chgrp",
+      "umask",
+      "getfacl",
+      "setfacl",
+      "chattr",
+      "lsattr",
+      "su",
+      "sudo",
+      "visudo"
+    ]
+  }
+]

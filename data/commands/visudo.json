@@ -1,0 +1,16 @@
+{
+  "id": "visudo",
+  "title": "visudo — Editar sudoers de forma segura",
+  "description": "Edita el archivo /etc/sudoers con validación de sintaxis antes de guardar, evitando romper sudo.",
+  "syntax": "visudo [opciones]",
+  "examples": [
+    { "cmd": "sudo visudo", "desc": "Edita /etc/sudoers validando la sintaxis." },
+    { "cmd": "sudo visudo -c", "desc": "Comprueba la sintaxis sin editar." },
+    { "cmd": "sudo visudo -f /etc/sudoers.d/miarchivo", "desc": "Edita un archivo de configuración extra." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Solo verifica la sintaxis." },
+    { "flag": "-f", "desc": "Edita un archivo alternativo." },
+    { "flag": "-s", "desc": "Modo estricto de comprobación." }
+  ]
+}

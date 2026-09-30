@@ -1,0 +1,16 @@
+{
+  "id": "basename",
+  "title": "basename — Quitar el directorio de una ruta",
+  "description": "Devuelve el nombre final de una ruta, útil en scripts para extraer el nombre de archivo.",
+  "syntax": "basename ruta [sufijo]",
+  "examples": [
+    { "cmd": "basename /etc/nginx/nginx.conf", "desc": "Devuelve nginx.conf." },
+    { "cmd": "basename imagen.tar.gz .tar.gz", "desc": "Quita también el sufijo indicado." },
+    { "cmd": "basename -a a/b c/d", "desc": "Procesa varias rutas." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Admite múltiples argumentos." },
+    { "flag": "-s", "desc": "Elimina el sufijo indicado de cada nombre." },
+    { "flag": "-z", "desc": "Termina cada línea con NUL en lugar de salto de línea." }
+  ]
+}
