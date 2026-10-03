@@ -1,0 +1,17 @@
+{
+  "id": "pkill",
+  "title": "pkill — Terminar procesos por patrón",
+  "description": "Envía señales a procesos cuyo nombre o atributos coincidan con un patrón.",
+  "syntax": "pkill [opciones] patrón",
+  "examples": [
+    { "cmd": "pkill firefox", "desc": "Termina procesos que coincidan con el patrón." },
+    { "cmd": "pkill -f 'python app.py'", "desc": "Coincide con la línea de comando completa." },
+    { "cmd": "pkill -u juan", "desc": "Termina procesos del usuario." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Coincide con la línea de comando completa." },
+    { "flag": "-u", "desc": "Filtra por usuario efectivo." },
+    { "flag": "-9", "desc": "Envía SIGKILL." },
+    { "flag": "-c", "desc": "Muestra cuántos procesos coinciden." }
+  ]
+}

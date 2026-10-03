@@ -73,5 +73,61 @@
       "sudo",
       "visudo"
     ]
+  },
+  {
+    "id": "usuarios",
+    "name": "Usuarios y grupos",
+    "icon": "user",
+    "commands": [
+      "useradd",
+      "adduser",
+      "usermod",
+      "userdel",
+      "groupadd",
+      "groupmod",
+      "groupdel",
+      "passwd",
+      "chage",
+      "id",
+      "groups",
+      "who",
+      "w",
+      "last",
+      "lastlog",
+      "whoami",
+      "gpasswd"
+    ]
+  },
+  {
+    "id": "procesos",
+    "name": "Procesos y recursos",
+    "icon": "cpu",
+    "commands": [
+      "ps",
+      "top",
+      "htop",
+      "kill",
+      "killall",
+      "pkill",
+      "pgrep",
+      "nice",
+      "renice",
+      "jobs",
+      "fg",
+      "bg",
+      "nohup",
+      "watch",
+      "time",
+      "timeout",
+      "lsof",
+      "strace",
+      "ltrace",
+      "at",
+      "crontab",
+      "screen",
+      "tmux",
+      "pstree",
+      "pidof"
+    ]
   }
 ]

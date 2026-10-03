@@ -1,0 +1,14 @@
+{
+  "id": "fg",
+  "title": "fg — Traer trabajo al primer plano",
+  "description": "Continúa en primer plano un trabajo detenido o en segundo plano. Es un builtin del shell.",
+  "syntax": "fg [%job]",
+  "examples": [
+    { "cmd": "fg", "desc": "Trae el último trabajo al primer plano." },
+    { "cmd": "fg %2", "desc": "Trae el trabajo número 2." }
+  ],
+  "options": [
+    { "flag": "%n", "desc": "Referencia al trabajo número n." },
+    { "flag": "%%", "desc": "Trabajo actual." }
+  ]
+}

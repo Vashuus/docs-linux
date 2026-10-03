@@ -1,0 +1,14 @@
+{
+  "id": "groupmod",
+  "title": "groupmod — Modificar grupos",
+  "description": "Cambia el nombre o el GID de un grupo existente.",
+  "syntax": "groupmod [opciones] grupo",
+  "examples": [
+    { "cmd": "sudo groupmod -n nuevo viejo", "desc": "Renombra el grupo." },
+    { "cmd": "sudo groupmod -g 1600 devs", "desc": "Cambia el GID." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Nuevo nombre del grupo." },
+    { "flag": "-g", "desc": "Nuevo GID." }
+  ]
+}

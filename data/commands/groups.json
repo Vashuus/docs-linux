@@ -1,0 +1,13 @@
+{
+  "id": "groups",
+  "title": "groups — Mostrar grupos de un usuario",
+  "description": "Lista los grupos a los que pertenece un usuario.",
+  "syntax": "groups [usuario...]",
+  "examples": [
+    { "cmd": "groups", "desc": "Muestra tus grupos." },
+    { "cmd": "groups juan", "desc": "Muestra los grupos de otro usuario." }
+  ],
+  "options": [
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

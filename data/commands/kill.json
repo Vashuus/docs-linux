@@ -1,0 +1,18 @@
+{
+  "id": "kill",
+  "title": "kill — Enviar señales a procesos",
+  "description": "Envía una señal a un proceso, normalmente para terminarlo. Por defecto envía SIGTERM (15).",
+  "syntax": "kill [-señal] PID...",
+  "examples": [
+    { "cmd": "kill 1234", "desc": "Termina el proceso de forma ordenada (SIGTERM)." },
+    { "cmd": "kill -9 1234", "desc": "Fuerza la terminación (SIGKILL, no se puede ignorar)." },
+    { "cmd": "kill -HUP 1234", "desc": "Recarga el proceso (SIGHUP)." },
+    { "cmd": "kill -l", "desc": "Lista las señales disponibles." }
+  ],
+  "options": [
+    { "flag": "-9", "desc": "SIGKILL: termina de inmediato." },
+    { "flag": "-15", "desc": "SIGTERM: terminación ordenada (por defecto)." },
+    { "flag": "-1", "desc": "SIGHUP: recarga la configuración." },
+    { "flag": "-l", "desc": "Lista los nombres de las señales." }
+  ]
+}

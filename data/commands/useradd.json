@@ -1,0 +1,18 @@
+{
+  "id": "useradd",
+  "title": "useradd — Crear usuarios",
+  "description": "Crea una cuenta de usuario de bajo nivel. Suele requerir crear también el hogar y la contraseña.",
+  "syntax": "useradd [opciones] usuario",
+  "examples": [
+    { "cmd": "sudo useradd -m juan", "desc": "Crea el usuario con su directorio hogar." },
+    { "cmd": "sudo useradd -m -s /bin/bash -G sudo maria", "desc": "Con shell y grupos adicionales." },
+    { "cmd": "sudo useradd -r servicio", "desc": "Crea un usuario de sistema." }
+  ],
+  "options": [
+    { "flag": "-m", "desc": "Crea el directorio hogar." },
+    { "flag": "-s", "desc": "Shell de inicio de sesión." },
+    { "flag": "-G", "desc": "Grupos suplementarios." },
+    { "flag": "-r", "desc": "Cuenta de sistema." },
+    { "flag": "-d", "desc": "Ruta del directorio hogar." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "last",
+  "title": "last — Historial de inicios de sesión",
+  "description": "Muestra el registro de los últimos accesos y reinicios usando el fichero wtmp.",
+  "syntax": "last [opciones] [usuario...]",
+  "examples": [
+    { "cmd": "last", "desc": "Muestra los últimos accesos." },
+    { "cmd": "last juan", "desc": "Muestra los accesos de un usuario." },
+    { "cmd": "last reboot", "desc": "Muestra los últimos reinicios." }
+  ],
+  "options": [
+    { "flag": "-n N", "desc": "Muestra las últimas N entradas." },
+    { "flag": "-i", "desc": "Muestra las IP en lugar de los nombres de host." },
+    { "flag": "-x", "desc": "Incluye el apagado y los cambios de runlevel." }
+  ]
+}

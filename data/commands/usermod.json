@@ -1,0 +1,18 @@
+{
+  "id": "usermod",
+  "title": "usermod — Modificar usuarios",
+  "description": "Cambia la configuración de una cuenta existente: grupos, shell, hogar, etc.",
+  "syntax": "usermod [opciones] usuario",
+  "examples": [
+    { "cmd": "sudo usermod -aG docker juan", "desc": "Añade el usuario al grupo docker." },
+    { "cmd": "sudo usermod -s /bin/zsh juan", "desc": "Cambia el shell." },
+    { "cmd": "sudo usermod -L juan", "desc": "Bloquea la cuenta." }
+  ],
+  "options": [
+    { "flag": "-aG", "desc": "Añade a grupos sin quitarlo de los actuales." },
+    { "flag": "-s", "desc": "Cambia el shell." },
+    { "flag": "-d", "desc": "Cambia el directorio hogar." },
+    { "flag": "-L / -U", "desc": "Bloquea / desbloquea la cuenta." },
+    { "flag": "-e", "desc": "Fecha de expiración de la cuenta." }
+  ]
+}

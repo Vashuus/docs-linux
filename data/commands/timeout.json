@@ -1,0 +1,16 @@
+{
+  "id": "timeout",
+  "title": "timeout — Limitar el tiempo de un comando",
+  "description": "Ejecuta un comando y lo termina si excede un tiempo máximo. Muy útil en scripts.",
+  "syntax": "timeout [opciones] duración comando",
+  "examples": [
+    { "cmd": "timeout 30 curl https://ejemplo.com", "desc": "Cancela el comando tras 30 segundos." },
+    { "cmd": "timeout 5m backup.sh", "desc": "Limita a 5 minutos." },
+    { "cmd": "timeout -s KILL 10 ping host", "desc": "Envía SIGKILL al expirar." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Señal a enviar al expirar (por defecto TERM)." },
+    { "flag": "-k", "desc": "Envía KILL tras un tiempo adicional." },
+    { "flag": "--preserve-status", "desc": "Devuelve el estado del comando." }
+  ]
+}

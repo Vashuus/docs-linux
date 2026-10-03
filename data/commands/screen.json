@@ -1,0 +1,17 @@
+{
+  "id": "screen",
+  "title": "screen — Multiplexor de terminal",
+  "description": "Crea sesiones de terminal persistentes que sobreviven a desconexiones. Permite varias ventanas en una.",
+  "syntax": "screen [opciones] [comando]",
+  "examples": [
+    { "cmd": "screen -S trabajo", "desc": "Crea una sesión nueva llamada trabajo." },
+    { "cmd": "screen -r trabajo", "desc": "Se reengancha a una sesión existente." },
+    { "cmd": "screen -ls", "desc": "Lista las sesiones activas." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Nombra la sesión." },
+    { "flag": "-r", "desc": "Reengancha a una sesión." },
+    { "flag": "-d -r", "desc": "Desconecta y reengancha." },
+    { "flag": "-ls", "desc": "Lista las sesiones." }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nohup",
+  "title": "nohup — Ejecutar inmune al cierre de sesión",
+  "description": "Ejecuta un comando de forma que siga funcionando aunque se cierre la terminal (ignora SIGHUP).",
+  "syntax": "nohup comando [&]",
+  "examples": [
+    { "cmd": "nohup ./servidor.sh &", "desc": "Ejecuta en segundo plano, inmune al cierre de sesión." },
+    { "cmd": "nohup comando > salida.log 2>&1 &", "desc": "Redirige salida y errores a un archivo." }
+  ],
+  "options": [
+    { "flag": "&", "desc": "Envía el proceso al segundo plano." },
+    { "flag": "> archivo", "desc": "Redirige la salida estándar." },
+    { "flag": "2>&1", "desc": "Redirige también los errores." }
+  ]
+}

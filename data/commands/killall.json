@@ -1,0 +1,17 @@
+{
+  "id": "killall",
+  "title": "killall — Terminar procesos por nombre",
+  "description": "Envía una señal a todos los procesos que coincidan con un nombre.",
+  "syntax": "killall [opciones] nombre...",
+  "examples": [
+    { "cmd": "killall firefox", "desc": "Termina todos los procesos firefox." },
+    { "cmd": "killall -9 nginx", "desc": "Fuerza la terminación." },
+    { "cmd": "killall -u juan", "desc": "Termina los procesos de un usuario." }
+  ],
+  "options": [
+    { "flag": "-9", "desc": "Envía SIGKILL." },
+    { "flag": "-u", "desc": "Solo procesos del usuario indicado." },
+    { "flag": "-i", "desc": "Pide confirmación." },
+    { "flag": "-w", "desc": "Espera a que los procesos terminen." }
+  ]
+}

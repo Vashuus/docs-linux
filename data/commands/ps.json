@@ -1,0 +1,18 @@
+{
+  "id": "ps",
+  "title": "ps — Estado de los procesos",
+  "description": "Muestra una instantánea de los procesos en ejecución.",
+  "syntax": "ps [opciones]",
+  "examples": [
+    { "cmd": "ps aux", "desc": "Muestra todos los procesos de todos los usuarios." },
+    { "cmd": "ps -ef", "desc": "Formato completo con PPID." },
+    { "cmd": "ps aux | grep nginx", "desc": "Filtra procesos por nombre." }
+  ],
+  "options": [
+    { "flag": "a", "desc": "Procesos de todos los usuarios con terminal." },
+    { "flag": "u", "desc": "Formato orientado al usuario." },
+    { "flag": "x", "desc": "Incluye procesos sin terminal de control." },
+    { "flag": "-e", "desc": "Todos los procesos." },
+    { "flag": "-f", "desc": "Formato completo." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "userdel",
+  "title": "userdel — Eliminar usuarios",
+  "description": "Borra una cuenta de usuario. Con -r elimina también su directorio hogar y correo.",
+  "syntax": "userdel [opciones] usuario",
+  "examples": [
+    { "cmd": "sudo userdel juan", "desc": "Elimina la cuenta, conserva el hogar." },
+    { "cmd": "sudo userdel -r juan", "desc": "Elimina la cuenta y su directorio hogar." }
+  ],
+  "options": [
+    { "flag": "-r", "desc": "Elimina también el hogar y el buzón de correo." },
+    { "flag": "-f", "desc": "Fuerza la eliminación aunque haya sesión abierta." }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "whoami",
+  "title": "whoami — Usuario actual",
+  "description": "Muestra el nombre del usuario efectivo con el que se está ejecutando el shell.",
+  "syntax": "whoami",
+  "examples": [
+    { "cmd": "whoami", "desc": "Muestra tu usuario efectivo." },
+    { "cmd": "sudo whoami", "desc": "Muestra root al ejecutarse con sudo." }
+  ],
+  "options": [
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

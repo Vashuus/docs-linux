@@ -1,0 +1,13 @@
+{
+  "id": "bg",
+  "title": "bg — Pasar trabajo a segundo plano",
+  "description": "Reanuda en segundo plano un trabajo detenido. Es un builtin del shell.",
+  "syntax": "bg [%job]",
+  "examples": [
+    { "cmd": "bg", "desc": "Reanuda el último trabajo en segundo plano." },
+    { "cmd": "bg %1", "desc": "Reanuda el trabajo 1 en segundo plano." }
+  ],
+  "options": [
+    { "flag": "%n", "desc": "Referencia al trabajo número n." }
+  ]
+}

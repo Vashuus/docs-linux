@@ -1,0 +1,17 @@
+{
+  "id": "lsof",
+  "title": "lsof — Listar archivos abiertos",
+  "description": "Muestra los archivos abiertos por los procesos, incluidas conexiones de red y puertos.",
+  "syntax": "lsof [opciones]",
+  "examples": [
+    { "cmd": "sudo lsof -i :80", "desc": "Muestra qué proceso usa el puerto 80." },
+    { "cmd": "lsof /var/log/syslog", "desc": "Muestra qué procesos usan un archivo." },
+    { "cmd": "lsof -u www-data", "desc": "Archivos abiertos por un usuario." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Filtra por red (opcionalmente :puerto)." },
+    { "flag": "-p", "desc": "Filtra por PID." },
+    { "flag": "-u", "desc": "Filtra por usuario." },
+    { "flag": "-n", "desc": "No resuelve nombres de host." }
+  ]
+}

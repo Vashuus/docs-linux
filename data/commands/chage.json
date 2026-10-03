@@ -1,0 +1,18 @@
+{
+  "id": "chage",
+  "title": "chage — Gestionar caducidad de contraseñas",
+  "description": "Configura la política de expiración de la contraseña y de la cuenta de un usuario.",
+  "syntax": "chage [opciones] usuario",
+  "examples": [
+    { "cmd": "sudo chage -l juan", "desc": "Muestra la información de caducidad." },
+    { "cmd": "sudo chage -M 90 juan", "desc": "Fuerza cambio de contraseña cada 90 días." },
+    { "cmd": "sudo chage -E 2026-12-31 juan", "desc": "Establece fecha de expiración de la cuenta." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Lista la política actual." },
+    { "flag": "-M", "desc": "Máximo de días de validez." },
+    { "flag": "-m", "desc": "Mínimo de días entre cambios." },
+    { "flag": "-E", "desc": "Fecha de expiración de la cuenta." },
+    { "flag": "-W", "desc": "Días de aviso antes de expirar." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "renice",
+  "title": "renice — Cambiar la prioridad de un proceso",
+  "description": "Modifica la prioridad nice de procesos que ya están en ejecución.",
+  "syntax": "renice -n valor -p PID...",
+  "examples": [
+    { "cmd": "renice -n 10 -p 1234", "desc": "Baja la prioridad del proceso." },
+    { "cmd": "sudo renice -n -5 -p 1234", "desc": "Sube la prioridad (requiere root)." },
+    { "cmd": "renice -n 5 -u juan", "desc": "Cambia la prioridad de todos los procesos de un usuario." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Nuevo valor nice." },
+    { "flag": "-p", "desc": "PID objetivo." },
+    { "flag": "-u", "desc": "Todos los procesos del usuario." },
+    { "flag": "-g", "desc": "Todos los procesos del grupo." }
+  ]
+}

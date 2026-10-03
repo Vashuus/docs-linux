@@ -1,0 +1,15 @@
+{
+  "id": "time",
+  "title": "time — Medir el tiempo de ejecución",
+  "description": "Ejecuta un comando y muestra cuánto tarda (real, usuario y sistema). Es un builtin del shell.",
+  "syntax": "time comando",
+  "examples": [
+    { "cmd": "time make -j4", "desc": "Mide cuánto tarda la compilación." },
+    { "cmd": "time ls -R /", "desc": "Mide el tiempo de la operación." }
+  ],
+  "options": [
+    { "flag": "real", "desc": "Tiempo total transcurrido." },
+    { "flag": "user", "desc": "Tiempo de CPU en modo usuario." },
+    { "flag": "sys", "desc": "Tiempo de CPU en modo kernel." }
+  ]
+}

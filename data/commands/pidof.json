@@ -1,0 +1,15 @@
+{
+  "id": "pidof",
+  "title": "pidof — Obtener el PID de un programa",
+  "description": "Devuelve los PID de un programa en ejecución a partir de su nombre.",
+  "syntax": "pidof [opciones] nombre",
+  "examples": [
+    { "cmd": "pidof nginx", "desc": "Muestra los PID de los procesos nginx." },
+    { "cmd": "pidof -s sshd", "desc": "Muestra solo el primer PID." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Devuelve solo un PID." },
+    { "flag": "-x", "desc": "Incluye también scripts de shell." },
+    { "flag": "-o", "desc": "Excluye los PID indicados." }
+  ]
+}

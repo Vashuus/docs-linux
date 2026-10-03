@@ -1,0 +1,16 @@
+{
+  "id": "jobs",
+  "title": "jobs — Ver trabajos del shell",
+  "description": "Lista los trabajos (jobs) en segundo plano o detenidos del shell actual. Es un builtin.",
+  "syntax": "jobs [opciones]",
+  "examples": [
+    { "cmd": "jobs", "desc": "Lista los trabajos del shell." },
+    { "cmd": "jobs -l", "desc": "Muestra también los PID." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Incluye el PID de cada trabajo." },
+    { "flag": "-p", "desc": "Muestra solo los PID." },
+    { "flag": "-r", "desc": "Solo trabajos en ejecución." },
+    { "flag": "-s", "desc": "Solo trabajos detenidos." }
+  ]
+}

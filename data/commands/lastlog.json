@@ -1,0 +1,16 @@
+{
+  "id": "lastlog",
+  "title": "lastlog — Último acceso de cada usuario",
+  "description": "Muestra la última vez que inició sesión cada usuario registrado.",
+  "syntax": "lastlog [opciones]",
+  "examples": [
+    { "cmd": "lastlog", "desc": "Lista el último acceso de todos los usuarios." },
+    { "cmd": "lastlog -u juan", "desc": "Muestra el último acceso de un usuario." },
+    { "cmd": "lastlog -b 30", "desc": "Usuarios que no acceden desde hace más de 30 días." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Solo el usuario indicado." },
+    { "flag": "-b", "desc": "Días: usuarios con acceso más antiguo." },
+    { "flag": "-t", "desc": "Días: usuarios con acceso más reciente." }
+  ]
+}

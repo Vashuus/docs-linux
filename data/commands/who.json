@@ -1,0 +1,16 @@
+{
+  "id": "who",
+  "title": "who — Ver usuarios conectados",
+  "description": "Muestra qué usuarios tienen sesión abierta en el sistema.",
+  "syntax": "who [opciones]",
+  "examples": [
+    { "cmd": "who", "desc": "Lista las sesiones activas." },
+    { "cmd": "who -b", "desc": "Muestra la hora del último arranque." },
+    { "cmd": "who -u", "desc": "Muestra usuarios inactivos y su PID." }
+  ],
+  "options": [
+    { "flag": "-b", "desc": "Hora del último arranque." },
+    { "flag": "-u", "desc": "Usuarios inactivos con PID." },
+    { "flag": "-q", "desc": "Solo nombres de usuario y total." }
+  ]
+}

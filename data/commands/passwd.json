@@ -1,0 +1,17 @@
+{
+  "id": "passwd",
+  "title": "passwd — Cambiar contraseñas",
+  "description": "Establece o cambia la contraseña de un usuario. Un root puede cambiar la de cualquier usuario.",
+  "syntax": "passwd [opciones] [usuario]",
+  "examples": [
+    { "cmd": "passwd", "desc": "Cambia tu propia contraseña." },
+    { "cmd": "sudo passwd juan", "desc": "Cambia la contraseña de otro usuario." },
+    { "cmd": "sudo passwd -l juan", "desc": "Bloquea la cuenta." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Bloquea la cuenta añadiendo '!' a la contraseña." },
+    { "flag": "-u", "desc": "Desbloquea la cuenta." },
+    { "flag": "-e", "desc": "Fuerza a cambiar la contraseña en el próximo inicio." },
+    { "flag": "-S", "desc": "Muestra el estado de la contraseña." }
+  ]
+}

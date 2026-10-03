@@ -1,0 +1,14 @@
+{
+  "id": "nice",
+  "title": "nice — Ejecutar con prioridad ajustada",
+  "description": "Ejecuta un comando con una prioridad (nice) distinta. Valores más altos = menos prioridad.",
+  "syntax": "nice [-n ajuste] comando",
+  "examples": [
+    { "cmd": "nice -n 19 tar czf backup.tgz /datos", "desc": "Ejecuta con la prioridad más baja." },
+    { "cmd": "sudo nice -n -5 servidor", "desc": "Ejecuta con más prioridad (requiere privilegios)." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Ajuste de nice, de -20 (máxima) a 19 (mínima)." },
+    { "flag": "--adjustment", "desc": "Forma larga de -n." }
+  ]
+}

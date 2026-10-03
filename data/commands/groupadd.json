@@ -1,0 +1,16 @@
+{
+  "id": "groupadd",
+  "title": "groupadd — Crear grupos",
+  "description": "Crea un nuevo grupo en el sistema.",
+  "syntax": "groupadd [opciones] grupo",
+  "examples": [
+    { "cmd": "sudo groupadd devs", "desc": "Crea un grupo." },
+    { "cmd": "sudo groupadd -g 1500 devs", "desc": "Crea el grupo con un GID concreto." },
+    { "cmd": "sudo groupadd -r servicio", "desc": "Crea un grupo de sistema." }
+  ],
+  "options": [
+    { "flag": "-g", "desc": "Especifica el GID." },
+    { "flag": "-r", "desc": "Grupo de sistema." },
+    { "flag": "-f", "desc": "No falla si el grupo ya existe." }
+  ]
+}

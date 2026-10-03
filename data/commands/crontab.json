@@ -1,0 +1,17 @@
+{
+  "id": "crontab",
+  "title": "crontab — Programar tareas recurrentes",
+  "description": "Edita y gestiona la tabla de tareas cron del usuario, que se ejecutan según un horario periódico.",
+  "syntax": "crontab [-u usuario] [-e|-l|-r]",
+  "examples": [
+    { "cmd": "crontab -e", "desc": "Edita tu tabla de tareas." },
+    { "cmd": "crontab -l", "desc": "Lista tus tareas programadas." },
+    { "cmd": "sudo crontab -u www-data -l", "desc": "Lista las tareas de otro usuario." }
+  ],
+  "options": [
+    { "flag": "-e", "desc": "Edita la tabla de tareas." },
+    { "flag": "-l", "desc": "Lista las tareas actuales." },
+    { "flag": "-r", "desc": "Elimina toda la tabla." },
+    { "flag": "-u", "desc": "Especifica el usuario (solo root)." }
+  ]
+}

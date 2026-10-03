@@ -1,0 +1,17 @@
+{
+  "id": "watch",
+  "title": "watch — Ejecutar un comando periódicamente",
+  "description": "Ejecuta un comando repetidamente y muestra su salida en pantalla completa. Ideal para vigilar cambios.",
+  "syntax": "watch [opciones] comando",
+  "examples": [
+    { "cmd": "watch -n 1 nvidia-smi", "desc": "Ejecuta cada segundo." },
+    { "cmd": "watch -d 'ls -l'", "desc": "Resalta las diferencias entre actualizaciones." },
+    { "cmd": "watch -n 5 'df -h'", "desc": "Vigila el uso de disco cada 5 segundos." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "Intervalo en segundos." },
+    { "flag": "-d", "desc": "Resalta los cambios." },
+    { "flag": "-g", "desc": "Sale cuando la salida cambia." },
+    { "flag": "-t", "desc": "No muestra la cabecera." }
+  ]
+}

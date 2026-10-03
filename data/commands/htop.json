@@ -1,0 +1,17 @@
+{
+  "id": "htop",
+  "title": "htop — Monitor interactivo mejorado",
+  "description": "Visor de procesos interactivo y a color, más amigable que top. Permite matar procesos y filtrar.",
+  "syntax": "htop [opciones]",
+  "examples": [
+    { "cmd": "htop", "desc": "Abre el monitor interactivo." },
+    { "cmd": "htop -u juan", "desc": "Muestra solo procesos de un usuario." },
+    { "cmd": "htop -t", "desc": "Muestra procesos en vista de árbol." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Filtra por usuario." },
+    { "flag": "-t", "desc": "Vista de árbol." },
+    { "flag": "-p", "desc": "Muestra solo los PID indicados." },
+    { "flag": "-d", "desc": "Retardo de actualización." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ltrace",
+  "title": "ltrace — Rastrear llamadas a bibliotecas",
+  "description": "Muestra las llamadas a funciones de bibliotecas dinámicas que realiza un programa.",
+  "syntax": "ltrace [opciones] comando",
+  "examples": [
+    { "cmd": "ltrace ./programa", "desc": "Muestra las llamadas a bibliotecas." },
+    { "cmd": "ltrace -p 1234", "desc": "Se adjunta a un proceso en ejecución." },
+    { "cmd": "ltrace -c ./programa", "desc": "Resumen con contadores." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Se adjunta al PID indicado." },
+    { "flag": "-c", "desc": "Cuenta y resume las llamadas." },
+    { "flag": "-e", "desc": "Filtra las funciones a mostrar." }
+  ]
+}

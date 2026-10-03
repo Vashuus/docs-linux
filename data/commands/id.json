@@ -1,0 +1,17 @@
+{
+  "id": "id",
+  "title": "id — Mostrar identidad del usuario",
+  "description": "Muestra el UID, GID y los grupos a los que pertenece un usuario.",
+  "syntax": "id [opciones] [usuario]",
+  "examples": [
+    { "cmd": "id", "desc": "Muestra tu identidad." },
+    { "cmd": "id juan", "desc": "Muestra la identidad de otro usuario." },
+    { "cmd": "id -Gn juan", "desc": "Muestra solo los nombres de los grupos." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Muestra solo el UID." },
+    { "flag": "-g", "desc": "Muestra solo el GID." },
+    { "flag": "-G", "desc": "Muestra todos los GIDs." },
+    { "flag": "-n", "desc": "Muestra el nombre en lugar del número." }
+  ]
+}

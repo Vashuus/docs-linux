@@ -1,0 +1,17 @@
+{
+  "id": "top",
+  "title": "top — Monitor de procesos en tiempo real",
+  "description": "Muestra los procesos y el uso de recursos actualizándose en tiempo real.",
+  "syntax": "top [opciones]",
+  "examples": [
+    { "cmd": "top", "desc": "Monitor interactivo de procesos." },
+    { "cmd": "top -u www-data", "desc": "Solo procesos de un usuario." },
+    { "cmd": "top -b -n 1", "desc": "Modo por lotes, una sola iteración (para scripts)." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Filtra por usuario." },
+    { "flag": "-p", "desc": "Muestra solo los PID indicados." },
+    { "flag": "-b", "desc": "Modo por lotes." },
+    { "flag": "-d", "desc": "Intervalo de actualización en segundos." }
+  ]
+}

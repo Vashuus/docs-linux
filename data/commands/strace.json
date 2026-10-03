@@ -1,0 +1,17 @@
+{
+  "id": "strace",
+  "title": "strace — Rastrear llamadas al sistema",
+  "description": "Ejecuta un programa y muestra las llamadas al sistema y señales que realiza. Herramienta clave de depuración.",
+  "syntax": "strace [opciones] comando",
+  "examples": [
+    { "cmd": "strace -f ./programa", "desc": "Sigue también los procesos hijos." },
+    { "cmd": "strace -p 1234", "desc": "Se adjunta a un proceso en ejecución." },
+    { "cmd": "strace -e trace=openat ls", "desc": "Filtra solo las llamadas indicadas." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Sigue procesos hijos (fork)." },
+    { "flag": "-p", "desc": "Se adjunta al PID indicado." },
+    { "flag": "-e", "desc": "Filtra las llamadas a mostrar." },
+    { "flag": "-o", "desc": "Escribe la salida a un archivo." }
+  ]
+}

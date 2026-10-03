@@ -1,0 +1,12 @@
+{
+  "id": "groupdel",
+  "title": "groupdel — Eliminar grupos",
+  "description": "Elimina un grupo del sistema. No se puede eliminar si es el grupo primario de un usuario.",
+  "syntax": "groupdel grupo",
+  "examples": [
+    { "cmd": "sudo groupdel devs", "desc": "Elimina el grupo." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la eliminación aunque el grupo no exista." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "adduser",
+  "title": "adduser — Crear usuarios (interactivo)",
+  "description": "Interfaz amigable sobre useradd: crea el hogar, pide la contraseña y datos. Típico de Debian/Ubuntu.",
+  "syntax": "adduser [opciones] usuario",
+  "examples": [
+    { "cmd": "sudo adduser juan", "desc": "Crea el usuario de forma interactiva." },
+    { "cmd": "sudo adduser juan sudo", "desc": "Añade un usuario existente a un grupo." },
+    { "cmd": "sudo adduser --system --no-create-home servicio", "desc": "Crea un usuario de sistema." }
+  ],
+  "options": [
+    { "flag": "--system", "desc": "Crea una cuenta de sistema." },
+    { "flag": "--no-create-home", "desc": "No crea el directorio hogar." },
+    { "flag": "--disabled-password", "desc": "Crea la cuenta sin contraseña." },
+    { "flag": "--gecos", "desc": "Establece la información GECOS." }
+  ]
+}

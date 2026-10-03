@@ -1,0 +1,17 @@
+{
+  "id": "pgrep",
+  "title": "pgrep — Buscar procesos por nombre",
+  "description": "Busca procesos por nombre u otras características y devuelve sus PID.",
+  "syntax": "pgrep [opciones] patrón",
+  "examples": [
+    { "cmd": "pgrep nginx", "desc": "Muestra los PID que coinciden." },
+    { "cmd": "pgrep -f 'python app.py'", "desc": "Coincide con la línea de comando completa." },
+    { "cmd": "pgrep -u juan -l", "desc": "Procesos de un usuario con su nombre." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Coincide con la línea de comando completa." },
+    { "flag": "-u", "desc": "Filtra por usuario efectivo." },
+    { "flag": "-l", "desc": "Muestra también el nombre del proceso." },
+    { "flag": "-a", "desc": "Muestra la línea de comando completa." }
+  ]
+}

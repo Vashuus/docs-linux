@@ -1,0 +1,16 @@
+{
+  "id": "pstree",
+  "title": "pstree — Mostrar procesos en árbol",
+  "description": "Muestra los procesos en forma de árbol, reflejando la jerarquía padre-hijo.",
+  "syntax": "pstree [opciones] [pid|usuario]",
+  "examples": [
+    { "cmd": "pstree", "desc": "Muestra el árbol de procesos." },
+    { "cmd": "pstree -p", "desc": "Incluye los PID." },
+    { "cmd": "pstree -u juan", "desc": "Procesos de un usuario." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Muestra los PID." },
+    { "flag": "-u", "desc": "Muestra los cambios de usuario." },
+    { "flag": "-a", "desc": "Incluye argumentos de la línea de comando." }
+  ]
+}

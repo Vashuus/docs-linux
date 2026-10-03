@@ -1,0 +1,17 @@
+{
+  "id": "gpasswd",
+  "title": "gpasswd — Administrar grupos",
+  "description": "Gestiona miembros y contraseñas de grupos. Útil para añadir o quitar usuarios de un grupo.",
+  "syntax": "gpasswd [opciones] grupo",
+  "examples": [
+    { "cmd": "sudo gpasswd -a juan docker", "desc": "Añade un usuario al grupo." },
+    { "cmd": "sudo gpasswd -d juan docker", "desc": "Quita un usuario del grupo." },
+    { "cmd": "sudo gpasswd -A juan devs", "desc": "Nombra administrador del grupo." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Añade un usuario al grupo." },
+    { "flag": "-d", "desc": "Elimina un usuario del grupo." },
+    { "flag": "-A", "desc": "Establece administradores del grupo." },
+    { "flag": "-M", "desc": "Establece la lista de miembros." }
+  ]
+}

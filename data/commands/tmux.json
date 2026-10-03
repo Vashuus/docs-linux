@@ -1,0 +1,18 @@
+{
+  "id": "tmux",
+  "title": "tmux — Multiplexor de terminal moderno",
+  "description": "Permite crear sesiones, ventanas y paneles dentro de una misma terminal, y mantenerlas activas entre conexiones.",
+  "syntax": "tmux [opciones] [comando]",
+  "examples": [
+    { "cmd": "tmux new -s trabajo", "desc": "Crea una sesión llamada trabajo." },
+    { "cmd": "tmux attach -t trabajo", "desc": "Se conecta a una sesión existente." },
+    { "cmd": "tmux ls", "desc": "Lista las sesiones." },
+    { "cmd": "tmux kill-session -t trabajo", "desc": "Cierra una sesión." }
+  ],
+  "options": [
+    { "flag": "new -s", "desc": "Crea una sesión con nombre." },
+    { "flag": "attach -t", "desc": "Se conecta a una sesión." },
+    { "flag": "ls", "desc": "Lista las sesiones." },
+    { "flag": "split-window", "desc": "Divide el panel actual." }
+  ]
+}

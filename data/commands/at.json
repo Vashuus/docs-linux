@@ -1,0 +1,16 @@
+{
+  "id": "at",
+  "title": "at — Programar un comando puntual",
+  "description": "Ejecuta un comando una sola vez en un momento futuro. El demonio atd debe estar activo.",
+  "syntax": "at [opciones] hora",
+  "examples": [
+    { "cmd": "echo 'backup.sh' | at 23:00", "desc": "Ejecuta el comando a las 23:00." },
+    { "cmd": "at now + 1 hour", "desc": "Programa en una hora." },
+    { "cmd": "atq", "desc": "Lista los trabajos programados." }
+  ],
+  "options": [
+    { "flag": "-l / atq", "desc": "Lista los trabajos pendientes." },
+    { "flag": "-r", "desc": "Elimina un trabajo (o atrm)." },
+    { "flag": "-f", "desc": "Lee el trabajo desde un archivo." }
+  ]
+}

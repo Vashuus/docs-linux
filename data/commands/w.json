@@ -1,0 +1,15 @@
+{
+  "id": "w",
+  "title": "w — Ver sesiones y carga del sistema",
+  "description": "Muestra quién está conectado y qué está haciendo, más el resumen de carga del sistema.",
+  "syntax": "w [opciones] [usuario]",
+  "examples": [
+    { "cmd": "w", "desc": "Muestra sesiones y carga media." },
+    { "cmd": "w -h", "desc": "Omite la cabecera." }
+  ],
+  "options": [
+    { "flag": "-h", "desc": "No muestra la cabecera." },
+    { "flag": "-s", "desc": "Salida abreviada." },
+    { "flag": "-u", "desc": "Ignora el nombre de usuario en la salida." }
+  ]
+}
