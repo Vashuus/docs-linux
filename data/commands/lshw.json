@@ -1,0 +1,16 @@
+{
+  "id": "lshw",
+  "title": "lshw — Inventario de hardware",
+  "description": "Muestra información detallada del hardware del sistema.",
+  "syntax": "lshw [opciones]",
+  "examples": [
+    { "cmd": "sudo lshw -short", "desc": "Resumen del hardware." },
+    { "cmd": "sudo lshw -C network", "desc": "Solo dispositivos de red." },
+    { "cmd": "sudo lshw -html > hw.html", "desc": "Genera un informe en HTML." }
+  ],
+  "options": [
+    { "flag": "-short", "desc": "Salida resumida." },
+    { "flag": "-C", "desc": "Filtra por clase (network, disk, memory...)." },
+    { "flag": "-html", "desc": "Salida en HTML." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "umount",
+  "title": "umount — Desmontar sistemas de archivos",
+  "description": "Desmonta un dispositivo o punto de montaje previamente montado.",
+  "syntax": "umount [opciones] objetivo",
+  "examples": [
+    { "cmd": "sudo umount /mnt/usb", "desc": "Desmonta por punto de montaje." },
+    { "cmd": "sudo umount /dev/sdb1", "desc": "Desmonta por dispositivo." },
+    { "cmd": "sudo umount -l /mnt/usb", "desc": "Desmontaje diferido (lazy)." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Desmontaje diferido." },
+    { "flag": "-f", "desc": "Fuerza el desmontaje." },
+    { "flag": "-a", "desc": "Desmonta todos los indicados en /proc/mounts." }
+  ]
+}

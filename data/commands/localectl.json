@@ -1,0 +1,17 @@
+{
+  "id": "localectl",
+  "title": "localectl — Idioma y teclado del sistema",
+  "description": "Consulta y configura la configuración regional (locale) y el mapa de teclado del sistema (systemd).",
+  "syntax": "localectl [comando]",
+  "examples": [
+    { "cmd": "localectl status", "desc": "Muestra el estado actual." },
+    { "cmd": "sudo localectl set-locale LANG=es_ES.UTF-8", "desc": "Cambia el idioma del sistema." },
+    { "cmd": "sudo localectl set-keymap es", "desc": "Cambia la distribución del teclado." }
+  ],
+  "options": [
+    { "flag": "status", "desc": "Muestra locale y teclado." },
+    { "flag": "set-locale", "desc": "Establece el locale." },
+    { "flag": "set-keymap", "desc": "Establece el mapa de teclado." },
+    { "flag": "list-keymaps", "desc": "Lista los mapas disponibles." }
+  ]
+}

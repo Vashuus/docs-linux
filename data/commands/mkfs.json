@@ -1,0 +1,16 @@
+{
+  "id": "mkfs",
+  "title": "mkfs — Crear un sistema de archivos",
+  "description": "Formatea una partición o dispositivo creando un sistema de archivos (ext4, xfs, vfat...).",
+  "syntax": "sudo mkfs[.tipo] [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo mkfs.ext4 /dev/sdb1", "desc": "Crea un sistema de archivos ext4." },
+    { "cmd": "sudo mkfs.xfs /dev/sdb1", "desc": "Crea un sistema de archivos XFS." },
+    { "cmd": "sudo mkfs.vfat -n USB /dev/sdb1", "desc": "Crea un FAT32 etiquetado 'USB'." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Tipo de sistema de archivos." },
+    { "flag": "-L", "desc": "Etiqueta del sistema de archivos." },
+    { "flag": "-F", "desc": "Fuerza la operación." }
+  ]
+}

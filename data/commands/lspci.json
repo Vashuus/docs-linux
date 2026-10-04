@@ -1,0 +1,16 @@
+{
+  "id": "lspci",
+  "title": "lspci — Dispositivos PCI",
+  "description": "Lista los dispositivos conectados al bus PCI (GPUs, tarjetas de red, controladores...).",
+  "syntax": "lspci [opciones]",
+  "examples": [
+    { "cmd": "lspci", "desc": "Lista los dispositivos PCI." },
+    { "cmd": "lspci -k", "desc": "Muestra el driver del kernel en uso." },
+    { "cmd": "lspci -vnn", "desc": "Información detallada con IDs numéricos." }
+  ],
+  "options": [
+    { "flag": "-k", "desc": "Muestra los drivers del kernel." },
+    { "flag": "-v", "desc": "Detallado." },
+    { "flag": "-nn", "desc": "Muestra los IDs numéricos." }
+  ]
+}

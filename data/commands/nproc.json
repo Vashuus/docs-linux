@@ -1,0 +1,15 @@
+{
+  "id": "nproc",
+  "title": "nproc — Número de procesadores disponibles",
+  "description": "Muestra el número de unidades de procesamiento (núcleos) disponibles para los procesos.",
+  "syntax": "nproc [opciones]",
+  "examples": [
+    { "cmd": "nproc", "desc": "Muestra el número de núcleos disponibles." },
+    { "cmd": "nproc --all", "desc": "Muestra el total de núcleos instalados." },
+    { "cmd": "make -j$(nproc)", "desc": "Compila usando todos los núcleos." }
+  ],
+  "options": [
+    { "flag": "--all", "desc": "Número total de núcleos instalados." },
+    { "flag": "--ignore", "desc": "Resta N núcleos al resultado." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "cal",
+  "title": "cal — Mostrar un calendario",
+  "description": "Muestra un calendario del mes o del año.",
+  "syntax": "cal [opciones] [mes] [año]",
+  "examples": [
+    { "cmd": "cal", "desc": "Muestra el mes actual." },
+    { "cmd": "cal 2026", "desc": "Muestra todo el año." },
+    { "cmd": "cal -3", "desc": "Muestra mes anterior, actual y siguiente." }
+  ],
+  "options": [
+    { "flag": "-3", "desc": "Tres meses." },
+    { "flag": "-y", "desc": "Año completo." },
+    { "flag": "-m", "desc": "Empieza la semana en lunes." }
+  ]
+}

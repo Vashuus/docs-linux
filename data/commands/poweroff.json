@@ -1,0 +1,14 @@
+{
+  "id": "poweroff",
+  "title": "poweroff — Apagar el sistema",
+  "description": "Apaga la máquina de forma inmediata y ordenada.",
+  "syntax": "sudo poweroff [opciones]",
+  "examples": [
+    { "cmd": "sudo poweroff", "desc": "Apaga el sistema." },
+    { "cmd": "sudo poweroff -f", "desc": "Fuerza el apagado inmediato." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza el apagado." },
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

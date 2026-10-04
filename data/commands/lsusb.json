@@ -1,0 +1,16 @@
+{
+  "id": "lsusb",
+  "title": "lsusb — Dispositivos USB",
+  "description": "Lista los dispositivos conectados por USB.",
+  "syntax": "lsusb [opciones]",
+  "examples": [
+    { "cmd": "lsusb", "desc": "Lista los dispositivos USB." },
+    { "cmd": "lsusb -t", "desc": "Muestra el árbol USB." },
+    { "cmd": "lsusb -v", "desc": "Información detallada." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Muestra el árbol físico USB." },
+    { "flag": "-v", "desc": "Información detallada." },
+    { "flag": "-s", "desc": "Muestra solo el dispositivo indicado." }
+  ]
+}

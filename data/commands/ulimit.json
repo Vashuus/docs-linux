@@ -1,0 +1,17 @@
+{
+  "id": "ulimit",
+  "title": "ulimit — Límites de recursos del shell",
+  "description": "Consulta o ajusta los límites de recursos para los procesos del shell. Es un builtin.",
+  "syntax": "ulimit [opciones] [valor]",
+  "examples": [
+    { "cmd": "ulimit -a", "desc": "Muestra todos los límites." },
+    { "cmd": "ulimit -n", "desc": "Muestra el límite de archivos abiertos." },
+    { "cmd": "ulimit -n 4096", "desc": "Aumenta el límite de descriptores." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Muestra todos los límites." },
+    { "flag": "-n", "desc": "Máximo de archivos abiertos." },
+    { "flag": "-u", "desc": "Máximo de procesos por usuario." },
+    { "flag": "-c", "desc": "Tamaño máximo de core dump." }
+  ]
+}

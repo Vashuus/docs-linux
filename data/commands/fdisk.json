@@ -1,0 +1,15 @@
+{
+  "id": "fdisk",
+  "title": "fdisk — Gestionar particiones",
+  "description": "Crea, elimina y modifica particiones en un disco (MBR/GPT).",
+  "syntax": "sudo fdisk [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo fdisk -l", "desc": "Lista las particiones de todos los discos." },
+    { "cmd": "sudo fdisk -l /dev/sda", "desc": "Lista las particiones de un disco." },
+    { "cmd": "sudo fdisk /dev/sdb", "desc": "Abre el editor interactivo de particiones." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Lista las tablas de particiones." },
+    { "flag": "-u", "desc": "Muestra los tamaños en sectores." }
+  ]
+}

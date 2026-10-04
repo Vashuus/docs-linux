@@ -1,0 +1,14 @@
+{
+  "id": "sync",
+  "title": "sync — Volcar cachés a disco",
+  "description": "Fuerza la escritura de los datos en caché al disco antes de apagar o desmontar.",
+  "syntax": "sync [opciones]",
+  "examples": [
+    { "cmd": "sync", "desc": "Vuelca todas las cachés a disco." },
+    { "cmd": "sync -f /mnt/usb", "desc": "Sincroniza solo un sistema de archivos." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Sincroniza el sistema de archivos indicado." },
+    { "flag": "-d", "desc": "Sincroniza solo los metadatos." }
+  ]
+}

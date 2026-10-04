@@ -1,0 +1,16 @@
+{
+  "id": "lsblk",
+  "title": "lsblk — Listar dispositivos de bloque",
+  "description": "Muestra los discos, particiones y volúmenes en forma de árbol.",
+  "syntax": "lsblk [opciones]",
+  "examples": [
+    { "cmd": "lsblk", "desc": "Muestra el árbol de dispositivos de bloque." },
+    { "cmd": "lsblk -f", "desc": "Incluye sistemas de archivos, UUID y puntos de montaje." },
+    { "cmd": "lsblk -o NAME,SIZE,TYPE,MOUNTPOINT", "desc": "Selecciona columnas concretas." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Muestra sistemas de archivos y UUID." },
+    { "flag": "-o", "desc": "Selecciona las columnas a mostrar." },
+    { "flag": "-p", "desc": "Muestra las rutas completas de los dispositivos." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fsck",
+  "title": "fsck — Comprobar y reparar sistemas de archivos",
+  "description": "Verifica la integridad de un sistema de archivos y repara errores. Debe usarse con el sistema desmontado.",
+  "syntax": "sudo fsck [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo fsck /dev/sdb1", "desc": "Comprueba un sistema de archivos." },
+    { "cmd": "sudo fsck -y /dev/sdb1", "desc": "Repara respondiendo sí a todo." },
+    { "cmd": "sudo fsck -f /dev/sdb1", "desc": "Fuerza la comprobación." }
+  ],
+  "options": [
+    { "flag": "-y", "desc": "Responde 'sí' a todas las preguntas." },
+    { "flag": "-f", "desc": "Fuerza la comprobación." },
+    { "flag": "-n", "desc": "Solo comprueba, no repara." },
+    { "flag": "-A", "desc": "Comprueba todos los sistemas de /etc/fstab." }
+  ]
+}

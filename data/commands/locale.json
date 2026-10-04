@@ -1,0 +1,16 @@
+{
+  "id": "locale",
+  "title": "locale — Configuración regional",
+  "description": "Muestra o configura el idioma, el juego de caracteres y otros ajustes regionales.",
+  "syntax": "locale [opciones]",
+  "examples": [
+    { "cmd": "locale", "desc": "Muestra la configuración regional actual." },
+    { "cmd": "locale -a", "desc": "Lista las locales disponibles." },
+    { "cmd": "sudo locale-gen es_ES.UTF-8", "desc": "Genera una localización." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Lista todas las locales disponibles." },
+    { "flag": "-m", "desc": "Lista los mapas de caracteres." },
+    { "flag": "-k", "desc": "Muestra los nombres de las categorías." }
+  ]
+}

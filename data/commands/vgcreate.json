@@ -1,0 +1,16 @@
+{
+  "id": "vgcreate",
+  "title": "vgcreate — Crear grupo de volúmenes LVM",
+  "description": "Agrupa uno o varios volúmenes físicos en un grupo de volúmenes (VG).",
+  "syntax": "sudo vgcreate nombre_vg pv...",
+  "examples": [
+    { "cmd": "sudo vgcreate datos /dev/sdb1", "desc": "Crea un grupo de volúmenes." },
+    { "cmd": "sudo vgcreate datos /dev/sdb1 /dev/sdc1", "desc": "Con varios volúmenes físicos." },
+    { "cmd": "sudo vgs", "desc": "Lista los grupos de volúmenes." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Tamaño de extensión (PE)." },
+    { "flag": "-f", "desc": "Fuerza la creación." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

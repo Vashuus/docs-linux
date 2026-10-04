@@ -1,0 +1,14 @@
+{
+  "id": "swapoff",
+  "title": "swapoff — Desactivar swap",
+  "description": "Desactiva una partición o archivo de intercambio, moviendo su contenido a la RAM.",
+  "syntax": "sudo swapoff [opciones] [dispositivo]",
+  "examples": [
+    { "cmd": "sudo swapoff /dev/sdb2", "desc": "Desactiva una swap." },
+    { "cmd": "sudo swapoff -a", "desc": "Desactiva todas las swaps." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Desactiva todas las swaps de fstab." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

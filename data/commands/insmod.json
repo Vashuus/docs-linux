@@ -1,0 +1,13 @@
+{
+  "id": "insmod",
+  "title": "insmod — Insertar un módulo del kernel",
+  "description": "Carga un módulo del kernel desde un archivo .ko concreto, sin resolver dependencias.",
+  "syntax": "insmod archivo.ko",
+  "examples": [
+    { "cmd": "sudo insmod modulo.ko", "desc": "Inserta un módulo desde un archivo." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la inserción." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

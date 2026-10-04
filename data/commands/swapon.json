@@ -1,0 +1,16 @@
+{
+  "id": "swapon",
+  "title": "swapon — Activar swap",
+  "description": "Activa una partición o archivo de intercambio.",
+  "syntax": "sudo swapon [opciones] [dispositivo]",
+  "examples": [
+    { "cmd": "sudo swapon /dev/sdb2", "desc": "Activa una swap." },
+    { "cmd": "sudo swapon --show", "desc": "Muestra las swaps activas." },
+    { "cmd": "sudo swapon -a", "desc": "Activa todas las swaps de /etc/fstab." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Activa todas las swaps de fstab." },
+    { "flag": "--show", "desc": "Muestra el uso actual de swap." },
+    { "flag": "-p", "desc": "Establece la prioridad." }
+  ]
+}

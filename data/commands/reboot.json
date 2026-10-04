@@ -1,0 +1,14 @@
+{
+  "id": "reboot",
+  "title": "reboot — Reiniciar el sistema",
+  "description": "Reinicia la máquina de forma inmediata y ordenada.",
+  "syntax": "sudo reboot [opciones]",
+  "examples": [
+    { "cmd": "sudo reboot", "desc": "Reinicia el sistema." },
+    { "cmd": "sudo reboot -f", "desc": "Fuerza el reinicio inmediato." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza el reinicio sin parar servicios." },
+    { "flag": "-p", "desc": "Apaga en lugar de reiniciar." }
+  ]
+}

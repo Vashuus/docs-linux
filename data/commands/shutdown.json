@@ -1,0 +1,18 @@
+{
+  "id": "shutdown",
+  "title": "shutdown — Apagar o reiniciar programado",
+  "description": "Apaga, reinicia o cancela el apagado del sistema, opcionalmente con retardo o a una hora concreta.",
+  "syntax": "sudo shutdown [opciones] [hora] [mensaje]",
+  "examples": [
+    { "cmd": "sudo shutdown -h now", "desc": "Apaga inmediatamente." },
+    { "cmd": "sudo shutdown -h +10 'Mantenimiento'", "desc": "Apaga en 10 minutos con aviso." },
+    { "cmd": "sudo shutdown -r 23:00", "desc": "Reinicia a las 23:00." },
+    { "cmd": "sudo shutdown -c", "desc": "Cancela un apagado programado." }
+  ],
+  "options": [
+    { "flag": "-h", "desc": "Apaga." },
+    { "flag": "-r", "desc": "Reinicia." },
+    { "flag": "-c", "desc": "Cancela el apagado." },
+    { "flag": "-k", "desc": "Solo envía el aviso, no apaga." }
+  ]
+}

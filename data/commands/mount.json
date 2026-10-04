@@ -1,0 +1,16 @@
+{
+  "id": "mount",
+  "title": "mount — Montar sistemas de archivos",
+  "description": "Monta dispositivos o sistemas de archivos en un punto de montaje.",
+  "syntax": "mount [opciones] [dispositivo] [punto]",
+  "examples": [
+    { "cmd": "mount", "desc": "Lista los sistemas de archivos montados." },
+    { "cmd": "sudo mount /dev/sdb1 /mnt/usb", "desc": "Monta una partición." },
+    { "cmd": "sudo mount -o remount,rw /", "desc": "Remonta con otras opciones." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Tipo de sistema de archivos." },
+    { "flag": "-o", "desc": "Opciones de montaje (ro, rw, noexec...)." },
+    { "flag": "-a", "desc": "Monta todo lo indicado en /etc/fstab." }
+  ]
+}

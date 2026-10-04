@@ -1,0 +1,15 @@
+{
+  "id": "uptime",
+  "title": "uptime — Tiempo activo y carga media",
+  "description": "Muestra cuánto tiempo lleva encendido el sistema, los usuarios conectados y la carga media.",
+  "syntax": "uptime [opciones]",
+  "examples": [
+    { "cmd": "uptime", "desc": "Muestra tiempo activo y carga media." },
+    { "cmd": "uptime -p", "desc": "Formato legible del tiempo activo." },
+    { "cmd": "uptime -s", "desc": "Muestra la fecha y hora de arranque." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Tiempo activo en formato legible." },
+    { "flag": "-s", "desc": "Fecha y hora del arranque." }
+  ]
+}

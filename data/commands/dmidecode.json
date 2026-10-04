@@ -1,0 +1,16 @@
+{
+  "id": "dmidecode",
+  "title": "dmidecode — Información de la BIOS/placa",
+  "description": "Extrae información del hardware desde las tablas DMI/SMBIOS: BIOS, placa base, RAM, número de serie.",
+  "syntax": "sudo dmidecode [opciones]",
+  "examples": [
+    { "cmd": "sudo dmidecode -t system", "desc": "Información del sistema (fabricante, serie)." },
+    { "cmd": "sudo dmidecode -t memory", "desc": "Detalles de la memoria RAM." },
+    { "cmd": "sudo dmidecode -t bios", "desc": "Información de la BIOS." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Filtra por tipo (bios, system, memory, processor...)." },
+    { "flag": "-s", "desc": "Muestra solo un valor concreto." },
+    { "flag": "-q", "desc": "Salida concisa." }
+  ]
+}

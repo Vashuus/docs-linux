@@ -1,0 +1,17 @@
+{
+  "id": "du",
+  "title": "du — Tamaño de archivos y directorios",
+  "description": "Estima el espacio ocupado por archivos y directorios.",
+  "syntax": "du [opciones] [ruta...]",
+  "examples": [
+    { "cmd": "du -sh carpeta/", "desc": "Tamaño total de un directorio." },
+    { "cmd": "du -h --max-depth=1", "desc": "Tamaño de cada subdirectorio de primer nivel." },
+    { "cmd": "du -sh * | sort -h", "desc": "Lista y ordena por tamaño." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Resumen total, sin detalle." },
+    { "flag": "-h", "desc": "Unidades legibles." },
+    { "flag": "--max-depth", "desc": "Limita la profundidad." },
+    { "flag": "-a", "desc": "Incluye archivos, no solo directorios." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "iostat",
+  "title": "iostat — Estadísticas de E/S y CPU",
+  "description": "Muestra estadísticas de entrada/salida de discos y uso de CPU. Parte del paquete sysstat.",
+  "syntax": "iostat [opciones] [intervalo] [repeticiones]",
+  "examples": [
+    { "cmd": "iostat -x 2 5", "desc": "Estadísticas extendidas cada 2 segundos." },
+    { "cmd": "iostat -d -h", "desc": "Solo dispositivos, unidades legibles." },
+    { "cmd": "iostat -c", "desc": "Solo estadísticas de CPU." }
+  ],
+  "options": [
+    { "flag": "-x", "desc": "Estadísticas extendidas." },
+    { "flag": "-d", "desc": "Solo dispositivos de bloque." },
+    { "flag": "-c", "desc": "Solo CPU." },
+    { "flag": "-h", "desc": "Formato legible." }
+  ]
+}

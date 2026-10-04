@@ -1,0 +1,16 @@
+{
+  "id": "modprobe",
+  "title": "modprobe — Cargar o descargar módulos del kernel",
+  "description": "Añade o elimina módulos del kernel, resolviendo dependencias automáticamente.",
+  "syntax": "modprobe [opciones] módulo",
+  "examples": [
+    { "cmd": "sudo modprobe vfat", "desc": "Carga un módulo." },
+    { "cmd": "sudo modprobe -r vfat", "desc": "Descarga un módulo." },
+    { "cmd": "sudo modprobe -n -v vfat", "desc": "Simula la operación sin aplicarla." }
+  ],
+  "options": [
+    { "flag": "-r", "desc": "Elimina el módulo." },
+    { "flag": "-n", "desc": "Simulación (dry-run)." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

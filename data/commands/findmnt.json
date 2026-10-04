@@ -1,0 +1,16 @@
+{
+  "id": "findmnt",
+  "title": "findmnt — Ver puntos de montaje",
+  "description": "Muestra los sistemas de archivos montados en forma de árbol o lista.",
+  "syntax": "findmnt [opciones] [dispositivo|punto]",
+  "examples": [
+    { "cmd": "findmnt", "desc": "Muestra el árbol de montajes." },
+    { "cmd": "findmnt /", "desc": "Muestra el montaje de una ruta." },
+    { "cmd": "findmnt --verify", "desc": "Verifica /etc/fstab." }
+  ],
+  "options": [
+    { "flag": "-T", "desc": "Busca el montaje de una ruta." },
+    { "flag": "-l", "desc": "Salida en lista." },
+    { "flag": "--verify", "desc": "Comprueba /etc/fstab." }
+  ]
+}

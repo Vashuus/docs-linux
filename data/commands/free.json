@@ -1,0 +1,17 @@
+{
+  "id": "free",
+  "title": "free — Uso de memoria",
+  "description": "Muestra la memoria RAM y swap disponible y en uso.",
+  "syntax": "free [opciones]",
+  "examples": [
+    { "cmd": "free -h", "desc": "Muestra la memoria en unidades legibles." },
+    { "cmd": "free -m", "desc": "Muestra la memoria en megabytes." },
+    { "cmd": "free -s 2", "desc": "Actualiza cada 2 segundos." }
+  ],
+  "options": [
+    { "flag": "-h", "desc": "Unidades legibles (Mi, Gi)." },
+    { "flag": "-m", "desc": "Megabytes." },
+    { "flag": "-g", "desc": "Gigabytes." },
+    { "flag": "-s", "desc": "Actualiza cada N segundos." }
+  ]
+}

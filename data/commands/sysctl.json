@@ -1,0 +1,17 @@
+{
+  "id": "sysctl",
+  "title": "sysctl — Parámetros del kernel",
+  "description": "Consulta y modifica parámetros del kernel en tiempo de ejecución.",
+  "syntax": "sysctl [opciones] [parámetro[=valor]]",
+  "examples": [
+    { "cmd": "sysctl net.ipv4.ip_forward", "desc": "Consulta un parámetro." },
+    { "cmd": "sudo sysctl -w net.ipv4.ip_forward=1", "desc": "Modifica un parámetro temporalmente." },
+    { "cmd": "sudo sysctl -p", "desc": "Recarga /etc/sysctl.conf." }
+  ],
+  "options": [
+    { "flag": "-w", "desc": "Escribe/cambia un parámetro." },
+    { "flag": "-p", "desc": "Carga desde un archivo de configuración." },
+    { "flag": "-a", "desc": "Muestra todos los parámetros." },
+    { "flag": "-n", "desc": "Muestra solo el valor." }
+  ]
+}

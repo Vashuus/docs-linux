@@ -1,0 +1,16 @@
+{
+  "id": "blkid",
+  "title": "blkid — UUID y tipo de dispositivos",
+  "description": "Muestra el UUID, la etiqueta y el tipo de sistema de archivos de los dispositivos de bloque.",
+  "syntax": "sudo blkid [opciones] [dispositivo]",
+  "examples": [
+    { "cmd": "sudo blkid", "desc": "Muestra UUID y tipo de todos los dispositivos." },
+    { "cmd": "sudo blkid /dev/sda1", "desc": "Información de un dispositivo concreto." },
+    { "cmd": "sudo blkid -s UUID -o value /dev/sda1", "desc": "Muestra solo el UUID." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Muestra solo el atributo indicado." },
+    { "flag": "-o", "desc": "Formato de salida (value, full, export)." },
+    { "flag": "-U", "desc": "Busca un dispositivo por UUID." }
+  ]
+}

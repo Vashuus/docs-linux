@@ -1,0 +1,13 @@
+{
+  "id": "lsmod",
+  "title": "lsmod — Módulos del kernel cargados",
+  "description": "Lista los módulos del kernel actualmente cargados.",
+  "syntax": "lsmod",
+  "examples": [
+    { "cmd": "lsmod", "desc": "Lista los módulos cargados." },
+    { "cmd": "lsmod | grep nvidia", "desc": "Busca un módulo concreto." }
+  ],
+  "options": [
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

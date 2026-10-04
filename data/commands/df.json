@@ -1,0 +1,17 @@
+{
+  "id": "df",
+  "title": "df — Espacio libre en disco",
+  "description": "Muestra el espacio usado y disponible en los sistemas de archivos montados.",
+  "syntax": "df [opciones] [ruta]",
+  "examples": [
+    { "cmd": "df -h", "desc": "Muestra el espacio en unidades legibles." },
+    { "cmd": "df -hT", "desc": "Incluye el tipo de sistema de archivos." },
+    { "cmd": "df -i", "desc": "Muestra el uso de inodos." }
+  ],
+  "options": [
+    { "flag": "-h", "desc": "Unidades legibles." },
+    { "flag": "-T", "desc": "Muestra el tipo de sistema de archivos." },
+    { "flag": "-i", "desc": "Estadísticas de inodos." },
+    { "flag": "-x", "desc": "Excluye un tipo de sistema de archivos." }
+  ]
+}

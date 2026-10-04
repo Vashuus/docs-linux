@@ -1,0 +1,16 @@
+{
+  "id": "lscpu",
+  "title": "lscpu — Información de la CPU",
+  "description": "Muestra detalles de la arquitectura y los núcleos de la CPU.",
+  "syntax": "lscpu [opciones]",
+  "examples": [
+    { "cmd": "lscpu", "desc": "Muestra información completa de la CPU." },
+    { "cmd": "lscpu -e", "desc": "Lista cada CPU con su información." },
+    { "cmd": "lscpu | grep 'Model name'", "desc": "Muestra el modelo de la CPU." }
+  ],
+  "options": [
+    { "flag": "-e", "desc": "Tabla extendida por CPU." },
+    { "flag": "-p", "desc": "Salida parseable." },
+    { "flag": "-c", "desc": "Muestra solo las CPU online/offline." }
+  ]
+}

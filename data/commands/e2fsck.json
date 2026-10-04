@@ -1,0 +1,17 @@
+{
+  "id": "e2fsck",
+  "title": "e2fsck — Comprobar ext2/ext3/ext4",
+  "description": "Comprueba y repara sistemas de archivos ext2/ext3/ext4.",
+  "syntax": "sudo e2fsck [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo e2fsck -f /dev/sdb1", "desc": "Fuerza la comprobación." },
+    { "cmd": "sudo e2fsck -p /dev/sdb1", "desc": "Repara automáticamente si es seguro." },
+    { "cmd": "sudo e2fsck -cc /dev/sdb1", "desc": "Busca sectores defectuosos." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la comprobación." },
+    { "flag": "-p", "desc": "Reparación automática segura." },
+    { "flag": "-y", "desc": "Responde 'sí' a todo." },
+    { "flag": "-n", "desc": "Solo lectura, sin reparar." }
+  ]
+}

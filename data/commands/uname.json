@@ -1,0 +1,17 @@
+{
+  "id": "uname",
+  "title": "uname — Información del sistema",
+  "description": "Muestra información del kernel y del sistema operativo.",
+  "syntax": "uname [opciones]",
+  "examples": [
+    { "cmd": "uname -a", "desc": "Muestra toda la información del kernel." },
+    { "cmd": "uname -r", "desc": "Muestra la versión del kernel." },
+    { "cmd": "uname -m", "desc": "Muestra la arquitectura de la máquina." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Toda la información." },
+    { "flag": "-r", "desc": "Versión del kernel." },
+    { "flag": "-m", "desc": "Arquitectura (x86_64, arm64...)." },
+    { "flag": "-n", "desc": "Nombre del host." }
+  ]
+}

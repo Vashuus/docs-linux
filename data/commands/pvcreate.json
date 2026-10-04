@@ -1,0 +1,16 @@
+{
+  "id": "pvcreate",
+  "title": "pvcreate — Crear volumen físico LVM",
+  "description": "Inicializa un dispositivo o partición como volumen físico (PV) para usar con LVM.",
+  "syntax": "sudo pvcreate dispositivo",
+  "examples": [
+    { "cmd": "sudo pvcreate /dev/sdb1", "desc": "Inicializa un volumen físico." },
+    { "cmd": "sudo pvcreate /dev/sdb1 /dev/sdc1", "desc": "Inicializa varios a la vez." },
+    { "cmd": "sudo pvs", "desc": "Lista los volúmenes físicos." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la creación." },
+    { "flag": "-y", "desc": "Responde 'sí' a las preguntas." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

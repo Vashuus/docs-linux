@@ -1,0 +1,16 @@
+{
+  "id": "hostname",
+  "title": "hostname — Nombre del equipo",
+  "description": "Muestra o cambia el nombre del host.",
+  "syntax": "hostname [opciones] [nombre]",
+  "examples": [
+    { "cmd": "hostname", "desc": "Muestra el nombre del host." },
+    { "cmd": "hostname -I", "desc": "Muestra las direcciones IP del host." },
+    { "cmd": "sudo hostname servidor01", "desc": "Cambia el nombre (temporal)." }
+  ],
+  "options": [
+    { "flag": "-I", "desc": "Todas las direcciones IP." },
+    { "flag": "-f", "desc": "Nombre de dominio completo (FQDN)." },
+    { "flag": "-s", "desc": "Nombre corto." }
+  ]
+}

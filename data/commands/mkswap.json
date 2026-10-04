@@ -1,0 +1,16 @@
+{
+  "id": "mkswap",
+  "title": "mkswap — Crear área de swap",
+  "description": "Prepara una partición o archivo para usarse como memoria de intercambio (swap).",
+  "syntax": "sudo mkswap [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo mkswap /dev/sdb2", "desc": "Prepara una partición como swap." },
+    { "cmd": "sudo mkswap -L swap1 /dev/sdb2", "desc": "Con etiqueta." },
+    { "cmd": "sudo mkswap /swapfile", "desc": "Prepara un archivo como swap." }
+  ],
+  "options": [
+    { "flag": "-L", "desc": "Etiqueta la swap." },
+    { "flag": "-U", "desc": "Especifica el UUID." },
+    { "flag": "--check", "desc": "Comprueba posibles daños." }
+  ]
+}

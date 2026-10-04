@@ -1,0 +1,17 @@
+{
+  "id": "dd",
+  "title": "dd — Copiar y convertir datos a bajo nivel",
+  "description": "Copia datos bloque a bloque. Sirve para clonar discos, crear imágenes y hacer USB de arranque.",
+  "syntax": "dd if=origen of=destino [opciones]",
+  "examples": [
+    { "cmd": "sudo dd if=imagen.iso of=/dev/sdb bs=4M status=progress", "desc": "Crea un USB de arranque." },
+    { "cmd": "sudo dd if=/dev/sda of=/backup/disco.img bs=4M", "desc": "Clona un disco a una imagen." },
+    { "cmd": "dd if=/dev/zero of=archivo bs=1M count=100", "desc": "Crea un archivo de 100 MB." }
+  ],
+  "options": [
+    { "flag": "if=", "desc": "Archivo/dispositivo de entrada." },
+    { "flag": "of=", "desc": "Archivo/dispositivo de salida." },
+    { "flag": "bs=", "desc": "Tamaño de bloque." },
+    { "flag": "status=progress", "desc": "Muestra el progreso." }
+  ]
+}

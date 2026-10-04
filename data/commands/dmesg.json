@@ -1,0 +1,17 @@
+{
+  "id": "dmesg",
+  "title": "dmesg — Mensajes del kernel",
+  "description": "Muestra el búfer de mensajes del kernel: arranque, hardware, errores de drivers.",
+  "syntax": "dmesg [opciones]",
+  "examples": [
+    { "cmd": "sudo dmesg -T", "desc": "Muestra los mensajes con marcas de tiempo legibles." },
+    { "cmd": "sudo dmesg -l err", "desc": "Filtra solo errores." },
+    { "cmd": "sudo dmesg -w", "desc": "Sigue la salida en tiempo real." }
+  ],
+  "options": [
+    { "flag": "-T", "desc": "Marcas de tiempo legibles." },
+    { "flag": "-l", "desc": "Filtra por nivel (err, warn, info...)." },
+    { "flag": "-w", "desc": "Espera nuevos mensajes (follow)." },
+    { "flag": "-H", "desc": "Salida paginada con colores." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mdadm",
+  "title": "mdadm — Gestionar RAID por software",
+  "description": "Crea y administra arrays RAID por software (0, 1, 5, 6, 10) usando múltiples discos.",
+  "syntax": "sudo mdadm [modo] [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1", "desc": "Crea un RAID 1 con dos discos." },
+    { "cmd": "cat /proc/mdstat", "desc": "Muestra el estado de los arrays." },
+    { "cmd": "sudo mdadm --detail /dev/md0", "desc": "Muestra detalles de un array." }
+  ],
+  "options": [
+    { "flag": "--create", "desc": "Crea un nuevo array." },
+    { "flag": "--level", "desc": "Nivel de RAID (0,1,5,6,10)." },
+    { "flag": "--raid-devices", "desc": "Número de dispositivos." },
+    { "flag": "--assemble", "desc": "Reensambla un array existente." }
+  ]
+}

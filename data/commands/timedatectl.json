@@ -1,0 +1,16 @@
+{
+  "id": "timedatectl",
+  "title": "timedatectl — Fecha, hora y zona horaria",
+  "description": "Consulta y configura la fecha, la hora, la zona horaria y la sincronización NTP (systemd).",
+  "syntax": "timedatectl [comando]",
+  "examples": [
+    { "cmd": "timedatectl", "desc": "Muestra el estado actual." },
+    { "cmd": "sudo timedatectl set-timezone Europe/Madrid", "desc": "Cambia la zona horaria." },
+    { "cmd": "sudo timedatectl set-ntp true", "desc": "Activa la sincronización NTP." }
+  ],
+  "options": [
+    { "flag": "set-timezone", "desc": "Fija la zona horaria." },
+    { "flag": "set-ntp", "desc": "Activa/desactiva NTP." },
+    { "flag": "list-timezones", "desc": "Lista las zonas disponibles." }
+  ]
+}

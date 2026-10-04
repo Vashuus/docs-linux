@@ -1,0 +1,17 @@
+{
+  "id": "lvcreate",
+  "title": "lvcreate — Crear volumen lógico LVM",
+  "description": "Crea un volumen lógico (LV) dentro de un grupo de volúmenes, con el tamaño indicado.",
+  "syntax": "sudo lvcreate -L tamaño -n nombre grupo_vg",
+  "examples": [
+    { "cmd": "sudo lvcreate -L 20G -n web datos", "desc": "Crea un volumen lógico de 20 GB." },
+    { "cmd": "sudo lvcreate -l 100%FREE -n total datos", "desc": "Usa todo el espacio libre." },
+    { "cmd": "sudo lvs", "desc": "Lista los volúmenes lógicos." }
+  ],
+  "options": [
+    { "flag": "-L", "desc": "Tamaño del volumen (p. ej. 20G)." },
+    { "flag": "-l", "desc": "Tamaño en extensiones o porcentaje." },
+    { "flag": "-n", "desc": "Nombre del volumen lógico." },
+    { "flag": "-s", "desc": "Crea una instantánea (snapshot)." }
+  ]
+}

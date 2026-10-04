@@ -1,0 +1,17 @@
+{
+  "id": "date",
+  "title": "date — Mostrar o fijar la fecha",
+  "description": "Muestra o establece la fecha y hora del sistema.",
+  "syntax": "date [opciones] [+formato]",
+  "examples": [
+    { "cmd": "date", "desc": "Muestra la fecha y hora actual." },
+    { "cmd": "date +%Y-%m-%d", "desc": "Formato 'AAAA-MM-DD'." },
+    { "cmd": "sudo date -s '2026-01-01 12:00'", "desc": "Fija la fecha y hora." }
+  ],
+  "options": [
+    { "flag": "+formato", "desc": "Especifica el formato de salida." },
+    { "flag": "-s", "desc": "Establece la fecha/hora." },
+    { "flag": "-u", "desc": "Usa UTC." },
+    { "flag": "-r", "desc": "Muestra la fecha de modificación de un archivo." }
+  ]
+}

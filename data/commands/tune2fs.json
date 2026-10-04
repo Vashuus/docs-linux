@@ -1,0 +1,17 @@
+{
+  "id": "tune2fs",
+  "title": "tune2fs — Ajustar parámetros de ext",
+  "description": "Consulta y modifica parámetros de sistemas de archivos ext2/ext3/ext4, como la etiqueta o el intervalo de comprobación.",
+  "syntax": "sudo tune2fs [opciones] dispositivo",
+  "examples": [
+    { "cmd": "sudo tune2fs -l /dev/sda1", "desc": "Muestra los parámetros del sistema de archivos." },
+    { "cmd": "sudo tune2fs -L datos /dev/sda1", "desc": "Cambia la etiqueta." },
+    { "cmd": "sudo tune2fs -c 0 /dev/sda1", "desc": "Desactiva la comprobación periódica por montajes." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Lista la superbloque." },
+    { "flag": "-L", "desc": "Cambia la etiqueta." },
+    { "flag": "-c", "desc": "Montajes entre comprobaciones." },
+    { "flag": "-i", "desc": "Intervalo de tiempo entre comprobaciones." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "modinfo",
+  "title": "modinfo — Información de un módulo",
+  "description": "Muestra información de un módulo del kernel: autor, versión, parámetros y dependencias.",
+  "syntax": "modinfo [opciones] módulo",
+  "examples": [
+    { "cmd": "modinfo vfat", "desc": "Muestra información del módulo." },
+    { "cmd": "modinfo -p vfat", "desc": "Lista los parámetros del módulo." },
+    { "cmd": "modinfo -F version vfat", "desc": "Muestra solo un campo concreto." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Muestra los parámetros válidos." },
+    { "flag": "-F", "desc": "Muestra solo el campo indicado." },
+    { "flag": "-n", "desc": "Muestra solo el nombre del archivo." }
+  ]
+}

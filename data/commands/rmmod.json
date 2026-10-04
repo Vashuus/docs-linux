@@ -1,0 +1,15 @@
+{
+  "id": "rmmod",
+  "title": "rmmod — Quitar un módulo del kernel",
+  "description": "Descarga un módulo del kernel actualmente cargado.",
+  "syntax": "rmmod [opciones] módulo",
+  "examples": [
+    { "cmd": "sudo rmmod modulo", "desc": "Descarga un módulo." },
+    { "cmd": "sudo rmmod -f modulo", "desc": "Fuerza la descarga." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la descarga." },
+    { "flag": "-v", "desc": "Salida detallada." },
+    { "flag": "-w", "desc": "Espera si el módulo está en uso." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "parted",
+  "title": "parted — Editor de particiones",
+  "description": "Crea, redimensiona y gestiona particiones, con soporte para GPT y etiquetas de disco.",
+  "syntax": "sudo parted [opciones] [dispositivo] [comando]",
+  "examples": [
+    { "cmd": "sudo parted -l", "desc": "Lista las particiones de todos los discos." },
+    { "cmd": "sudo parted /dev/sdb mklabel gpt", "desc": "Crea una tabla de particiones GPT." },
+    { "cmd": "sudo parted /dev/sdb mkpart primary ext4 0% 100%", "desc": "Crea una partición." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Lista todas las particiones." },
+    { "flag": "mklabel", "desc": "Crea una tabla de particiones (gpt/msdos)." },
+    { "flag": "mkpart", "desc": "Crea una partición." },
+    { "flag": "print", "desc": "Muestra la tabla actual." }
+  ]
+}

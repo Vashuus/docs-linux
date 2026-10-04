@@ -1,0 +1,16 @@
+{
+  "id": "vmstat",
+  "title": "vmstat — Estadísticas del sistema",
+  "description": "Informa sobre procesos, memoria, swap, E/S y CPU.",
+  "syntax": "vmstat [intervalo] [repeticiones]",
+  "examples": [
+    { "cmd": "vmstat 1 5", "desc": "Muestra 5 muestras cada segundo." },
+    { "cmd": "vmstat -s", "desc": "Resumen de contadores de memoria." },
+    { "cmd": "vmstat -d", "desc": "Estadísticas de disco." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Tabla con contadores de memoria." },
+    { "flag": "-d", "desc": "Estadísticas de disco." },
+    { "flag": "-t", "desc": "Incluye marca de tiempo." }
+  ]
+}
