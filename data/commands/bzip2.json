@@ -1,0 +1,16 @@
+{
+  "id": "bzip2",
+  "title": "bzip2 — Comprimir con bzip2",
+  "description": "Comprime archivos con bzip2 (mejor ratio que gzip, más lento), generando archivos .bz2.",
+  "syntax": "bzip2 [opciones] archivo...",
+  "examples": [
+    { "cmd": "bzip2 archivo.tar", "desc": "Comprime el archivo a .bz2." },
+    { "cmd": "bzip2 -k archivo.tar", "desc": "Conserva el original." },
+    { "cmd": "bzip2 -d archivo.bz2", "desc": "Descomprime." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Descomprime." },
+    { "flag": "-k", "desc": "Conserva el original." },
+    { "flag": "-9", "desc": "Máxima compresión." }
+  ]
+}

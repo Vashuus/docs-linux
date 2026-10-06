@@ -1,0 +1,17 @@
+{
+  "id": "unrar",
+  "title": "unrar — Extraer archivos RAR",
+  "description": "Extrae o lista el contenido de archivos RAR.",
+  "syntax": "unrar [comando] archivo.rar",
+  "examples": [
+    { "cmd": "unrar x archivo.rar", "desc": "Extrae conservando rutas." },
+    { "cmd": "unrar l archivo.rar", "desc": "Lista el contenido." },
+    { "cmd": "unrar e archivo.rar", "desc": "Extrae sin conservar rutas." }
+  ],
+  "options": [
+    { "flag": "x", "desc": "Extraer con rutas completas." },
+    { "flag": "e", "desc": "Extraer sin rutas." },
+    { "flag": "l", "desc": "Listar contenido." },
+    { "flag": "-p", "desc": "Contraseña." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "zip",
+  "title": "zip — Crear archivos ZIP",
+  "description": "Comprime archivos y directorios en formato ZIP, compatible con muchos sistemas.",
+  "syntax": "zip [opciones] archivo.zip archivos...",
+  "examples": [
+    { "cmd": "zip backup.zip a.txt b.txt", "desc": "Crea un ZIP con varios archivos." },
+    { "cmd": "zip -r proyecto.zip carpeta/", "desc": "Comprime un directorio recursivamente." },
+    { "cmd": "zip -e secreto.zip documento.pdf", "desc": "Crea un ZIP con contraseña." }
+  ],
+  "options": [
+    { "flag": "-r", "desc": "Recursivo (directorios)." },
+    { "flag": "-e", "desc": "Cifra con contraseña." },
+    { "flag": "-9", "desc": "Máxima compresión." },
+    { "flag": "-x", "desc": "Excluye archivos que coincidan." }
+  ]
+}

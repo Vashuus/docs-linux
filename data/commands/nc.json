@@ -1,0 +1,18 @@
+{
+  "id": "nc",
+  "title": "nc — Netcat: TCP/IP manual",
+  "description": "Lee y escribe datos por conexiones TCP/UDP. Sirve para escanear puertos, transferir datos y depurar servicios.",
+  "syntax": "nc [opciones] host puerto",
+  "examples": [
+    { "cmd": "nc -zv host 80", "desc": "Comprueba si el puerto está abierto." },
+    { "cmd": "nc -l 1234", "desc": "Escucha en un puerto (modo servidor)." },
+    { "cmd": "nc host 1234 < archivo", "desc": "Envía un archivo." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Modo escucha." },
+    { "flag": "-z", "desc": "Solo comprueba el puerto." },
+    { "flag": "-v", "desc": "Salida detallada." },
+    { "flag": "-u", "desc": "Usa UDP." },
+    { "flag": "-w", "desc": "Tiempo de espera." }
+  ]
+}

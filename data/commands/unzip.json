@@ -1,0 +1,17 @@
+{
+  "id": "unzip",
+  "title": "unzip — Extraer archivos ZIP",
+  "description": "Extrae o lista el contenido de archivos ZIP.",
+  "syntax": "unzip [opciones] archivo.zip",
+  "examples": [
+    { "cmd": "unzip archivo.zip", "desc": "Extrae el ZIP en el directorio actual." },
+    { "cmd": "unzip -d /destino archivo.zip", "desc": "Extrae en un directorio concreto." },
+    { "cmd": "unzip -l archivo.zip", "desc": "Lista el contenido sin extraer." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Lista el contenido." },
+    { "flag": "-d", "desc": "Directorio de destino." },
+    { "flag": "-o", "desc": "Sobrescribe sin preguntar." },
+    { "flag": "-P", "desc": "Contraseña." }
+  ]
+}

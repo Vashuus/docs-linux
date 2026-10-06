@@ -1,0 +1,14 @@
+{
+  "id": "zcat",
+  "title": "zcat — Ver archivos comprimidos",
+  "description": "Muestra el contenido de archivos comprimidos con gzip sin descomprimirlos.",
+  "syntax": "zcat archivo.gz",
+  "examples": [
+    { "cmd": "zcat log.gz", "desc": "Muestra el contenido del .gz." },
+    { "cmd": "zcat log.gz | grep ERROR", "desc": "Filtra dentro del archivo comprimido." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la lectura aunque no sea gzip." },
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

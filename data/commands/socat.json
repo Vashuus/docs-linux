@@ -1,0 +1,16 @@
+{
+  "id": "socat",
+  "title": "socat — Retransmisor bidireccional",
+  "description": "Establece canales de comunicación entre dos puntos: sockets, archivos, puertos serie, etc. Es como netcat pero más potente.",
+  "syntax": "socat [opciones] dirección1 dirección2",
+  "examples": [
+    { "cmd": "socat TCP-LISTEN:1234,fork -", "desc": "Escucha en un puerto TCP." },
+    { "cmd": "socat - TCP:host:80", "desc": "Conecta la entrada estándar a un socket TCP." },
+    { "cmd": "socat TCP-LISTEN:8080,fork TCP:localhost:80", "desc": "Redirige un puerto a otro." }
+  ],
+  "options": [
+    { "flag": "-", "desc": "Entrada/salida estándar." },
+    { "flag": "fork", "desc": "Atiende múltiples conexiones." },
+    { "flag": "-d -d", "desc": "Aumenta el nivel de depuración." }
+  ]
+}

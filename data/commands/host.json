@@ -1,0 +1,16 @@
+{
+  "id": "host",
+  "title": "host — Resolución DNS rápida",
+  "description": "Realiza consultas DNS simples de nombres a IP y viceversa.",
+  "syntax": "host [opciones] nombre [servidor]",
+  "examples": [
+    { "cmd": "host ejemplo.com", "desc": "Resuelve el nombre." },
+    { "cmd": "host 8.8.8.8", "desc": "Consulta inversa." },
+    { "cmd": "host -t MX ejemplo.com", "desc": "Consulta un tipo de registro concreto." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Tipo de registro." },
+    { "flag": "-a", "desc": "Muestra todo (equivale a -v -t ANY)." },
+    { "flag": "-v", "desc": "Salida detallada." }
+  ]
+}

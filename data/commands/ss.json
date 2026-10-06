@@ -1,0 +1,18 @@
+{
+  "id": "ss",
+  "title": "ss — Estadísticas de sockets",
+  "description": "Muestra conexiones de red, puertos en escucha y estadísticas de sockets. Reemplaza a netstat.",
+  "syntax": "ss [opciones] [filtro]",
+  "examples": [
+    { "cmd": "ss -tulpn", "desc": "Muestra puertos TCP/UDP en escucha con proceso." },
+    { "cmd": "ss -s", "desc": "Resumen de estadísticas." },
+    { "cmd": "ss -tn state established", "desc": "Conexiones TCP establecidas." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Sockets TCP." },
+    { "flag": "-u", "desc": "Sockets UDP." },
+    { "flag": "-l", "desc": "Solo los que están en escucha." },
+    { "flag": "-p", "desc": "Muestra el proceso." },
+    { "flag": "-n", "desc": "Puertos numéricos." }
+  ]
+}

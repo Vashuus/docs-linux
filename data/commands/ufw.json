@@ -1,0 +1,19 @@
+{
+  "id": "ufw",
+  "title": "ufw — Cortafuegos simple (Ubuntu)",
+  "description": "Gestiona el cortafuegos de forma sencilla en Debian/Ubuntu, con reglas por servicio o puerto.",
+  "syntax": "sudo ufw comando [opciones]",
+  "examples": [
+    { "cmd": "sudo ufw status verbose", "desc": "Muestra el estado y las reglas." },
+    { "cmd": "sudo ufw allow 22/tcp", "desc": "Permite SSH." },
+    { "cmd": "sudo ufw allow from 192.168.1.0/24 to any port 3306", "desc": "Permite una red a un puerto concreto." },
+    { "cmd": "sudo ufw enable", "desc": "Activa el cortafuegos." }
+  ],
+  "options": [
+    { "flag": "allow", "desc": "Permite tráfico." },
+    { "flag": "deny", "desc": "Bloquea tráfico." },
+    { "flag": "delete", "desc": "Elimina una regla." },
+    { "flag": "enable / disable", "desc": "Activa o desactiva." },
+    { "flag": "status", "desc": "Muestra el estado." }
+  ]
+}

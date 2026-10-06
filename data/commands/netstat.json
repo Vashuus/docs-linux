@@ -1,0 +1,18 @@
+{
+  "id": "netstat",
+  "title": "netstat — Estadísticas de red (clásico)",
+  "description": "Muestra conexiones, puertos en escucha, tablas de rutas e interfaces. Reemplazada por ss/ip.",
+  "syntax": "netstat [opciones]",
+  "examples": [
+    { "cmd": "netstat -tulpn", "desc": "Puertos TCP/UDP en escucha con proceso." },
+    { "cmd": "netstat -rn", "desc": "Tabla de rutas." },
+    { "cmd": "netstat -i", "desc": "Estadísticas de interfaces." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Conexiones TCP." },
+    { "flag": "-u", "desc": "Conexiones UDP." },
+    { "flag": "-l", "desc": "Solo escuchas." },
+    { "flag": "-p", "desc": "Muestra el proceso." },
+    { "flag": "-rn", "desc": "Tabla de rutas." }
+  ]
+}

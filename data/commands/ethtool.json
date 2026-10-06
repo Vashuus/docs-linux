@@ -1,0 +1,17 @@
+{
+  "id": "ethtool",
+  "title": "ethtool — Información de la interfaz de red",
+  "description": "Consulta y ajusta parámetros de tarjetas de red: velocidad, dúplex, enlaces y estadísticas.",
+  "syntax": "sudo ethtool [opciones] interfaz",
+  "examples": [
+    { "cmd": "ethtool eth0", "desc": "Muestra velocidad, dúplex y estado." },
+    { "cmd": "ethtool -S eth0", "desc": "Estadísticas de la interfaz." },
+    { "cmd": "sudo ethtool -s eth0 speed 1000 duplex full", "desc": "Fija la velocidad y el dúplex." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Estadísticas de la interfaz." },
+    { "flag": "-s", "desc": "Establece parámetros." },
+    { "flag": "-i", "desc": "Información del driver." },
+    { "flag": "-p", "desc": "Parpadea el LED de la interfaz." }
+  ]
+}

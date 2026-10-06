@@ -1,0 +1,16 @@
+{
+  "id": "nmtui",
+  "title": "nmtui — Interfaz de texto de NetworkManager",
+  "description": "Interfaz interactiva de texto para gestionar conexiones de red con NetworkManager.",
+  "syntax": "nmtui [comando]",
+  "examples": [
+    { "cmd": "nmtui", "desc": "Abre el menú interactivo." },
+    { "cmd": "nmtui edit 'WiFi casa'", "desc": "Edita una conexión concreta." },
+    { "cmd": "nmtui connect", "desc": "Selecciona y activa una conexión." }
+  ],
+  "options": [
+    { "flag": "edit", "desc": "Edita una conexión." },
+    { "flag": "connect", "desc": "Activa una conexión." },
+    { "flag": "hostname", "desc": "Cambia el nombre del host." }
+  ]
+}

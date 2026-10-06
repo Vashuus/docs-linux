@@ -1,0 +1,20 @@
+{
+  "id": "curl",
+  "title": "curl — Transferir datos por URL",
+  "description": "Realiza peticiones HTTP/HTTPS/FTP y otras, ideal para APIs, descargas y pruebas.",
+  "syntax": "curl [opciones] URL",
+  "examples": [
+    { "cmd": "curl https://api.ejemplo.com", "desc": "Muestra la respuesta del servidor." },
+    { "cmd": "curl -O https://ejemplo.com/archivo.zip", "desc": "Descarga conservando el nombre." },
+    { "cmd": "curl -X POST -H 'Content-Type: application/json' -d '{\"a\":1}' URL", "desc": "Petición POST con JSON." },
+    { "cmd": "curl -I https://ejemplo.com", "desc": "Muestra solo las cabeceras." }
+  ],
+  "options": [
+    { "flag": "-O", "desc": "Descarga con el nombre remoto." },
+    { "flag": "-o", "desc": "Guarda la salida en un archivo." },
+    { "flag": "-I", "desc": "Solo cabeceras." },
+    { "flag": "-X", "desc": "Método HTTP." },
+    { "flag": "-L", "desc": "Sigue redirecciones." },
+    { "flag": "-k", "desc": "Ignora errores de certificado." }
+  ]
+}

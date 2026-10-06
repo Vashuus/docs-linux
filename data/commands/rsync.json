@@ -1,0 +1,20 @@
+{
+  "id": "rsync",
+  "title": "rsync — Sincronizar archivos",
+  "description": "Copia y sincroniza archivos local o remotamente, transfiriendo solo las diferencias. Ideal para backups.",
+  "syntax": "rsync [opciones] origen destino",
+  "examples": [
+    { "cmd": "rsync -av carpeta/ backup/", "desc": "Sincroniza dos directorios." },
+    { "cmd": "rsync -avz carpeta/ usuario@host:/backup/", "desc": "Sincroniza a un servidor remoto con compresión." },
+    { "cmd": "rsync -av --delete src/ dst/", "desc": "Sincroniza borrando lo que sobra en destino." },
+    { "cmd": "rsync -av --exclude 'node_modules' src/ dst/", "desc": "Excluye patrones." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Modo archivo (recursivo + preserva atributos)." },
+    { "flag": "-v", "desc": "Detallado." },
+    { "flag": "-z", "desc": "Comprime durante la transferencia." },
+    { "flag": "--delete", "desc": "Elimina en destino lo que no está en origen." },
+    { "flag": "--exclude", "desc": "Excluye patrones." },
+    { "flag": "-n", "desc": "Simulación (dry-run)." }
+  ]
+}

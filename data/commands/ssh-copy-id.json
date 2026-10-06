@@ -1,0 +1,16 @@
+{
+  "id": "ssh-copy-id",
+  "title": "ssh-copy-id — Instalar tu clave pública",
+  "description": "Copia tu clave pública al archivo authorized_keys de un servidor remoto para habilitar el acceso sin contraseña.",
+  "syntax": "ssh-copy-id [opciones] usuario@host",
+  "examples": [
+    { "cmd": "ssh-copy-id usuario@host", "desc": "Instala tu clave pública en el servidor." },
+    { "cmd": "ssh-copy-id -i ~/.ssh/id_ed25519.pub usuario@host", "desc": "Usa una clave concreta." },
+    { "cmd": "ssh-copy-id -p 2222 usuario@host", "desc": "Con puerto personalizado." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Clave pública a copiar." },
+    { "flag": "-p", "desc": "Puerto." },
+    { "flag": "-f", "desc": "Fuerza la copia sin comprobar." }
+  ]
+}

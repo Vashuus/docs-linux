@@ -1,0 +1,20 @@
+{
+  "id": "tar",
+  "title": "tar — Empaquetar y comprimir archivos",
+  "description": "Crea y extrae archivos tar (tarballs), opcionalmente comprimidos con gzip, bzip2 o xz.",
+  "syntax": "tar [opciones] archivo.tar[.gz] [archivos...]",
+  "examples": [
+    { "cmd": "tar czf backup.tar.gz carpeta/", "desc": "Crea un tar.gz comprimido." },
+    { "cmd": "tar xzf backup.tar.gz", "desc": "Extrae un tar.gz." },
+    { "cmd": "tar tzf backup.tar.gz", "desc": "Lista el contenido sin extraer." },
+    { "cmd": "tar xJf paquete.tar.xz -C /destino", "desc": "Extrae un tar.xz en otro directorio." }
+  ],
+  "options": [
+    { "flag": "c", "desc": "Crear archivo." },
+    { "flag": "x", "desc": "Extraer." },
+    { "flag": "t", "desc": "Listar contenido." },
+    { "flag": "z", "desc": "Comprimir con gzip." },
+    { "flag": "f", "desc": "Nombre del archivo (siempre al final)." },
+    { "flag": "v", "desc": "Mostrar los archivos procesados." }
+  ]
+}

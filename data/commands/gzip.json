@@ -1,0 +1,17 @@
+{
+  "id": "gzip",
+  "title": "gzip — Comprimir con gzip",
+  "description": "Comprime archivos con el algoritmo gzip, generando archivos .gz.",
+  "syntax": "gzip [opciones] archivo...",
+  "examples": [
+    { "cmd": "gzip archivo.log", "desc": "Comprime el archivo (reemplaza el original por .gz)." },
+    { "cmd": "gzip -k archivo.log", "desc": "Comprime conservando el original." },
+    { "cmd": "gzip -9 archivo.log", "desc": "Máxima compresión." }
+  ],
+  "options": [
+    { "flag": "-k", "desc": "Conserva el archivo original." },
+    { "flag": "-d", "desc": "Descomprime (equivale a gunzip)." },
+    { "flag": "-9", "desc": "Máxima compresión." },
+    { "flag": "-r", "desc": "Recursivo." }
+  ]
+}

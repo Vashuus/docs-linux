@@ -1,0 +1,18 @@
+{
+  "id": "wget",
+  "title": "wget — Descargar archivos",
+  "description": "Descarga archivos y sitios completos por HTTP/HTTPS/FTP con reintentos y recursividad.",
+  "syntax": "wget [opciones] URL",
+  "examples": [
+    { "cmd": "wget https://ejemplo.com/archivo.zip", "desc": "Descarga un archivo." },
+    { "cmd": "wget -c URL", "desc": "Continúa una descarga interrumpida." },
+    { "cmd": "wget -r -np -k https://ejemplo.com/docs/", "desc": "Descarga un sitio recursivamente." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Continúa descargas incompletas." },
+    { "flag": "-r", "desc": "Descarga recursiva." },
+    { "flag": "-np", "desc": "No sube al directorio padre." },
+    { "flag": "-O", "desc": "Guarda con otro nombre." },
+    { "flag": "--limit-rate", "desc": "Limita la velocidad." }
+  ]
+}

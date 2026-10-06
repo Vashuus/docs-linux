@@ -1,0 +1,17 @@
+{
+  "id": "ping",
+  "title": "ping — Comprobar conectividad",
+  "description": "Envía paquetes ICMP a un host para comprobar si responde y medir la latencia.",
+  "syntax": "ping [opciones] host",
+  "examples": [
+    { "cmd": "ping ejemplo.com", "desc": "Envía paquetes ICMP continuamente." },
+    { "cmd": "ping -c 4 8.8.8.8", "desc": "Envía solo 4 paquetes." },
+    { "cmd": "ping -i 0.5 -s 1000 host", "desc": "Intervalo y tamaño personalizados." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Número de paquetes." },
+    { "flag": "-i", "desc": "Intervalo entre paquetes (segundos)." },
+    { "flag": "-s", "desc": "Tamaño del paquete." },
+    { "flag": "-W", "desc": "Tiempo de espera por respuesta." }
+  ]
+}

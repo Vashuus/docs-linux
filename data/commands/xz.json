@@ -1,0 +1,17 @@
+{
+  "id": "xz",
+  "title": "xz — Comprimir con xz",
+  "description": "Comprime archivos con xz (alto ratio, más lento), generando archivos .xz.",
+  "syntax": "xz [opciones] archivo...",
+  "examples": [
+    { "cmd": "xz archivo.tar", "desc": "Comprime a .xz." },
+    { "cmd": "xz -k -6 archivo.tar", "desc": "Conserva el original con nivel 6." },
+    { "cmd": "xz -T0 -9 archivo", "desc": "Usa todos los núcleos y máxima compresión." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Descomprime." },
+    { "flag": "-k", "desc": "Conserva el original." },
+    { "flag": "-T", "desc": "Número de hilos (0 = todos)." },
+    { "flag": "-9", "desc": "Máxima compresión." }
+  ]
+}

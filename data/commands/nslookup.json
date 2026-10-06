@@ -1,0 +1,16 @@
+{
+  "id": "nslookup",
+  "title": "nslookup — Consultas DNS (simple)",
+  "description": "Consulta servidores DNS de forma interactiva o directa.",
+  "syntax": "nslookup [opciones] nombre [servidor]",
+  "examples": [
+    { "cmd": "nslookup ejemplo.com", "desc": "Resuelve el nombre." },
+    { "cmd": "nslookup ejemplo.com 8.8.8.8", "desc": "Usa un servidor concreto." },
+    { "cmd": "nslookup 8.8.8.8", "desc": "Consulta inversa." }
+  ],
+  "options": [
+    { "flag": "-type=", "desc": "Tipo de registro (MX, NS, TXT...)." },
+    { "flag": "-debug", "desc": "Muestra información de depuración." },
+    { "flag": "-query=", "desc": "Tipo de consulta." }
+  ]
+}

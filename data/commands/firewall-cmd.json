@@ -1,0 +1,19 @@
+{
+  "id": "firewall-cmd",
+  "title": "firewall-cmd — Cortafuegos firewalld",
+  "description": "Gestiona el cortafuegos firewalld (RHEL/Fedora/CentOS): zonas, servicios, puertos y reglas.",
+  "syntax": "sudo firewall-cmd [opciones]",
+  "examples": [
+    { "cmd": "sudo firewall-cmd --list-all", "desc": "Muestra la configuración de la zona activa." },
+    { "cmd": "sudo firewall-cmd --permanent --add-port=8080/tcp", "desc": "Abre un puerto de forma permanente." },
+    { "cmd": "sudo firewall-cmd --permanent --add-service=http", "desc": "Permite el servicio HTTP." },
+    { "cmd": "sudo firewall-cmd --reload", "desc": "Recarga las reglas." }
+  ],
+  "options": [
+    { "flag": "--list-all", "desc": "Muestra toda la configuración." },
+    { "flag": "--add-port", "desc": "Abre un puerto." },
+    { "flag": "--add-service", "desc": "Permite un servicio." },
+    { "flag": "--permanent", "desc": "Aplica el cambio de forma persistente." },
+    { "flag": "--reload", "desc": "Recarga la configuración." }
+  ]
+}

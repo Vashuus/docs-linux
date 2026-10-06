@@ -1,0 +1,18 @@
+{
+  "id": "ssh-keygen",
+  "title": "ssh-keygen — Generar claves SSH",
+  "description": "Crea pares de claves pública/privada para autenticación SSH sin contraseña.",
+  "syntax": "ssh-keygen [opciones]",
+  "examples": [
+    { "cmd": "ssh-keygen -t ed25519 -C 'correo@ejemplo.com'", "desc": "Genera una clave Ed25519." },
+    { "cmd": "ssh-keygen -t rsa -b 4096", "desc": "Genera una clave RSA de 4096 bits." },
+    { "cmd": "ssh-keygen -lf ~/.ssh/id_ed25519.pub", "desc": "Muestra la huella de una clave." }
+  ],
+  "options": [
+    { "flag": "-t", "desc": "Tipo de clave (ed25519, rsa)." },
+    { "flag": "-b", "desc": "Número de bits (RSA)." },
+    { "flag": "-C", "desc": "Comentario (normalmente el correo)." },
+    { "flag": "-f", "desc": "Archivo de salida." },
+    { "flag": "-lf", "desc": "Muestra la huella." }
+  ]
+}

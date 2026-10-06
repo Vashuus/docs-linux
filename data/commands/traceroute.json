@@ -1,0 +1,17 @@
+{
+  "id": "traceroute",
+  "title": "traceroute — Trazar la ruta a un host",
+  "description": "Muestra los saltos de red (routers) por los que pasan los paquetes hasta llegar a un destino.",
+  "syntax": "traceroute [opciones] host",
+  "examples": [
+    { "cmd": "traceroute ejemplo.com", "desc": "Traza la ruta al host." },
+    { "cmd": "traceroute -n ejemplo.com", "desc": "No resuelve nombres DNS." },
+    { "cmd": "sudo traceroute -T ejemplo.com", "desc": "Usa paquetes TCP." }
+  ],
+  "options": [
+    { "flag": "-n", "desc": "No resuelve nombres." },
+    { "flag": "-T", "desc": "Usa TCP SYN." },
+    { "flag": "-I", "desc": "Usa ICMP." },
+    { "flag": "-m", "desc": "Máximo de saltos." }
+  ]
+}

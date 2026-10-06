@@ -1,0 +1,18 @@
+{
+  "id": "dig",
+  "title": "dig — Consultas DNS",
+  "description": "Realiza consultas DNS y muestra la respuesta detallada. Es la herramienta moderna de resolución de nombres.",
+  "syntax": "dig [opciones] [nombre] [tipo]",
+  "examples": [
+    { "cmd": "dig ejemplo.com", "desc": "Consulta el registro A." },
+    { "cmd": "dig ejemplo.com MX", "desc": "Consulta los registros MX." },
+    { "cmd": "dig +short ejemplo.com", "desc": "Respuesta corta." },
+    { "cmd": "dig @8.8.8.8 ejemplo.com", "desc": "Usa un servidor DNS concreto." }
+  ],
+  "options": [
+    { "flag": "+short", "desc": "Respuesta resumida." },
+    { "flag": "+trace", "desc": "Sigue la delegación desde la raíz." },
+    { "flag": "@servidor", "desc": "Servidor DNS a consultar." },
+    { "flag": "-x", "desc": "Consulta inversa (PTR) de una IP." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "scp",
+  "title": "scp — Copiar archivos por SSH",
+  "description": "Copia archivos entre hosts locales y remotos usando SSH.",
+  "syntax": "scp [opciones] origen destino",
+  "examples": [
+    { "cmd": "scp archivo.zip usuario@host:/tmp/", "desc": "Sube un archivo al servidor." },
+    { "cmd": "scp usuario@host:/var/log/app.log .", "desc": "Descarga un archivo." },
+    { "cmd": "scp -r carpeta/ usuario@host:/opt/", "desc": "Copia un directorio recursivamente." }
+  ],
+  "options": [
+    { "flag": "-r", "desc": "Recursivo." },
+    { "flag": "-P", "desc": "Puerto (mayúscula)." },
+    { "flag": "-i", "desc": "Clave privada." },
+    { "flag": "-C", "desc": "Compresión durante la transferencia." }
+  ]
+}

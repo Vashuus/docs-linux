@@ -1,0 +1,19 @@
+{
+  "id": "ssh",
+  "title": "ssh — Conexión remota segura",
+  "description": "Inicia sesión o ejecuta comandos en un host remoto cifrado, y permite túneles y redirecciones.",
+  "syntax": "ssh [opciones] usuario@host [comando]",
+  "examples": [
+    { "cmd": "ssh usuario@servidor", "desc": "Abre sesión remota." },
+    { "cmd": "ssh -p 2222 usuario@servidor", "desc": "Conecta a un puerto distinto." },
+    { "cmd": "ssh usuario@servidor 'uptime'", "desc": "Ejecuta un comando remoto." },
+    { "cmd": "ssh -L 8080:localhost:80 usuario@servidor", "desc": "Crea un túnel local." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Puerto del servidor SSH." },
+    { "flag": "-i", "desc": "Clave privada a usar." },
+    { "flag": "-L", "desc": "Redirección/túnel local." },
+    { "flag": "-R", "desc": "Redirección/túnel remoto." },
+    { "flag": "-v", "desc": "Modo detallado (depuración)." }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "zstd",
+  "title": "zstd — Comprimir con Zstandard",
+  "description": "Comprime archivos con Zstandard: muy rápido con buen ratio. Genera archivos .zst.",
+  "syntax": "zstd [opciones] archivo...",
+  "examples": [
+    { "cmd": "zstd archivo.tar", "desc": "Comprime a .zst." },
+    { "cmd": "zstd -19 archivo.tar", "desc": "Máxima compresión." },
+    { "cmd": "zstd -d archivo.zst", "desc": "Descomprime." },
+    { "cmd": "zstd -T0 archivo", "desc": "Usa todos los núcleos." }
+  ],
+  "options": [
+    { "flag": "-d", "desc": "Descomprime." },
+    { "flag": "-k", "desc": "Conserva el original." },
+    { "flag": "-T", "desc": "Número de hilos." },
+    { "flag": "-19", "desc": "Nivel máximo de compresión." }
+  ]
+}

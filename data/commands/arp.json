@@ -1,0 +1,16 @@
+{
+  "id": "arp",
+  "title": "arp — Tabla ARP",
+  "description": "Muestra y modifica la caché ARP, que asocia direcciones IP con direcciones MAC.",
+  "syntax": "arp [opciones]",
+  "examples": [
+    { "cmd": "arp -a", "desc": "Muestra la tabla ARP." },
+    { "cmd": "arp -n", "desc": "Muestra IPs sin resolver nombres." },
+    { "cmd": "sudo arp -d 192.168.1.5", "desc": "Elimina una entrada." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Muestra todas las entradas." },
+    { "flag": "-n", "desc": "Salida numérica." },
+    { "flag": "-d", "desc": "Elimina una entrada." }
+  ]
+}

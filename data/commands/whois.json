@@ -1,0 +1,16 @@
+{
+  "id": "whois",
+  "title": "whois — Información de dominios e IPs",
+  "description": "Consulta los datos de registro de un dominio o el titular de una dirección IP.",
+  "syntax": "whois [opciones] objetivo",
+  "examples": [
+    { "cmd": "whois ejemplo.com", "desc": "Muestra los datos del dominio." },
+    { "cmd": "whois 8.8.8.8", "desc": "Muestra el titular de la IP." },
+    { "cmd": "whois -h whois.verisign-grs.com dominio.com", "desc": "Consulta un servidor whois concreto." }
+  ],
+  "options": [
+    { "flag": "-h", "desc": "Servidor whois a consultar." },
+    { "flag": "-p", "desc": "Puerto del servidor." },
+    { "flag": "-H", "desc": "Oculta los textos legales." }
+  ]
+}

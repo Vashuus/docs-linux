@@ -1,0 +1,16 @@
+{
+  "id": "ifconfig",
+  "title": "ifconfig — Configurar red (clásico)",
+  "description": "Herramienta clásica para ver y configurar interfaces de red. Reemplazada por ip, pero aún muy usada.",
+  "syntax": "ifconfig [interfaz] [opciones]",
+  "examples": [
+    { "cmd": "ifconfig", "desc": "Muestra todas las interfaces." },
+    { "cmd": "ifconfig eth0", "desc": "Muestra una interfaz concreta." },
+    { "cmd": "sudo ifconfig eth0 up", "desc": "Activa una interfaz." }
+  ],
+  "options": [
+    { "flag": "up / down", "desc": "Activa o desactiva la interfaz." },
+    { "flag": "netmask", "desc": "Define la máscara de red." },
+    { "flag": "-a", "desc": "Muestra todas las interfaces, incluso inactivas." }
+  ]
+}

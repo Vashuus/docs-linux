@@ -194,5 +194,63 @@
       "lvcreate",
       "mdadm"
     ]
+  },
+  {
+    "id": "compresion",
+    "name": "Compresión y empaquetado",
+    "icon": "backup",
+    "commands": [
+      "tar",
+      "gzip",
+      "gunzip",
+      "bzip2",
+      "xz",
+      "zstd",
+      "zip",
+      "unzip",
+      "7z",
+      "zcat",
+      "zless",
+      "unrar"
+    ]
+  },
+  {
+    "id": "redes",
+    "name": "Redes",
+    "icon": "network",
+    "commands": [
+      "ip",
+      "ifconfig",
+      "ping",
+      "traceroute",
+      "mtr",
+      "ss",
+      "netstat",
+      "dig",
+      "nslookup",
+      "host",
+      "whois",
+      "curl",
+      "wget",
+      "nc",
+      "telnet",
+      "ssh",
+      "scp",
+      "sftp",
+      "rsync",
+      "ssh-keygen",
+      "ssh-copy-id",
+      "arp",
+      "ethtool",
+      "nmcli",
+      "nmtui",
+      "socat",
+      "openssl",
+      "firewall-cmd",
+      "ufw",
+      "iptables",
+      "nft",
+      "tcpdump"
+    ]
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "id": "7z",
+  "title": "7z — Comprimir y extraer con 7-Zip",
+  "description": "Comprime y extrae archivos en múltiples formatos (7z, zip, tar, xz...).",
+  "syntax": "7z [comando] [opciones] archivo",
+  "examples": [
+    { "cmd": "7z a backup.7z carpeta/", "desc": "Crea un archivo 7z." },
+    { "cmd": "7z x archivo.7z", "desc": "Extrae conservando rutas." },
+    { "cmd": "7z l archivo.7z", "desc": "Lista el contenido." }
+  ],
+  "options": [
+    { "flag": "a", "desc": "Añadir/crear archivo." },
+    { "flag": "x", "desc": "Extraer con rutas completas." },
+    { "flag": "l", "desc": "Listar contenido." },
+    { "flag": "-p", "desc": "Contraseña." }
+  ]
+}

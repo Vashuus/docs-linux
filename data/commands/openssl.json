@@ -1,0 +1,19 @@
+{
+  "id": "openssl",
+  "title": "openssl — Criptografía y certificados",
+  "description": "Herramienta para criptografía: generar claves, certificados, hashes, cifrar y probar conexiones TLS.",
+  "syntax": "openssl comando [opciones]",
+  "examples": [
+    { "cmd": "openssl genrsa -out clave.pem 4096", "desc": "Genera una clave privada RSA." },
+    { "cmd": "openssl req -new -x509 -key clave.pem -out cert.pem -days 365", "desc": "Crea un certificado autofirmado." },
+    { "cmd": "openssl s_client -connect ejemplo.com:443", "desc": "Inspecciona el certificado TLS de un servidor." },
+    { "cmd": "openssl x509 -in cert.pem -noout -text", "desc": "Muestra los detalles de un certificado." }
+  ],
+  "options": [
+    { "flag": "genrsa", "desc": "Genera una clave RSA." },
+    { "flag": "req", "desc": "Crea peticiones/certificados." },
+    { "flag": "s_client", "desc": "Cliente TLS de prueba." },
+    { "flag": "x509", "desc": "Gestiona certificados X.509." },
+    { "flag": "dgst", "desc": "Calcula hashes." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "gunzip",
+  "title": "gunzip — Descomprimir .gz",
+  "description": "Descomprime archivos generados por gzip.",
+  "syntax": "gunzip [opciones] archivo.gz...",
+  "examples": [
+    { "cmd": "gunzip archivo.gz", "desc": "Descomprime el archivo." },
+    { "cmd": "gunzip -k archivo.gz", "desc": "Conserva el .gz original." },
+    { "cmd": "gunzip -c archivo.gz > salida", "desc": "Escribe el resultado a la salida." }
+  ],
+  "options": [
+    { "flag": "-k", "desc": "Conserva el archivo comprimido." },
+    { "flag": "-c", "desc": "Escribe a la salida estándar." },
+    { "flag": "-f", "desc": "Fuerza la descompresión." }
+  ]
+}

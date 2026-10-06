@@ -1,0 +1,18 @@
+{
+  "id": "nmcli",
+  "title": "nmcli — Cliente de NetworkManager",
+  "description": "Gestiona conexiones de red desde la línea de comandos con NetworkManager.",
+  "syntax": "nmcli [opciones] [objeto] [comando]",
+  "examples": [
+    { "cmd": "nmcli device status", "desc": "Muestra el estado de los dispositivos." },
+    { "cmd": "nmcli connection show", "desc": "Lista las conexiones." },
+    { "cmd": "sudo nmcli connection up 'WiFi casa'", "desc": "Activa una conexión." },
+    { "cmd": "sudo nmcli device wifi list", "desc": "Lista las redes WiFi." }
+  ],
+  "options": [
+    { "flag": "device", "desc": "Gestión de dispositivos." },
+    { "flag": "connection", "desc": "Gestión de conexiones." },
+    { "flag": "-f", "desc": "Selecciona los campos de salida." },
+    { "flag": "-t", "desc": "Salida tabulada (parseable)." }
+  ]
+}

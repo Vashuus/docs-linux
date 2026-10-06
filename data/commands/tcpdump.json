@@ -1,0 +1,19 @@
+{
+  "id": "tcpdump",
+  "title": "tcpdump — Capturar tráfico de red",
+  "description": "Captura y muestra paquetes que pasan por una interfaz de red. Herramienta básica de análisis de tráfico.",
+  "syntax": "sudo tcpdump [opciones] [filtro]",
+  "examples": [
+    { "cmd": "sudo tcpdump -i eth0", "desc": "Captura todo el tráfico de una interfaz." },
+    { "cmd": "sudo tcpdump -i eth0 port 80", "desc": "Captura solo el puerto 80." },
+    { "cmd": "sudo tcpdump -i any -w captura.pcap", "desc": "Guarda la captura en un archivo." },
+    { "cmd": "sudo tcpdump -r captura.pcap", "desc": "Lee una captura guardada." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Interfaz de red." },
+    { "flag": "-w", "desc": "Escribe a un archivo pcap." },
+    { "flag": "-r", "desc": "Lee de un archivo pcap." },
+    { "flag": "-n", "desc": "No resuelve nombres." },
+    { "flag": "-c", "desc": "Captura solo N paquetes." }
+  ]
+}

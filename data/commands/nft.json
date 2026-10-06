@@ -1,0 +1,17 @@
+{
+  "id": "nft",
+  "title": "nft — Cortafuegos nftables",
+  "description": "Sucesor de iptables basado en nftables. Gestiona tablas, cadenas y reglas de filtrado de forma unificada.",
+  "syntax": "sudo nft [comando] [opciones]",
+  "examples": [
+    { "cmd": "sudo nft list ruleset", "desc": "Muestra todas las reglas." },
+    { "cmd": "sudo nft add table inet filtro", "desc": "Crea una tabla." },
+    { "cmd": "sudo nft add rule inet filtro input tcp dport 22 accept", "desc": "Permite el puerto 22." }
+  ],
+  "options": [
+    { "flag": "list ruleset", "desc": "Muestra todas las reglas." },
+    { "flag": "add table", "desc": "Crea una tabla." },
+    { "flag": "add rule", "desc": "Añade una regla." },
+    { "flag": "-f", "desc": "Carga reglas desde un archivo." }
+  ]
+}

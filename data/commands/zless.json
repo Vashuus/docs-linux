@@ -1,0 +1,13 @@
+{
+  "id": "zless",
+  "title": "zless — Paginar archivos comprimidos",
+  "description": "Abre un archivo comprimido con gzip en el paginador less sin descomprimirlo.",
+  "syntax": "zless archivo.gz",
+  "examples": [
+    { "cmd": "zless log.gz", "desc": "Pagina el contenido del .gz." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Fuerza la lectura aunque no sea gzip." },
+    { "flag": "--help", "desc": "Muestra la ayuda." }
+  ]
+}

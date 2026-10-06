@@ -1,0 +1,14 @@
+{
+  "id": "telnet",
+  "title": "telnet — Cliente Telnet",
+  "description": "Se conecta a un host y puerto con el protocolo Telnet. Útil para comprobar servicios en texto plano.",
+  "syntax": "telnet [opciones] host [puerto]",
+  "examples": [
+    { "cmd": "telnet host 25", "desc": "Se conecta al puerto 25 (SMTP)." },
+    { "cmd": "telnet host 80", "desc": "Prueba una conexión HTTP." }
+  ],
+  "options": [
+    { "flag": "-l", "desc": "Usuario de login." },
+    { "flag": "-4 / -6", "desc": "Fuerza IPv4 o IPv6." }
+  ]
+}

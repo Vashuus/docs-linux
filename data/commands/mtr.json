@@ -1,0 +1,17 @@
+{
+  "id": "mtr",
+  "title": "mtr — traceroute + ping continuo",
+  "description": "Combina traceroute y ping: muestra estadísticas continuas de latencia y pérdida por cada salto.",
+  "syntax": "mtr [opciones] host",
+  "examples": [
+    { "cmd": "mtr ejemplo.com", "desc": "Interfaz interactiva en tiempo real." },
+    { "cmd": "mtr -r -c 10 ejemplo.com", "desc": "Informe tras 10 ciclos." },
+    { "cmd": "mtr -n ejemplo.com", "desc": "Sin resolución de nombres." }
+  ],
+  "options": [
+    { "flag": "-r", "desc": "Modo informe (no interactivo)." },
+    { "flag": "-c", "desc": "Número de ciclos." },
+    { "flag": "-n", "desc": "Sin resolución de nombres." },
+    { "flag": "-T", "desc": "Usa TCP." }
+  ]
+}

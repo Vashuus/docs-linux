@@ -1,0 +1,20 @@
+{
+  "id": "iptables",
+  "title": "iptables — Cortafuegos iptables (clásico)",
+  "description": "Configura reglas de filtrado de paquetes en el kernel. Base de los cortafuegos en Linux (más reciente: nft).",
+  "syntax": "sudo iptables [opciones] [cadena] [regla]",
+  "examples": [
+    { "cmd": "sudo iptables -L -n -v", "desc": "Lista las reglas actuales." },
+    { "cmd": "sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT", "desc": "Permite conexiones al puerto 22." },
+    { "cmd": "sudo iptables -A INPUT -j DROP", "desc": "Bloquea todo lo demás." },
+    { "cmd": "sudo iptables -D INPUT 3", "desc": "Elimina la regla número 3." }
+  ],
+  "options": [
+    { "flag": "-L", "desc": "Lista las reglas." },
+    { "flag": "-A", "desc": "Añade una regla al final." },
+    { "flag": "-I", "desc": "Inserta una regla al principio." },
+    { "flag": "-D", "desc": "Elimina una regla." },
+    { "flag": "-j", "desc": "Acción (ACCEPT, DROP, REJECT)." },
+    { "flag": "-F", "desc": "Borra todas las reglas." }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ip",
+  "title": "ip — Configurar red (moderno)",
+  "description": "Herramienta moderna para consultar y configurar interfaces, direcciones y rutas. Reemplaza a ifconfig/route.",
+  "syntax": "ip [objeto] [comando]",
+  "examples": [
+    { "cmd": "ip a", "desc": "Muestra las interfaces y sus direcciones." },
+    { "cmd": "ip r", "desc": "Muestra la tabla de rutas." },
+    { "cmd": "sudo ip link set eth0 up", "desc": "Activa una interfaz." },
+    { "cmd": "sudo ip addr add 192.168.1.10/24 dev eth0", "desc": "Añade una dirección IP." }
+  ],
+  "options": [
+    { "flag": "a / addr", "desc": "Direcciones IP." },
+    { "flag": "r / route", "desc": "Tabla de rutas." },
+    { "flag": "l / link", "desc": "Interfaces de red." },
+    { "flag": "n / neigh", "desc": "Tabla ARP/vecinos." }
+  ]
+}
