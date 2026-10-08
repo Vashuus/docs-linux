@@ -1,0 +1,16 @@
+{
+  "id": "dpkg",
+  "title": "dpkg — Paquetes .deb de bajo nivel",
+  "description": "Instala, consulta y gestiona paquetes .deb individuales sin resolver dependencias.",
+  "syntax": "dpkg [opciones] accion paquete",
+  "examples": [
+    { "cmd": "sudo dpkg -i paquete.deb", "desc": "Instala un archivo .deb local." },
+    { "cmd": "dpkg -l", "desc": "Lista los paquetes instalados." },
+    { "cmd": "dpkg -S /bin/ls", "desc": "Indica a qué paquete pertenece un archivo." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Instala el paquete indicado." },
+    { "flag": "-l", "desc": "Lista paquetes instalados." },
+    { "flag": "-S", "desc": "Busca el paquete dueño de un archivo." }
+  ]
+}

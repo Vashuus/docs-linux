@@ -1,0 +1,20 @@
+{
+  "id": "snap",
+  "title": "snap — Paquetes universales (Snapcraft)",
+  "description": "Gestiona aplicaciones empaquetadas como snaps, con aislamiento y actualizaciones automáticas.",
+  "syntax": "sudo snap [comando] [opciones]",
+  "examples": [
+    { "cmd": "sudo snap install code --classic", "desc": "Instala un snap en modo clásico." },
+    { "cmd": "snap list", "desc": "Lista los snaps instalados." },
+    { "cmd": "sudo snap refresh", "desc": "Actualiza los snaps." },
+    { "cmd": "sudo snap remove code", "desc": "Desinstala un snap." },
+    { "cmd": "snap find editor", "desc": "Busca snaps." }
+  ],
+  "options": [
+    { "flag": "install / remove", "desc": "Instala o desinstala." },
+    { "flag": "list", "desc": "Lista instalados." },
+    { "flag": "refresh", "desc": "Actualiza." },
+    { "flag": "find", "desc": "Busca." },
+    { "flag": "--classic", "desc": "Sin aislamiento (acceso completo)." }
+  ]
+}

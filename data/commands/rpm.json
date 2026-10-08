@@ -1,0 +1,21 @@
+{
+  "id": "rpm",
+  "title": "rpm — Gestor de paquetes RPM",
+  "description": "Instala, consulta y verifica paquetes .rpm de forma individual, sin resolver dependencias.",
+  "syntax": "sudo rpm [opciones] paquete.rpm",
+  "examples": [
+    { "cmd": "sudo rpm -ivh paquete.rpm", "desc": "Instala un paquete RPM." },
+    { "cmd": "sudo rpm -Uvh paquete.rpm", "desc": "Actualiza o instala un paquete." },
+    { "cmd": "rpm -qa", "desc": "Lista todos los paquetes instalados." },
+    { "cmd": "rpm -ql nginx", "desc": "Lista los archivos de un paquete." },
+    { "cmd": "sudo rpm -e nginx", "desc": "Desinstala un paquete." }
+  ],
+  "options": [
+    { "flag": "-i", "desc": "Instala." },
+    { "flag": "-U", "desc": "Actualiza o instala." },
+    { "flag": "-e", "desc": "Desinstala." },
+    { "flag": "-qa", "desc": "Lista los instalados." },
+    { "flag": "-ql", "desc": "Lista los archivos." },
+    { "flag": "-qf", "desc": "A qué paquete pertenece un archivo." }
+  ]
+}

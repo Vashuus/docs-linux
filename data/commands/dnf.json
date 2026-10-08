@@ -1,0 +1,20 @@
+{
+  "id": "dnf",
+  "title": "dnf — Gestor de paquetes (Fedora/RHEL)",
+  "description": "Sucesor de yum. Gestiona paquetes en Fedora, RHEL, CentOS y derivados modernos.",
+  "syntax": "sudo dnf [comando] [paquete]",
+  "examples": [
+    { "cmd": "sudo dnf install nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo dnf upgrade", "desc": "Actualiza el sistema." },
+    { "cmd": "sudo dnf remove nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "dnf search editor", "desc": "Busca paquetes." },
+    { "cmd": "dnf info nginx", "desc": "Muestra información." }
+  ],
+  "options": [
+    { "flag": "install / remove", "desc": "Instala o desinstala." },
+    { "flag": "upgrade", "desc": "Actualiza paquetes." },
+    { "flag": "search", "desc": "Busca paquetes." },
+    { "flag": "-y", "desc": "Confirma automáticamente." },
+    { "flag": "repolist", "desc": "Lista los repositorios." }
+  ]
+}

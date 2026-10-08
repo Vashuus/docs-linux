@@ -252,5 +252,45 @@
       "nft",
       "tcpdump"
     ]
+  },
+  {
+    "id": "servicios",
+    "name": "Servicios y systemd",
+    "icon": "service",
+    "commands": [
+      "systemctl",
+      "service",
+      "journalctl",
+      "systemd-analyze",
+      "systemd-run",
+      "loginctl",
+      "chkconfig",
+      "update-rc.d"
+    ]
+  },
+  {
+    "id": "paquetes",
+    "name": "Gestión de paquetes",
+    "icon": "package",
+    "commands": [
+      "apt",
+      "apt-get",
+      "apt-cache",
+      "dpkg",
+      "add-apt-repository",
+      "dnf",
+      "yum",
+      "rpm",
+      "pacman",
+      "yay",
+      "zypper",
+      "apk",
+      "emerge",
+      "xbps-install",
+      "nix-env",
+      "flatpak",
+      "snap",
+      "pip"
+    ]
   }
 ]

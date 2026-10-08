@@ -1,0 +1,20 @@
+{
+  "id": "flatpak",
+  "title": "flatpak — Aplicaciones en sandbox",
+  "description": "Instala y gestiona aplicaciones empaquetadas de forma universal y aislada, independientes de la distro.",
+  "syntax": "flatpak [comando] [opciones]",
+  "examples": [
+    { "cmd": "flatpak install flathub org.gimp.GIMP", "desc": "Instala una app desde Flathub." },
+    { "cmd": "flatpak run org.gimp.GIMP", "desc": "Ejecuta una app." },
+    { "cmd": "flatpak list", "desc": "Lista las apps instaladas." },
+    { "cmd": "flatpak update", "desc": "Actualiza las apps." },
+    { "cmd": "flatpak uninstall org.gimp.GIMP", "desc": "Desinstala una app." }
+  ],
+  "options": [
+    { "flag": "install / uninstall", "desc": "Instala o desinstala." },
+    { "flag": "run", "desc": "Ejecuta una app." },
+    { "flag": "list", "desc": "Lista apps." },
+    { "flag": "update", "desc": "Actualiza." },
+    { "flag": "remote-add", "desc": "Añade un repositorio remoto." }
+  ]
+}

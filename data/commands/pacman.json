@@ -1,0 +1,21 @@
+{
+  "id": "pacman",
+  "title": "pacman — Gestor de paquetes (Arch)",
+  "description": "Gestor de paquetes de Arch Linux y derivados, para paquetes oficiales.",
+  "syntax": "sudo pacman [opciones] [paquete]",
+  "examples": [
+    { "cmd": "sudo pacman -S nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo pacman -Syu", "desc": "Sincroniza y actualiza el sistema completo." },
+    { "cmd": "sudo pacman -Rns nginx", "desc": "Desinstala con dependencias y configuración." },
+    { "cmd": "pacman -Ss editor", "desc": "Busca en los repositorios." },
+    { "cmd": "pacman -Qi nginx", "desc": "Muestra información de un paquete instalado." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Instala/sincroniza." },
+    { "flag": "-R", "desc": "Elimina." },
+    { "flag": "-Ss", "desc": "Busca paquetes." },
+    { "flag": "-Syu", "desc": "Actualiza todo el sistema." },
+    { "flag": "-Qi", "desc": "Información de un paquete." },
+    { "flag": "-Q", "desc": "Consulta paquetes instalados." }
+  ]
+}

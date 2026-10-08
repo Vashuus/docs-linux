@@ -1,0 +1,19 @@
+{
+  "id": "yay",
+  "title": "yay — Ayudante de AUR (Arch)",
+  "description": "Asistente de pacman que además gestiona paquetes del AUR (Arch User Repository).",
+  "syntax": "yay [opciones] [paquete]",
+  "examples": [
+    { "cmd": "yay -S paquete", "desc": "Instala desde repos o AUR." },
+    { "cmd": "yay -Syu", "desc": "Actualiza repos y AUR." },
+    { "cmd": "yay -Ss editor", "desc": "Busca en repos y AUR." },
+    { "cmd": "yay -Rns paquete", "desc": "Desinstala un paquete." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Instala (incluye AUR)." },
+    { "flag": "-Syu", "desc": "Actualiza todo." },
+    { "flag": "-Ss", "desc": "Busca." },
+    { "flag": "-Yc", "desc": "Limpia la caché de AUR." },
+    { "flag": "--devel", "desc": "Actualiza paquetes de desarrollo." }
+  ]
+}

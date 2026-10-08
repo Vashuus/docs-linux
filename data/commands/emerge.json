@@ -1,0 +1,19 @@
+{
+  "id": "emerge",
+  "title": "emerge — Gestor de paquetes (Gentoo)",
+  "description": "Gestiona paquetes en Gentoo compilándolos desde código fuente según los USE flags.",
+  "syntax": "sudo emerge [opciones] paquete",
+  "examples": [
+    { "cmd": "sudo emerge nginx", "desc": "Compila e instala un paquete." },
+    { "cmd": "sudo emerge --update --deep --newuse @world", "desc": "Actualiza el sistema completo." },
+    { "cmd": "sudo emerge --unmerge nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "emerge --search editor", "desc": "Busca paquetes." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Actualiza." },
+    { "flag": "-D", "desc": "Considera dependencias profundas." },
+    { "flag": "--unmerge", "desc": "Desinstala." },
+    { "flag": "--search", "desc": "Busca." },
+    { "flag": "-a", "desc": "Pide confirmación (ask)." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "zypper",
+  "title": "zypper — Gestor de paquetes (openSUSE)",
+  "description": "Gestiona paquetes y repositorios en openSUSE y SUSE Linux Enterprise.",
+  "syntax": "sudo zypper [comando] [paquete]",
+  "examples": [
+    { "cmd": "sudo zypper install nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo zypper update", "desc": "Actualiza los paquetes." },
+    { "cmd": "sudo zypper remove nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "zypper search editor", "desc": "Busca paquetes." },
+    { "cmd": "zypper repos", "desc": "Lista los repositorios." }
+  ],
+  "options": [
+    { "flag": "install / remove", "desc": "Instala o desinstala." },
+    { "flag": "update", "desc": "Actualiza paquetes." },
+    { "flag": "search", "desc": "Busca paquetes." },
+    { "flag": "repos", "desc": "Lista repositorios." },
+    { "flag": "-y", "desc": "Confirma automáticamente." }
+  ]
+}

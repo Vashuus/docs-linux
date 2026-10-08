@@ -1,0 +1,17 @@
+{
+  "id": "systemd-run",
+  "title": "systemd-run — Ejecutar como unidad transitoria",
+  "description": "Ejecuta un comando como un servicio o timer transitorio gestionado por systemd, ideal para ejecuciones en segundo plano o aisladas.",
+  "syntax": "sudo systemd-run [opciones] comando",
+  "examples": [
+    { "cmd": "sudo systemd-run --unit=mi-tarea /ruta/script.sh", "desc": "Ejecuta un comando como servicio." },
+    { "cmd": "sudo systemd-run --on-calendar='daily' /ruta/backup.sh", "desc": "Programa una ejecución diaria." },
+    { "cmd": "sudo systemd-run --scope -p MemoryLimit=500M comando", "desc": "Ejecuta con límite de memoria." }
+  ],
+  "options": [
+    { "flag": "--unit", "desc": "Nombre de la unidad." },
+    { "flag": "--scope", "desc": "Crea un scope en lugar de un servicio." },
+    { "flag": "--on-calendar", "desc": "Programa un timer." },
+    { "flag": "-p", "desc": "Propiedad de la unidad." }
+  ]
+}

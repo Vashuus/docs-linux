@@ -1,0 +1,17 @@
+{
+  "id": "update-rc.d",
+  "title": "update-rc.d — Enlaces de arranque (Debian)",
+  "description": "Instala o elimina los enlaces de los niveles de ejecución para servicios SysV en Debian/Ubuntu.",
+  "syntax": "sudo update-rc.d servicio comando",
+  "examples": [
+    { "cmd": "sudo update-rc.d nginx defaults", "desc": "Activa un servicio con los enlaces por defecto." },
+    { "cmd": "sudo update-rc.d nginx disable", "desc": "Desactiva el arranque del servicio." },
+    { "cmd": "sudo update-rc.d -f nginx remove", "desc": "Elimina los enlaces de un servicio." }
+  ],
+  "options": [
+    { "flag": "defaults", "desc": "Crea los enlaces por defecto." },
+    { "flag": "disable", "desc": "Desactiva el arranque." },
+    { "flag": "enable", "desc": "Reactiva el arranque." },
+    { "flag": "-f", "desc": "Fuerza la eliminación de enlaces." }
+  ]
+}

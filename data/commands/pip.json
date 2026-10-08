@@ -1,0 +1,20 @@
+{
+  "id": "pip",
+  "title": "pip — Gestor de paquetes de Python",
+  "description": "Instala y gestiona paquetes de Python desde PyPI.",
+  "syntax": "pip [comando] [opciones] [paquete]",
+  "examples": [
+    { "cmd": "pip install requests", "desc": "Instala un paquete." },
+    { "cmd": "pip install -r requirements.txt", "desc": "Instala desde un archivo de requisitos." },
+    { "cmd": "pip uninstall requests", "desc": "Desinstala un paquete." },
+    { "cmd": "pip list --outdated", "desc": "Lista paquetes desactualizados." },
+    { "cmd": "pip freeze > requirements.txt", "desc": "Guarda las versiones instaladas." }
+  ],
+  "options": [
+    { "flag": "install / uninstall", "desc": "Instala o desinstala." },
+    { "flag": "-r", "desc": "Desde un archivo de requisitos." },
+    { "flag": "list", "desc": "Lista instalados." },
+    { "flag": "freeze", "desc": "Exporta versiones exactas." },
+    { "flag": "--user", "desc": "Instala para el usuario actual." }
+  ]
+}

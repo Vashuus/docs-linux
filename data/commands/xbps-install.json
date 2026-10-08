@@ -1,0 +1,18 @@
+{
+  "id": "xbps-install",
+  "title": "xbps-install — Gestor de paquetes (Void)",
+  "description": "Gestor de paquetes de Void Linux, rápido y sencillo.",
+  "syntax": "sudo xbps-install [opciones] paquete",
+  "examples": [
+    { "cmd": "sudo xbps-install -S nginx", "desc": "Sincroniza e instala un paquete." },
+    { "cmd": "sudo xbps-install -Su", "desc": "Actualiza todo el sistema." },
+    { "cmd": "sudo xbps-remove nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "xbps-query -Rs editor", "desc": "Busca paquetes en repos." }
+  ],
+  "options": [
+    { "flag": "-S", "desc": "Sincroniza los índices." },
+    { "flag": "-u", "desc": "Actualiza." },
+    { "flag": "-y", "desc": "Confirma automáticamente." },
+    { "flag": "-R", "desc": "Solo remotos." }
+  ]
+}

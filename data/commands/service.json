@@ -1,0 +1,17 @@
+{
+  "id": "service",
+  "title": "service — Gestionar servicios (SysV)",
+  "description": "Inicia, detiene y consulta servicios usando los scripts de init (SysV). Compatible con systemd.",
+  "syntax": "sudo service servicio comando",
+  "examples": [
+    { "cmd": "sudo service nginx restart", "desc": "Reinicia un servicio." },
+    { "cmd": "service nginx status", "desc": "Muestra el estado." },
+    { "cmd": "sudo service --status-all", "desc": "Lista el estado de todos los servicios." }
+  ],
+  "options": [
+    { "flag": "start / stop", "desc": "Inicia o detiene." },
+    { "flag": "restart", "desc": "Reinicia." },
+    { "flag": "status", "desc": "Muestra el estado." },
+    { "flag": "--status-all", "desc": "Estado de todos los servicios." }
+  ]
+}

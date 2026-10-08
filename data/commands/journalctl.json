@@ -1,0 +1,20 @@
+{
+  "id": "journalctl",
+  "title": "journalctl — Consultar los logs de systemd",
+  "description": "Muestra los registros del sistema gestionados por systemd-journald.",
+  "syntax": "journalctl [opciones]",
+  "examples": [
+    { "cmd": "journalctl -u nginx", "desc": "Muestra los logs de un servicio." },
+    { "cmd": "journalctl -f", "desc": "Sigue los logs en tiempo real." },
+    { "cmd": "journalctl --since '1 hour ago' -p err", "desc": "Errores de la última hora." },
+    { "cmd": "journalctl -b -1", "desc": "Logs del arranque anterior." }
+  ],
+  "options": [
+    { "flag": "-u", "desc": "Filtra por unidad/servicio." },
+    { "flag": "-f", "desc": "Sigue en tiempo real." },
+    { "flag": "-p", "desc": "Filtra por prioridad (err, warn...)." },
+    { "flag": "--since / --until", "desc": "Rango de tiempo." },
+    { "flag": "-b", "desc": "Por arranque." },
+    { "flag": "--disk-usage", "desc": "Uso en disco de los diarios." }
+  ]
+}

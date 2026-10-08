@@ -1,0 +1,18 @@
+{
+  "id": "apt-cache",
+  "title": "apt-cache — Consultar el índice de APT",
+  "description": "Busca paquetes y consulta su información en la caché de APT sin necesidad de privilegios.",
+  "syntax": "apt-cache [comando] [paquete]",
+  "examples": [
+    { "cmd": "apt-cache search editor", "desc": "Busca paquetes por palabra clave." },
+    { "cmd": "apt-cache show nginx", "desc": "Muestra información de un paquete." },
+    { "cmd": "apt-cache policy nginx", "desc": "Muestra versiones y repositorios disponibles." },
+    { "cmd": "apt-cache depends nginx", "desc": "Lista las dependencias." }
+  ],
+  "options": [
+    { "flag": "search", "desc": "Busca paquetes." },
+    { "flag": "show", "desc": "Muestra información." },
+    { "flag": "policy", "desc": "Versiones y origen." },
+    { "flag": "depends", "desc": "Dependencias." }
+  ]
+}

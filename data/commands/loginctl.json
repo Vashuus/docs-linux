@@ -1,0 +1,17 @@
+{
+  "id": "loginctl",
+  "title": "loginctl — Gestionar sesiones de login",
+  "description": "Consulta y controla las sesiones de usuario, terminales y bloqueos gestionados por systemd-logind.",
+  "syntax": "loginctl [comando] [opciones]",
+  "examples": [
+    { "cmd": "loginctl list-sessions", "desc": "Lista las sesiones activas." },
+    { "cmd": "loginctl show-user usuario", "desc": "Muestra información de un usuario." },
+    { "cmd": "loginctl terminate-session 3", "desc": "Cierra una sesión." }
+  ],
+  "options": [
+    { "flag": "list-sessions", "desc": "Lista las sesiones." },
+    { "flag": "show-user", "desc": "Información de un usuario." },
+    { "flag": "terminate-session", "desc": "Termina una sesión." },
+    { "flag": "lock-session", "desc": "Bloquea una sesión." }
+  ]
+}

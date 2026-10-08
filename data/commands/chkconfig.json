@@ -1,0 +1,17 @@
+{
+  "id": "chkconfig",
+  "title": "chkconfig — Servicios al arranque (SysV)",
+  "description": "Administra los niveles de ejecución en los que arrancan los servicios SysV. En sistemas con systemd se prefiere systemctl.",
+  "syntax": "sudo chkconfig [opciones] [servicio]",
+  "examples": [
+    { "cmd": "chkconfig --list", "desc": "Lista los servicios y sus niveles." },
+    { "cmd": "sudo chkconfig httpd on", "desc": "Activa un servicio." },
+    { "cmd": "sudo chkconfig --del httpd", "desc": "Elimina un servicio." }
+  ],
+  "options": [
+    { "flag": "--list", "desc": "Lista los servicios." },
+    { "flag": "on / off", "desc": "Activa o desactiva al arranque." },
+    { "flag": "--add", "desc": "Añade un servicio." },
+    { "flag": "--del", "desc": "Elimina un servicio." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "nix-env",
+  "title": "nix-env — Gestor de paquetes (Nix)",
+  "description": "Gestiona paquetes de usuario en Nix/NixOS. Instala software de forma aislada y reproducible sin afectar al sistema.",
+  "syntax": "nix-env [opciones] [operación]",
+  "examples": [
+    { "cmd": "nix-env -iA nixpkgs.htop", "desc": "Instala un paquete del canal nixpkgs." },
+    { "cmd": "nix-env -u", "desc": "Actualiza los paquetes instalados." },
+    { "cmd": "nix-env -e htop", "desc": "Desinstala un paquete." },
+    { "cmd": "nix-env -qaP editor", "desc": "Busca paquetes disponibles." }
+  ],
+  "options": [
+    { "flag": "-i / -iA", "desc": "Instala (por nombre o atributo)." },
+    { "flag": "-u", "desc": "Actualiza." },
+    { "flag": "-e", "desc": "Elimina." },
+    { "flag": "-q", "desc": "Consulta." },
+    { "flag": "--switch-profile", "desc": "Cambia de perfil." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "apk",
+  "title": "apk — Gestor de paquetes (Alpine)",
+  "description": "Gestor de paquetes ligero de Alpine Linux, muy usado en imágenes de contenedores.",
+  "syntax": "sudo apk [comando] [paquete]",
+  "examples": [
+    { "cmd": "apk add nginx", "desc": "Instala un paquete." },
+    { "cmd": "apk del nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "apk update && apk upgrade", "desc": "Actualiza índices y paquetes." },
+    { "cmd": "apk search editor", "desc": "Busca paquetes." }
+  ],
+  "options": [
+    { "flag": "add", "desc": "Instala." },
+    { "flag": "del", "desc": "Desinstala." },
+    { "flag": "update", "desc": "Actualiza los índices." },
+    { "flag": "upgrade", "desc": "Actualiza paquetes." },
+    { "flag": "search", "desc": "Busca." }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "apt",
+  "title": "apt — Gestor de paquetes",
+  "description": "Gestor de paquetes de alto nivel para Debian/Ubuntu. Instala, actualiza y elimina paquetes.",
+  "syntax": "apt [opciones] comando [paquete...]",
+  "examples": [
+    { "cmd": "sudo apt update", "desc": "Actualiza la lista de paquetes disponibles." },
+    { "cmd": "sudo apt install nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo apt remove nginx", "desc": "Desinstala un paquete." }
+  ],
+  "options": [
+    { "flag": "update", "desc": "Refresca los índices de paquetes." },
+    { "flag": "upgrade", "desc": "Actualiza los paquetes instalados." },
+    { "flag": "install", "desc": "Instala paquetes." }
+  ]
+}

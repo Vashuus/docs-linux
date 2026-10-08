@@ -1,0 +1,19 @@
+{
+  "id": "yum",
+  "title": "yum — Gestor de paquetes (RHEL clásico)",
+  "description": "Gestor de paquetes basado en RPM para RHEL/CentOS antiguos. Sustituido por dnf.",
+  "syntax": "sudo yum [comando] [paquete]",
+  "examples": [
+    { "cmd": "sudo yum install nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo yum update", "desc": "Actualiza el sistema." },
+    { "cmd": "sudo yum remove nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "yum search editor", "desc": "Busca paquetes." }
+  ],
+  "options": [
+    { "flag": "install / remove", "desc": "Instala o desinstala." },
+    { "flag": "update", "desc": "Actualiza paquetes." },
+    { "flag": "search", "desc": "Busca paquetes." },
+    { "flag": "list", "desc": "Lista paquetes." },
+    { "flag": "-y", "desc": "Confirma automáticamente." }
+  ]
+}

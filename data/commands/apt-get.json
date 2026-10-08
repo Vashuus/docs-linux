@@ -1,0 +1,20 @@
+{
+  "id": "apt-get",
+  "title": "apt-get — Gestor de paquetes (Debian/Ubuntu)",
+  "description": "Gestiona paquetes en Debian y derivados. Interfaz estable y clásica de APT.",
+  "syntax": "sudo apt-get [comando] [paquete]",
+  "examples": [
+    { "cmd": "sudo apt-get update", "desc": "Actualiza la lista de paquetes." },
+    { "cmd": "sudo apt-get install nginx", "desc": "Instala un paquete." },
+    { "cmd": "sudo apt-get upgrade", "desc": "Actualiza los paquetes instalados." },
+    { "cmd": "sudo apt-get remove nginx", "desc": "Desinstala un paquete." },
+    { "cmd": "sudo apt-get autoremove", "desc": "Elimina dependencias huérfanas." }
+  ],
+  "options": [
+    { "flag": "update", "desc": "Actualiza los índices." },
+    { "flag": "install / remove", "desc": "Instala o desinstala." },
+    { "flag": "upgrade / dist-upgrade", "desc": "Actualiza paquetes." },
+    { "flag": "-y", "desc": "Responde 'sí' automáticamente." },
+    { "flag": "autoremove", "desc": "Elimina dependencias sin uso." }
+  ]
+}

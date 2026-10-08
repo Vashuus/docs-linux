@@ -1,0 +1,16 @@
+{
+  "id": "add-apt-repository",
+  "title": "add-apt-repository — Añadir repositorios (PPA)",
+  "description": "Añade repositorios APT, incluidos los PPA de Ubuntu, y actualiza los índices.",
+  "syntax": "sudo add-apt-repository [opciones] repositorio",
+  "examples": [
+    { "cmd": "sudo add-apt-repository ppa:deadsnakes/ppa", "desc": "Añade un PPA de Ubuntu." },
+    { "cmd": "sudo add-apt-repository 'deb http://repo.example.com/ stable main'", "desc": "Añade una línea de repositorio." },
+    { "cmd": "sudo add-apt-repository --remove ppa:deadsnakes/ppa", "desc": "Elimina un repositorio." }
+  ],
+  "options": [
+    { "flag": "--remove", "desc": "Elimina un repositorio." },
+    { "flag": "-y", "desc": "Confirma automáticamente." },
+    { "flag": "-u", "desc": "Actualiza los índices tras añadir." }
+  ]
+}

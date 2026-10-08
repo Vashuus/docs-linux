@@ -1,0 +1,20 @@
+{
+  "id": "systemctl",
+  "title": "systemctl — Gestionar servicios (systemd)",
+  "description": "Controla servicios, unidades y el estado del sistema con systemd.",
+  "syntax": "systemctl [comando] [unidad]",
+  "examples": [
+    { "cmd": "sudo systemctl start nginx", "desc": "Inicia un servicio." },
+    { "cmd": "sudo systemctl enable --now nginx", "desc": "Activa el arranque automático e inicia ahora." },
+    { "cmd": "systemctl status nginx", "desc": "Muestra el estado del servicio." },
+    { "cmd": "sudo systemctl restart nginx", "desc": "Reinicia el servicio." },
+    { "cmd": "systemctl list-units --type=service", "desc": "Lista los servicios." }
+  ],
+  "options": [
+    { "flag": "start / stop", "desc": "Inicia o detiene." },
+    { "flag": "restart / reload", "desc": "Reinicia o recarga." },
+    { "flag": "enable / disable", "desc": "Activa o desactiva el arranque automático." },
+    { "flag": "status", "desc": "Muestra el estado." },
+    { "flag": "--now", "desc": "Aplica y arranca/detiene a la vez." }
+  ]
+}

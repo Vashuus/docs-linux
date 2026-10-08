@@ -1,0 +1,18 @@
+{
+  "id": "systemd-analyze",
+  "title": "systemd-analyze — Analizar el arranque",
+  "description": "Mide y analiza el tiempo de arranque del sistema y las unidades de systemd.",
+  "syntax": "systemd-analyze [comando] [opciones]",
+  "examples": [
+    { "cmd": "systemd-analyze", "desc": "Muestra el tiempo total de arranque." },
+    { "cmd": "systemd-analyze blame", "desc": "Ordena los servicios por tiempo de arranque." },
+    { "cmd": "systemd-analyze critical-chain", "desc": "Muestra la cadena crítica de arranque." },
+    { "cmd": "systemd-analyze plot > arranque.svg", "desc": "Genera un gráfico del arranque." }
+  ],
+  "options": [
+    { "flag": "blame", "desc": "Tiempo que tarda cada servicio." },
+    { "flag": "critical-chain", "desc": "Cadena crítica de dependencias." },
+    { "flag": "plot", "desc": "Gráfico SVG del arranque." },
+    { "flag": "verify", "desc": "Valida una unidad." }
+  ]
+}
