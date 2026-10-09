@@ -292,5 +292,42 @@
       "snap",
       "pip"
     ]
+  },
+  {
+    "id": "shell",
+    "name": "Shell y scripting",
+    "icon": "shell",
+    "commands": [
+      "bash",
+      "sh",
+      "source",
+      "export",
+      "env",
+      "read",
+      "test",
+      "eval",
+      "exec",
+      "trap",
+      "set",
+      "unset",
+      "alias",
+      "unalias",
+      "history",
+      "seq",
+      "yes",
+      "getopts"
+    ]
+  },
+  {
+    "id": "editores",
+    "name": "Editores de texto",
+    "icon": "tools",
+    "commands": [
+      "nano",
+      "vim",
+      "vi",
+      "emacs",
+      "micro"
+    ]
   }
 ]

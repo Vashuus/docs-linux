@@ -1,0 +1,16 @@
+{
+  "id": "getopts",
+  "title": "getopts — Procesar opciones en scripts",
+  "description": "Analiza las opciones de línea de comandos dentro de un script de shell de forma POSIX.",
+  "syntax": "getopts cadena variable [args]",
+  "examples": [
+    { "cmd": "while getopts \"ab:c\" opt; do case $opt in a) echo A;; b) echo \"B=$OPTARG\";; esac; done", "desc": "Recorre las opciones -a, -b (con valor) y -c." },
+    { "cmd": "getopts 'vf:' opt", "desc": "Define que -v no toma valor y -f sí." }
+  ],
+  "options": [
+    { "flag": "OPTARG", "desc": "Valor de la opción actual." },
+    { "flag": "OPTIND", "desc": "Índice del siguiente argumento." },
+    { "flag": "?", "desc": "Opción inválida." },
+    { "flag": ":", "desc": "Falta el argumento requerido." }
+  ]
+}

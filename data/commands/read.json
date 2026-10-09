@@ -1,0 +1,19 @@
+{
+  "id": "read",
+  "title": "read — Leer entrada del usuario",
+  "description": "Lee una línea de la entrada estándar y la guarda en una o varias variables. Muy usado en scripts interactivos.",
+  "syntax": "read [opciones] [variables]",
+  "examples": [
+    { "cmd": "read -p 'Nombre: ' nombre", "desc": "Pide un dato y lo guarda." },
+    { "cmd": "read -s -p 'Contraseña: ' pass", "desc": "Lee sin mostrar lo escrito." },
+    { "cmd": "read -r linea", "desc": "Lee sin interpretar barras invertidas." },
+    { "cmd": "while read -r l; do echo \"$l\"; done < archivo", "desc": "Recorre un archivo línea a línea." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Mensaje a mostrar." },
+    { "flag": "-s", "desc": "Modo silencioso." },
+    { "flag": "-r", "desc": "No interpreta barras invertidas." },
+    { "flag": "-n", "desc": "Lee N caracteres." },
+    { "flag": "-t", "desc": "Tiempo máximo de espera." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sh",
+  "title": "sh — Shell POSIX",
+  "description": "Intérprete de comandos POSIX. En muchos sistemas es un enlace a bash o dash; garantiza máxima portabilidad.",
+  "syntax": "sh [opciones] [script]",
+  "examples": [
+    { "cmd": "sh script.sh", "desc": "Ejecuta un script con el shell POSIX." },
+    { "cmd": "sh -c 'echo hola'", "desc": "Ejecuta una cadena." },
+    { "cmd": "sh -n script.sh", "desc": "Comprueba la sintaxis." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Ejecuta una cadena." },
+    { "flag": "-n", "desc": "Comprueba sintaxis." },
+    { "flag": "-x", "desc": "Traza los comandos." },
+    { "flag": "-e", "desc": "Aborta ante errores." }
+  ]
+}

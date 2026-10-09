@@ -1,0 +1,17 @@
+{
+  "id": "exec",
+  "title": "exec — Reemplazar el shell por un comando",
+  "description": "Ejecuta un comando reemplazando al shell actual, sin crear un subproceso. También se usa para redirigir descriptores.",
+  "syntax": "exec [-a nombre] comando            (reemplaza el shell)\nexec [n]>&m                        (redirige un descriptor)",
+  "examples": [
+    { "cmd": "exec ls -l", "desc": "Reemplaza el shell por el comando." },
+    { "cmd": "exec 3> archivo", "desc": "Abre un descriptor de archivo." },
+    { "cmd": "exec 2> errores.log", "desc": "Redirige la salida de error." },
+    { "cmd": "exec {fd}> archivo", "desc": "Asigna el descriptor libre a una variable." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Nombre con el que se muestra el proceso (argv[0])." },
+    { "flag": "-l", "desc": "Se comporta como login shell." },
+    { "flag": "-c", "desc": "Limpia el entorno." }
+  ]
+}

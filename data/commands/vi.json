@@ -1,0 +1,16 @@
+{
+  "id": "vi",
+  "title": "vi — Editor modal clásico",
+  "description": "Editor modal estándar en sistemas Unix. En muchos sistemas es un enlace a vim, que añade mejoras.",
+  "syntax": "vi [opciones] [archivo]",
+  "examples": [
+    { "cmd": "vi archivo.txt", "desc": "Abre un archivo." },
+    { "cmd": "vi + archivo.txt", "desc": "Abre al final del archivo." },
+    { "cmd": "vi -R archivo.txt", "desc": "Modo solo lectura." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Solo lectura." },
+    { "flag": "+N", "desc": "Empieza en la línea N." },
+    { "flag": "-c", "desc": "Ejecuta un comando al abrir." }
+  ]
+}

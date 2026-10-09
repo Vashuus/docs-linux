@@ -1,0 +1,19 @@
+{
+  "id": "history",
+  "title": "history — Historial de comandos",
+  "description": "Muestra y gestiona los comandos ejecutados anteriormente en el shell.",
+  "syntax": "history [opciones] [n]",
+  "examples": [
+    { "cmd": "history", "desc": "Muestra el historial." },
+    { "cmd": "history 20", "desc": "Muestra los últimos 20 comandos." },
+    { "cmd": "history -c", "desc": "Borra el historial en memoria." },
+    { "cmd": "history | grep ssh", "desc": "Busca en el historial." },
+    { "cmd": "sudo !!", "desc": "Repite el último comando con sudo." }
+  ],
+  "options": [
+    { "flag": "-c", "desc": "Limpia el historial." },
+    { "flag": "-d", "desc": "Elimina una entrada." },
+    { "flag": "-w", "desc": "Escribe el historial al archivo." },
+    { "flag": "-a", "desc": "Añade al archivo." }
+  ]
+}

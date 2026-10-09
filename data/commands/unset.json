@@ -1,0 +1,16 @@
+{
+  "id": "unset",
+  "title": "unset — Eliminar variables y funciones",
+  "description": "Borra variables, funciones o atributos definidos en el shell.",
+  "syntax": "unset [opciones] nombre...",
+  "examples": [
+    { "cmd": "unset VAR", "desc": "Elimina una variable." },
+    { "cmd": "unset -f mifuncion", "desc": "Elimina una función." },
+    { "cmd": "unset -v VAR", "desc": "Fuerza tratar el nombre como variable." }
+  ],
+  "options": [
+    { "flag": "-v", "desc": "Trata los nombres como variables." },
+    { "flag": "-f", "desc": "Trata los nombres como funciones." },
+    { "flag": "-n", "desc": "Elimina atributos en modo referencia." }
+  ]
+}

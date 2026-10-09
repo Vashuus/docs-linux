@@ -1,0 +1,18 @@
+{
+  "id": "trap",
+  "title": "trap — Capturar señales en scripts",
+  "description": "Ejecuta un comando cuando el shell recibe una señal, como al interrumpir con Ctrl+C o al salir.",
+  "syntax": "trap 'comando' SEÑAL...",
+  "examples": [
+    { "cmd": "trap 'echo Limpiando; rm -f tmp' EXIT", "desc": "Ejecuta al salir del script." },
+    { "cmd": "trap 'echo Cancelado' INT", "desc": "Captura Ctrl+C." },
+    { "cmd": "trap - INT", "desc": "Restaura el comportamiento por defecto." },
+    { "cmd": "trap '' INT", "desc": "Ignora la señal INT." }
+  ],
+  "options": [
+    { "flag": "EXIT", "desc": "Al terminar el shell." },
+    { "flag": "INT", "desc": "Ctrl+C." },
+    { "flag": "TERM", "desc": "Señal de terminación." },
+    { "flag": "-l", "desc": "Lista las señales disponibles." }
+  ]
+}

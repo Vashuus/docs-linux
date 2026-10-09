@@ -1,0 +1,19 @@
+{
+  "id": "bash",
+  "title": "bash — Shell Bourne Again",
+  "description": "Intérprete de comandos por defecto en la mayoría de distribuciones Linux. Ejecuta scripts y comandos interactivos.",
+  "syntax": "bash [opciones] [script]",
+  "examples": [
+    { "cmd": "bash script.sh", "desc": "Ejecuta un script." },
+    { "cmd": "bash -x script.sh", "desc": "Muestra cada comando antes de ejecutarlo (depuración)." },
+    { "cmd": "bash -n script.sh", "desc": "Comprueba la sintaxis sin ejecutar." },
+    { "cmd": "bash -c 'echo hola'", "desc": "Ejecuta un comando como cadena." }
+  ],
+  "options": [
+    { "flag": "-x", "desc": "Traza los comandos." },
+    { "flag": "-n", "desc": "Comprueba sintaxis." },
+    { "flag": "-e", "desc": "Aborta ante cualquier error." },
+    { "flag": "-c", "desc": "Ejecuta una cadena." },
+    { "flag": "-i", "desc": "Modo interactivo." }
+  ]
+}

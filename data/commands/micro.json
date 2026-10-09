@@ -1,0 +1,17 @@
+{
+  "id": "micro",
+  "title": "micro — Editor moderno en terminal",
+  "description": "Editor de texto en terminal con atajos intuitivos, soporte de ratón y resaltado de sintaxis, sin curva de aprendizaje modal.",
+  "syntax": "micro [opciones] [archivo]",
+  "examples": [
+    { "cmd": "micro archivo.txt", "desc": "Abre un archivo." },
+    { "cmd": "micro +25 archivo.txt", "desc": "Abre en la línea 25." },
+    { "cmd": "micro -readonly archivo.txt", "desc": "Abre en modo solo lectura." }
+  ],
+  "options": [
+    { "flag": "+N", "desc": "Empieza en la línea N." },
+    { "flag": "-readonly", "desc": "Solo lectura." },
+    { "flag": "-plugin", "desc": "Carga plugins." },
+    { "flag": "-options", "desc": "Ajusta una opción al abrir." }
+  ]
+}

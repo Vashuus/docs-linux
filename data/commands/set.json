@@ -1,0 +1,19 @@
+{
+  "id": "set",
+  "title": "set — Opciones y parámetros del shell",
+  "description": "Ajusta el comportamiento del shell y muestra o fija los parámetros posicionales. Muy usado para depurar scripts.",
+  "syntax": "set [opciones] [-- parámetros]",
+  "examples": [
+    { "cmd": "set -euo pipefail", "desc": "Modo estricto: aborta ante errores." },
+    { "cmd": "set -x", "desc": "Muestra cada comando ejecutado." },
+    { "cmd": "set -- a b c", "desc": "Fija los parámetros posicionales." },
+    { "cmd": "set", "desc": "Lista todas las variables del shell." }
+  ],
+  "options": [
+    { "flag": "-e", "desc": "Aborta ante errores." },
+    { "flag": "-u", "desc": "Error si se usa una variable no definida." },
+    { "flag": "-x", "desc": "Traza los comandos." },
+    { "flag": "-o pipefail", "desc": "Propaga errores en tuberías." },
+    { "flag": "+o", "desc": "Muestra el estado de las opciones." }
+  ]
+}

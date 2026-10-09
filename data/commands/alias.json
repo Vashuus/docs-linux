@@ -1,0 +1,14 @@
+{
+  "id": "alias",
+  "title": "alias — Crear atajos de comandos",
+  "description": "Define nombres cortos para comandos o secuencias de comandos. Normalmente se guardan en ~/.bashrc.",
+  "syntax": "alias [nombre='comando']",
+  "examples": [
+    { "cmd": "alias ll='ls -alF'", "desc": "Crea un atajo." },
+    { "cmd": "alias", "desc": "Muestra los alias definidos." },
+    { "cmd": "alias gs='git status'", "desc": "Atajo para git." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Muestra los alias de forma reutilizable." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "export",
+  "title": "export — Exportar variables de entorno",
+  "description": "Marca una variable para que esté disponible en el entorno de los procesos hijos.",
+  "syntax": "export [opciones] NOMBRE[=valor]",
+  "examples": [
+    { "cmd": "export PATH=\"$PATH:/opt/bin\"", "desc": "Añade un directorio al PATH." },
+    { "cmd": "export EDITOR=vim", "desc": "Define el editor por defecto." },
+    { "cmd": "export -p", "desc": "Muestra las variables exportadas." },
+    { "cmd": "export -n VAR", "desc": "Deja de exportar una variable." }
+  ],
+  "options": [
+    { "flag": "-p", "desc": "Muestra las variables exportadas." },
+    { "flag": "-n", "desc": "Quita el atributo de exportación." },
+    { "flag": "-f", "desc": "Exporta una función." }
+  ]
+}

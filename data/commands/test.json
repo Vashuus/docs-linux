@@ -1,0 +1,19 @@
+{
+  "id": "test",
+  "title": "test — Evaluar condiciones",
+  "description": "Evalúa expresiones para comprobar archivos, números y cadenas en scripts. Equivale a `[ ... ]`.",
+  "syntax": "test expresión   |   [ expresión ]",
+  "examples": [
+    { "cmd": "test -f archivo && echo existe", "desc": "Comprueba si un archivo existe." },
+    { "cmd": "[ -d dir ]", "desc": "Comprueba si es un directorio." },
+    { "cmd": "[ \"$a\" = \"$b\" ]", "desc": "Compara cadenas." },
+    { "cmd": "[ \"$n\" -gt 10 ]", "desc": "Compara números (mayor que)." }
+  ],
+  "options": [
+    { "flag": "-f", "desc": "Existe y es archivo regular." },
+    { "flag": "-d", "desc": "Existe y es directorio." },
+    { "flag": "-z", "desc": "Cadena vacía." },
+    { "flag": "-eq / -gt / -lt", "desc": "Comparaciones numéricas." },
+    { "flag": "= / !=", "desc": "Comparaciones de cadenas." }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "yes",
+  "title": "yes — Repetir una cadena",
+  "description": "Imprime indefinidamente una cadena (por defecto 'y'). Sirve para responder afirmativamente a comandos que piden confirmación.",
+  "syntax": "yes [cadena]",
+  "examples": [
+    { "cmd": "yes", "desc": "Imprime 'y' sin parar." },
+    { "cmd": "yes | sudo apt-get install paquete", "desc": "Responde 'y' a todas las preguntas." },
+    { "cmd": "yes no | head -5", "desc": "Imprime 'no' cinco veces." }
+  ],
+  "options": [
+    { "flag": "--help", "desc": "Muestra la ayuda." },
+    { "flag": "--version", "desc": "Muestra la versión." }
+  ]
+}

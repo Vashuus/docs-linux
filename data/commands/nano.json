@@ -1,0 +1,18 @@
+{
+  "id": "nano",
+  "title": "nano — Editor de texto sencillo",
+  "description": "Editor de texto en terminal fácil de usar, con atajos visibles en pantalla.",
+  "syntax": "nano [opciones] [archivo]",
+  "examples": [
+    { "cmd": "nano archivo.txt", "desc": "Abre o crea un archivo." },
+    { "cmd": "nano -w archivo.txt", "desc": "Desactiva el ajuste de línea." },
+    { "cmd": "nano +25 archivo.txt", "desc": "Abre en la línea 25." },
+    { "cmd": "sudo nano /etc/hosts", "desc": "Edita un archivo del sistema." }
+  ],
+  "options": [
+    { "flag": "-w", "desc": "Sin ajuste de línea." },
+    { "flag": "-l", "desc": "Muestra números de línea." },
+    { "flag": "+N", "desc": "Empieza en la línea N." },
+    { "flag": "-v", "desc": "Modo solo lectura." }
+  ]
+}

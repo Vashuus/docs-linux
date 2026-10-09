@@ -1,0 +1,15 @@
+{
+  "id": "source",
+  "title": "source — Ejecutar en el shell actual",
+  "description": "Ejecuta un archivo en el shell actual (no en un subproceso), por lo que sus variables y funciones permanecen. Equivale a `. archivo`.",
+  "syntax": "source archivo [argumentos]",
+  "examples": [
+    { "cmd": "source ~/.bashrc", "desc": "Recarga la configuración del shell." },
+    { "cmd": ". .venv/bin/activate", "desc": "Activa un entorno virtual de Python." },
+    { "cmd": "source ~/.profile", "desc": "Aplica las variables de entorno." }
+  ],
+  "options": [
+    { "flag": ".", "desc": "Sinónimo POSIX de source." },
+    { "flag": "-p", "desc": "Fuente en modo POSIX." }
+  ]
+}

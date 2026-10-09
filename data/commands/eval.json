@@ -1,0 +1,14 @@
+{
+  "id": "eval",
+  "title": "eval — Evaluar argumentos como comando",
+  "description": "Concatena los argumentos y los ejecuta como un comando del shell. Útil para construir comandos dinámicamente.",
+  "syntax": "eval [argumentos]",
+  "examples": [
+    { "cmd": "eval 'echo hola'", "desc": "Ejecuta una cadena como comando." },
+    { "cmd": "cmd='ls -l'; eval $cmd", "desc": "Ejecuta un comando guardado en una variable." },
+    { "cmd": "eval \"$comando\"", "desc": "Expande y ejecuta el contenido." }
+  ],
+  "options": [
+    { "flag": "-", "desc": "Sin opciones propias; ejecuta los argumentos unidos." }
+  ]
+}

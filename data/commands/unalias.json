@@ -1,0 +1,13 @@
+{
+  "id": "unalias",
+  "title": "unalias — Eliminar atajos",
+  "description": "Borra uno o todos los alias definidos en el shell.",
+  "syntax": "unalias [-a] nombre...",
+  "examples": [
+    { "cmd": "unalias ll", "desc": "Elimina un alias concreto." },
+    { "cmd": "unalias -a", "desc": "Elimina todos los alias." }
+  ],
+  "options": [
+    { "flag": "-a", "desc": "Elimina todos los alias." }
+  ]
+}

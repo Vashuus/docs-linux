@@ -1,0 +1,17 @@
+{
+  "id": "seq",
+  "title": "seq — Generar secuencias de números",
+  "description": "Imprime una secuencia de números, útil en bucles y scripts.",
+  "syntax": "seq [opciones] [inicio] [paso] fin",
+  "examples": [
+    { "cmd": "seq 5", "desc": "Del 1 al 5." },
+    { "cmd": "seq 1 2 10", "desc": "Del 1 al 10 saltando de 2 en 2." },
+    { "cmd": "seq -w 1 10", "desc": "Rellena con ceros a la izquierda." },
+    { "cmd": "seq -s ',' 1 5", "desc": "Usa coma como separador." }
+  ],
+  "options": [
+    { "flag": "-s", "desc": "Separador personalizado." },
+    { "flag": "-w", "desc": "Igual ancho rellenando con ceros." },
+    { "flag": "-f", "desc": "Formato de salida." }
+  ]
+}

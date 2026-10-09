@@ -1,0 +1,19 @@
+{
+  "id": "vim",
+  "title": "vim — Editor modal avanzado",
+  "description": "Editor de texto potente y modal. Tiene modos de inserción, normal y visual, y se extiende con plugins.",
+  "syntax": "vim [opciones] [archivo]",
+  "examples": [
+    { "cmd": "vim archivo.txt", "desc": "Abre un archivo." },
+    { "cmd": "vim +25 archivo.txt", "desc": "Abre en la línea 25." },
+    { "cmd": "vim -R archivo.txt", "desc": "Abre en modo solo lectura." },
+    { "cmd": "vim -d a.txt b.txt", "desc": "Muestra diferencias entre archivos." }
+  ],
+  "options": [
+    { "flag": "-R", "desc": "Modo solo lectura." },
+    { "flag": "-d", "desc": "Modo diff." },
+    { "flag": "-p", "desc": "Abre cada archivo en una pestaña." },
+    { "flag": "-o", "desc": "Abre splits horizontales." },
+    { "flag": "+N", "desc": "Empieza en la línea N." }
+  ]
+}

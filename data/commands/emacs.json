@@ -1,0 +1,17 @@
+{
+  "id": "emacs",
+  "title": "emacs — Editor extensible",
+  "description": "Editor de texto muy extensible y personalizable, con multitud de funciones más allá de la edición.",
+  "syntax": "emacs [opciones] [archivo]",
+  "examples": [
+    { "cmd": "emacs archivo.txt", "desc": "Abre un archivo." },
+    { "cmd": "emacs -nw archivo.txt", "desc": "Ejecuta sin interfaz gráfica (en terminal)." },
+    { "cmd": "emacs +25 archivo.txt", "desc": "Abre en la línea 25." }
+  ],
+  "options": [
+    { "flag": "-nw", "desc": "Sin ventana (modo terminal)." },
+    { "flag": "+N", "desc": "Empieza en la línea N." },
+    { "flag": "-q", "desc": "No carga la configuración de inicio." },
+    { "flag": "--batch", "desc": "Modo no interactivo." }
+  ]
+}
