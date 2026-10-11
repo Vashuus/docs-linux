@@ -1,0 +1,13 @@
+{
+  "id": "update-arch",
+  "title": "Actualizar Arch Linux",
+  "description": "Sincroniza repositorios y actualiza todo el sistema en Arch Linux (rolling release) con pacman.",
+  "icon": "svg/arch.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "tags": ["actualizacion", "arch", "pacman", "mantenimiento"],
+  "requires": ["bash", "pacman", "sudo", "coreutils"],
+  "usage": ["./update-arch.sh", "bash update-arch.sh", "chmod +x update-arch.sh && ./update-arch.sh"],
+  "script": "scripts/update-arch.sh"
+}

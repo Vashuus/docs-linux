@@ -1,0 +1,13 @@
+{
+  "id": "update-debian",
+  "title": "Actualizar Debian",
+  "description": "Actualiza indices, instala las actualizaciones y limpia paquetes obsoletos en Debian/Ubuntu.",
+  "icon": "svg/debian.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "tags": ["actualizacion", "debian", "apt", "mantenimiento"],
+  "requires": ["bash", "apt", "sudo", "coreutils"],
+  "usage": ["./update-debian.sh", "bash update-debian.sh", "chmod +x update-debian.sh && ./update-debian.sh"],
+  "script": "scripts/update-debian.sh"
+}

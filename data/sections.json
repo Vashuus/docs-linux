@@ -329,5 +329,17 @@
       "emacs",
       "micro"
     ]
+  },
+  {
+    "id": "scripts",
+    "name": "Scripts",
+    "icon": "script",
+    "type": "scripts",
+    "dir": "scripts",
+    "commands": [
+      "update-debian",
+      "update-fedora",
+      "update-arch"
+    ]
   }
 ]
