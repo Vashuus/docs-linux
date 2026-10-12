@@ -1,0 +1,38 @@
+{
+  "id": "xxd",
+  "title": "xxd — Volcado hexadecimal (xxd)",
+  "description": "Crea volcados hexadecimales y puede revertirlos a binario.",
+  "syntax": "xxd [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "xxd archivo",
+      "desc": "Volcado hexadecimal."
+    },
+    {
+      "cmd": "xxd -r volcado.hex > archivo.bin",
+      "desc": "Revierte a binario."
+    },
+    {
+      "cmd": "xxd -l 32 archivo",
+      "desc": "Solo 32 bytes."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-r",
+      "desc": "Revierte."
+    },
+    {
+      "flag": "-l",
+      "desc": "Número de bytes."
+    },
+    {
+      "flag": "-p",
+      "desc": "Formato plain."
+    },
+    {
+      "flag": "-i",
+      "desc": "Como array de C."
+    }
+  ]
+}

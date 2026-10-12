@@ -1,0 +1,34 @@
+{
+  "id": "photorec",
+  "title": "photorec — Recuperar archivos (PhotoRec)",
+  "description": "Recupera archivos de discos y tarjetas basándose en sus firmas.",
+  "syntax": "photorec",
+  "examples": [
+    {
+      "cmd": "photorec",
+      "desc": "Abre el asistente interactivo."
+    },
+    {
+      "cmd": "photorec /log /d salida /cmd disco.dd",
+      "desc": "Ejecuta en modo comando."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(interfaz)",
+      "desc": "Asistente por menús."
+    },
+    {
+      "flag": "/d",
+      "desc": "Directorio de destino."
+    },
+    {
+      "flag": "/cmd",
+      "desc": "Modo automático."
+    },
+    {
+      "flag": "/log",
+      "desc": "Registro."
+    }
+  ]
+}

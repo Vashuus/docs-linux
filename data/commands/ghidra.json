@@ -1,0 +1,30 @@
+{
+  "id": "ghidra",
+  "title": "ghidra — Suite de ingeniería inversa",
+  "description": "Desensamblador y descompilador de la NSA para analizar binarios.",
+  "syntax": "ghidra (GUI) | analyzeHeadless",
+  "examples": [
+    {
+      "cmd": "ghidra",
+      "desc": "Abre la interfaz gráfica."
+    },
+    {
+      "cmd": "analyzeHeadless proj Nombre -import binario",
+      "desc": "Modo sin interfaz."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(GUI)",
+      "desc": "Interfaz gráfica."
+    },
+    {
+      "flag": "analyzeHeadless",
+      "desc": "Modo de línea de comandos."
+    },
+    {
+      "flag": "-import",
+      "desc": "Archivo a importar."
+    }
+  ]
+}

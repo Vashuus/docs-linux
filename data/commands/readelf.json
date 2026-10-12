@@ -1,0 +1,38 @@
+{
+  "id": "readelf",
+  "title": "readelf — Leer archivos ELF",
+  "description": "Muestra información de archivos ELF: cabeceras, secciones y símbolos.",
+  "syntax": "readelf [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "readelf -h binario",
+      "desc": "Muestra la cabecera ELF."
+    },
+    {
+      "cmd": "readelf -s binario",
+      "desc": "Lista los símbolos."
+    },
+    {
+      "cmd": "readelf -a binario",
+      "desc": "Toda la información."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-h",
+      "desc": "Cabecera."
+    },
+    {
+      "flag": "-s",
+      "desc": "Símbolos."
+    },
+    {
+      "flag": "-l",
+      "desc": "Program headers."
+    },
+    {
+      "flag": "-a",
+      "desc": "Todo."
+    }
+  ]
+}

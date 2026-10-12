@@ -1,0 +1,38 @@
+{
+  "id": "exiftool",
+  "title": "exiftool — Leer metadatos",
+  "description": "Lee, escribe y borra metadatos EXIF de imágenes y otros archivos.",
+  "syntax": "exiftool [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "exiftool foto.jpg",
+      "desc": "Muestra todos los metadatos."
+    },
+    {
+      "cmd": "exiftool -gps:all foto.jpg",
+      "desc": "Muestra datos GPS."
+    },
+    {
+      "cmd": "exiftool -all= foto.jpg",
+      "desc": "Borra los metadatos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-gps:all",
+      "desc": "Datos GPS."
+    },
+    {
+      "flag": "-all=",
+      "desc": "Elimina metadatos."
+    },
+    {
+      "flag": "-r",
+      "desc": "Recursivo."
+    },
+    {
+      "flag": "-csv",
+      "desc": "Salida CSV."
+    }
+  ]
+}

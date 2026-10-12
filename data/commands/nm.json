@@ -1,0 +1,38 @@
+{
+  "id": "nm",
+  "title": "nm — Símbolos de binarios",
+  "description": "Lista los símbolos de archivos objeto y ejecutables.",
+  "syntax": "nm [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "nm binario",
+      "desc": "Lista los símbolos."
+    },
+    {
+      "cmd": "nm -D binario",
+      "desc": "Símbolos dinámicos."
+    },
+    {
+      "cmd": "nm -u binario",
+      "desc": "Símbolos no definidos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-D",
+      "desc": "Dinámicos."
+    },
+    {
+      "flag": "-u",
+      "desc": "No definidos."
+    },
+    {
+      "flag": "-C",
+      "desc": "Desmanglado C++."
+    },
+    {
+      "flag": "-a",
+      "desc": "Todos."
+    }
+  ]
+}

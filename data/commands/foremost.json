@@ -1,0 +1,34 @@
+{
+  "id": "foremost",
+  "title": "foremost — Recuperar archivos borrados",
+  "description": "Recupera archivos usando cabeceras, pies y estructuras internas.",
+  "syntax": "foremost -i imagen -o salida",
+  "examples": [
+    {
+      "cmd": "foremost -i disco.dd -o recuperados",
+      "desc": "Recupera archivos de una imagen."
+    },
+    {
+      "cmd": "foremost -t jpg,pdf -i imagen.dd -o out",
+      "desc": "Solo ciertos tipos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-i",
+      "desc": "Imagen/entrada."
+    },
+    {
+      "flag": "-o",
+      "desc": "Directorio de salida."
+    },
+    {
+      "flag": "-t",
+      "desc": "Tipos de archivo."
+    },
+    {
+      "flag": "-c",
+      "desc": "Archivo de configuración."
+    }
+  ]
+}

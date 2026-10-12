@@ -1,0 +1,34 @@
+{
+  "id": "ewfacquire",
+  "title": "ewfacquire — Imagen en formato E01",
+  "description": "Crea imágenes forenses en el formato E01 usando libewf.",
+  "syntax": "ewfacquire origen",
+  "examples": [
+    {
+      "cmd": "ewfacquire /dev/sda",
+      "desc": "Crea una imagen E01 del disco."
+    },
+    {
+      "cmd": "ewfacquire disco.dd",
+      "desc": "Convierte un dd a E01."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-t",
+      "desc": "Archivo de destino."
+    },
+    {
+      "flag": "-C",
+      "desc": "Caso."
+    },
+    {
+      "flag": "-D",
+      "desc": "Descripción."
+    },
+    {
+      "flag": "-m",
+      "desc": "Tamaño de segmento."
+    }
+  ]
+}

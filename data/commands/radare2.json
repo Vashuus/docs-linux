@@ -1,0 +1,38 @@
+{
+  "id": "radare2",
+  "title": "radare2 — Framework de ingeniería inversa",
+  "description": "Desensambla, depura y analiza binarios de forma interactiva.",
+  "syntax": "r2 [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "r2 binario",
+      "desc": "Abre un binario en modo análisis."
+    },
+    {
+      "cmd": "r2 -A binario",
+      "desc": "Abre y analiza automáticamente."
+    },
+    {
+      "cmd": "r2 -d binario",
+      "desc": "Abre en modo depuración."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-A",
+      "desc": "Análisis automático."
+    },
+    {
+      "flag": "-d",
+      "desc": "Modo depuración."
+    },
+    {
+      "flag": "-w",
+      "desc": "Modo escritura."
+    },
+    {
+      "flag": "aaa",
+      "desc": "Analiza todo."
+    }
+  ]
+}

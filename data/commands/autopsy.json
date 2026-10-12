@@ -1,0 +1,26 @@
+{
+  "id": "autopsy",
+  "title": "autopsy — Suite forense gráfica",
+  "description": "Plataforma de análisis forense con interfaz web para examinar discos e imágenes.",
+  "syntax": "autopsy",
+  "examples": [
+    {
+      "cmd": "autopsy",
+      "desc": "Inicia el servicio forense."
+    },
+    {
+      "cmd": "(web)",
+      "desc": "Abre http://localhost:9999/autopsy."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(interfaz web)",
+      "desc": "Crea casos y añade imágenes."
+    },
+    {
+      "flag": "ingest",
+      "desc": "Módulos de ingesta."
+    }
+  ]
+}

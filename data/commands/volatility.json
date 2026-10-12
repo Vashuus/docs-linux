@@ -1,0 +1,42 @@
+{
+  "id": "volatility",
+  "title": "volatility — Análisis de memoria RAM",
+  "description": "Analiza volcados de memoria para extraer procesos, conexiones y artefactos.",
+  "syntax": "volatility -f volcado comando",
+  "examples": [
+    {
+      "cmd": "volatility -f mem.dump imageinfo",
+      "desc": "Identifica el perfil del volcado."
+    },
+    {
+      "cmd": "volatility -f mem.dump --profile=X pslist",
+      "desc": "Lista procesos."
+    },
+    {
+      "cmd": "volatility -f mem.dump netscan",
+      "desc": "Conexiones de red."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-f",
+      "desc": "Archivo de volcado."
+    },
+    {
+      "flag": "imageinfo",
+      "desc": "Info del perfil."
+    },
+    {
+      "flag": "pslist",
+      "desc": "Procesos."
+    },
+    {
+      "flag": "netscan",
+      "desc": "Conexiones."
+    },
+    {
+      "flag": "--profile",
+      "desc": "Perfil del sistema."
+    }
+  ]
+}

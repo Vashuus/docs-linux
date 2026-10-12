@@ -1,0 +1,30 @@
+{
+  "id": "bulk-extractor",
+  "title": "bulk-extractor — Extracción masiva de artefactos",
+  "description": "Extrae emails, URLs, tarjetas y otros artefactos de imágenes y ficheros.",
+  "syntax": "bulk_extractor [opciones] -o salida imagen",
+  "examples": [
+    {
+      "cmd": "bulk_extractor -o out disco.dd",
+      "desc": "Extrae artefactos de una imagen."
+    },
+    {
+      "cmd": "bulk_extractor -o out -e email imagen.dd",
+      "desc": "Solo un tipo de scanner."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-o",
+      "desc": "Directorio de salida."
+    },
+    {
+      "flag": "-e",
+      "desc": "Habilita un scanner."
+    },
+    {
+      "flag": "-x",
+      "desc": "Deshabilita un scanner."
+    }
+  ]
+}

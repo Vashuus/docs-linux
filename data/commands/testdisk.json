@@ -1,0 +1,26 @@
+{
+  "id": "testdisk",
+  "title": "testdisk — Recuperar particiones",
+  "description": "Recupera particiones perdidas y repara tablas de particiones dañadas.",
+  "syntax": "testdisk",
+  "examples": [
+    {
+      "cmd": "testdisk",
+      "desc": "Abre el asistente interactivo."
+    },
+    {
+      "cmd": "testdisk /log disco.dd",
+      "desc": "Analiza una imagen de disco."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(interfaz)",
+      "desc": "Asistente por menús."
+    },
+    {
+      "flag": "/log",
+      "desc": "Registra la sesión."
+    }
+  ]
+}

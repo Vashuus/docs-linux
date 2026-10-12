@@ -1,0 +1,30 @@
+{
+  "id": "scalpel",
+  "title": "scalpel — Recuperar archivos (rápido)",
+  "description": "Herramienta de carving rápida y ligera basada en cabeceras y pies.",
+  "syntax": "scalpel -c conf -o salida imagen",
+  "examples": [
+    {
+      "cmd": "scalpel -c scalpel.conf -o out disco.dd",
+      "desc": "Recupera según configuración."
+    },
+    {
+      "cmd": "scalpel imagen.dd -o out",
+      "desc": "Con config por defecto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-c",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    },
+    {
+      "flag": "-b",
+      "desc": "Solo cuerpos (sin cabeceras)."
+    }
+  ]
+}

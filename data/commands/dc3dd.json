@@ -1,0 +1,34 @@
+{
+  "id": "dc3dd",
+  "title": "dc3dd — Imagen forense (dd mejorado)",
+  "description": "Crea copias forenses con hashing y verificación, ideal para cadena de custodia.",
+  "syntax": "dc3dd if=origen of=destino",
+  "examples": [
+    {
+      "cmd": "dc3dd if=/dev/sda of=copia.dd hash=sha256 log=registro.txt",
+      "desc": "Imagen con hash y registro."
+    },
+    {
+      "cmd": "dc3dd if=disco.dd of=/dev/sdb",
+      "desc": "Restaura una imagen."
+    }
+  ],
+  "options": [
+    {
+      "flag": "if=",
+      "desc": "Origen."
+    },
+    {
+      "flag": "of=",
+      "desc": "Destino."
+    },
+    {
+      "flag": "hash=",
+      "desc": "Algoritmo de hash."
+    },
+    {
+      "flag": "log=",
+      "desc": "Registro."
+    }
+  ]
+}

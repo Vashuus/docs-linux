@@ -434,6 +434,34 @@
     ]
   },
   {
+    "id": "forense",
+    "name": "Análisis forense",
+    "icon": "fingerprint",
+    "commands": [
+      "volatility",
+      "autopsy",
+      "sleuthkit",
+      "foremost",
+      "scalpel",
+      "binwalk",
+      "exiftool",
+      "steghide",
+      "zsteg",
+      "bulk-extractor",
+      "photorec",
+      "testdisk",
+      "dc3dd",
+      "ewfacquire",
+      "radare2",
+      "ghidra",
+      "objdump",
+      "readelf",
+      "nm",
+      "hexdump",
+      "xxd"
+    ]
+  },
+  {
     "id": "scripts",
     "name": "Scripts",
     "icon": "script",

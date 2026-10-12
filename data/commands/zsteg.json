@@ -1,0 +1,34 @@
+{
+  "id": "zsteg",
+  "title": "zsteg — Esteganografía en PNG/BMP",
+  "description": "Detecta datos ocultos en imágenes PNG y BMP.",
+  "syntax": "zsteg [opciones] imagen",
+  "examples": [
+    {
+      "cmd": "zsteg imagen.png",
+      "desc": "Busca datos ocultos."
+    },
+    {
+      "cmd": "zsteg -a imagen.png",
+      "desc": "Prueba todos los métodos."
+    },
+    {
+      "cmd": "zsteg -E b1,rgb imagen.png > salida",
+      "desc": "Extrae un plano concreto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "Todos los métodos."
+    },
+    {
+      "flag": "-E",
+      "desc": "Extrae un plano/orden."
+    },
+    {
+      "flag": "-l",
+      "desc": "Lista métodos disponibles."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "binwalk",
+  "title": "binwalk — Analizar y extraer firmas",
+  "description": "Busca y extrae archivos incrustados en binarios y firmware.",
+  "syntax": "binwalk [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "binwalk firmware.bin",
+      "desc": "Busca firmas incrustadas."
+    },
+    {
+      "cmd": "binwalk -e firmware.bin",
+      "desc": "Extrae el contenido."
+    },
+    {
+      "cmd": "binwalk -Me firmware.bin",
+      "desc": "Extracción recursiva."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-e",
+      "desc": "Extrae."
+    },
+    {
+      "flag": "-M",
+      "desc": "Escaneo recursivo."
+    },
+    {
+      "flag": "-A",
+      "desc": "Solo firmas."
+    },
+    {
+      "flag": "-D",
+      "desc": "Extrae por tipo."
+    }
+  ]
+}

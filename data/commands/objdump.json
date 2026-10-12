@@ -1,0 +1,38 @@
+{
+  "id": "objdump",
+  "title": "objdump — Inspeccionar binarios",
+  "description": "Muestra cabeceras, secciones y desensamblado de archivos objeto.",
+  "syntax": "objdump [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "objdump -d binario",
+      "desc": "Desensambla el código."
+    },
+    {
+      "cmd": "objdump -h binario",
+      "desc": "Muestra las secciones."
+    },
+    {
+      "cmd": "objdump -T binario",
+      "desc": "Símbolos dinámicos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Desensambla."
+    },
+    {
+      "flag": "-h",
+      "desc": "Secciones."
+    },
+    {
+      "flag": "-x",
+      "desc": "Todo el contenido."
+    },
+    {
+      "flag": "-T",
+      "desc": "Tabla de símbolos."
+    }
+  ]
+}

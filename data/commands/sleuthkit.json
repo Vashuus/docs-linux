@@ -1,0 +1,38 @@
+{
+  "id": "sleuthkit",
+  "title": "sleuthkit — Kit de herramientas forenses",
+  "description": "Conjunto de utilidades de línea de comandos para examinar imágenes de disco.",
+  "syntax": "fls/icat/mmls/fsstat ...",
+  "examples": [
+    {
+      "cmd": "mmls imagen.dd",
+      "desc": "Muestra la tabla de particiones."
+    },
+    {
+      "cmd": "fls -r -o 2048 imagen.dd",
+      "desc": "Lista archivos (incl. borrados)."
+    },
+    {
+      "cmd": "icat -o 2048 imagen.dd 12345 > recuperado",
+      "desc": "Recupera un inodo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "mmls",
+      "desc": "Tabla de particiones."
+    },
+    {
+      "flag": "fls",
+      "desc": "Lista archivos."
+    },
+    {
+      "flag": "icat",
+      "desc": "Extrae por inodo."
+    },
+    {
+      "flag": "fsstat",
+      "desc": "Info del sistema de archivos."
+    }
+  ]
+}

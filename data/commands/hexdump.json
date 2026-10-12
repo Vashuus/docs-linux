@@ -1,0 +1,34 @@
+{
+  "id": "hexdump",
+  "title": "hexdump — Volcado hexadecimal",
+  "description": "Muestra el contenido de un archivo en formato hexadecimal.",
+  "syntax": "hexdump [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "hexdump -C archivo",
+      "desc": "Volcado canónico con ASCII."
+    },
+    {
+      "cmd": "hexdump -n 64 archivo",
+      "desc": "Solo los primeros 64 bytes."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-C",
+      "desc": "Formato canónico."
+    },
+    {
+      "flag": "-n",
+      "desc": "Número de bytes."
+    },
+    {
+      "flag": "-s",
+      "desc": "Offset de inicio."
+    },
+    {
+      "flag": "-v",
+      "desc": "Sin agrupar líneas."
+    }
+  ]
+}

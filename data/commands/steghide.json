@@ -1,0 +1,42 @@
+{
+  "id": "steghide",
+  "title": "steghide — Esteganografía",
+  "description": "Oculta y extrae datos dentro de imágenes y audio.",
+  "syntax": "steghide [comando] [opciones]",
+  "examples": [
+    {
+      "cmd": "steghide embed -cf imagen.jpg -ef secreto.txt",
+      "desc": "Oculta un archivo."
+    },
+    {
+      "cmd": "steghide extract -sf imagen.jpg",
+      "desc": "Extrae el contenido."
+    },
+    {
+      "cmd": "steghide info imagen.jpg",
+      "desc": "Muestra información."
+    }
+  ],
+  "options": [
+    {
+      "flag": "embed",
+      "desc": "Ocultar."
+    },
+    {
+      "flag": "extract",
+      "desc": "Extraer."
+    },
+    {
+      "flag": "-cf",
+      "desc": "Archivo de portadora."
+    },
+    {
+      "flag": "-ef",
+      "desc": "Archivo a ocultar."
+    },
+    {
+      "flag": "-p",
+      "desc": "Passphrase."
+    }
+  ]
+}
