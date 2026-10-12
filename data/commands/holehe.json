@@ -1,0 +1,30 @@
+{
+  "id": "holehe",
+  "title": "holehe — Verificar correo en sitios",
+  "description": "Comprueba en qué sitios web está registrado un correo electrónico.",
+  "syntax": "holehe correo@ejemplo.com",
+  "examples": [
+    {
+      "cmd": "holehe correo@ejemplo.com",
+      "desc": "Comprueba el correo en muchos sitios."
+    },
+    {
+      "cmd": "holehe --only-used correo@ejemplo.com",
+      "desc": "Solo sitios donde está registrado."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--only-used",
+      "desc": "Solo coincidencias."
+    },
+    {
+      "flag": "-np",
+      "desc": "No usa proxies."
+    },
+    {
+      "flag": "--timeout",
+      "desc": "Tiempo de espera."
+    }
+  ]
+}

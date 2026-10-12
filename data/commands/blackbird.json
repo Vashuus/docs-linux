@@ -1,0 +1,34 @@
+{
+  "id": "blackbird",
+  "title": "blackbird — Buscar cuentas por email/usuario",
+  "description": "Busca cuentas asociadas a un correo o nombre de usuario en muchas plataformas.",
+  "syntax": "blackbird -u usuario",
+  "examples": [
+    {
+      "cmd": "blackbird -u usuario",
+      "desc": "Busca un nombre de usuario."
+    },
+    {
+      "cmd": "blackbird -e correo@ejemplo.com",
+      "desc": "Busca un correo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "Nombre de usuario."
+    },
+    {
+      "flag": "-e",
+      "desc": "Correo."
+    },
+    {
+      "flag": "--csv",
+      "desc": "Salida CSV."
+    },
+    {
+      "flag": "--json",
+      "desc": "Salida JSON."
+    }
+  ]
+}

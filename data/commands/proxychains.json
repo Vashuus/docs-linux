@@ -1,0 +1,30 @@
+{
+  "id": "proxychains",
+  "title": "proxychains — Encadenar proxys",
+  "description": "Fuerza a cualquier programa a usar proxys (SOCKS/HTTP) en cadena.",
+  "syntax": "proxychains comando [args]",
+  "examples": [
+    {
+      "cmd": "proxychains curl https://ifconfig.me",
+      "desc": "Enruta por la cadena de proxys."
+    },
+    {
+      "cmd": "proxychains4 -f proxychains.conf nmap -sT host",
+      "desc": "Con archivo de configuración."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-f",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "-q",
+      "desc": "Silencioso."
+    },
+    {
+      "flag": "(cadena)",
+      "desc": "Configura proxys en proxychains.conf."
+    }
+  ]
+}

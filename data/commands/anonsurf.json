@@ -1,0 +1,34 @@
+{
+  "id": "anonsurf",
+  "title": "anonsurf — Anonimato del sistema completo",
+  "description": "Redirige todo el tráfico del sistema a través de Tor (Parrot OS).",
+  "syntax": "sudo anonsurf start",
+  "examples": [
+    {
+      "cmd": "sudo anonsurf start",
+      "desc": "Activa el anonimato total."
+    },
+    {
+      "cmd": "sudo anonsurf stop",
+      "desc": "Desactiva el anonimato."
+    },
+    {
+      "cmd": "sudo anonsurf status",
+      "desc": "Muestra el estado."
+    }
+  ],
+  "options": [
+    {
+      "flag": "start / stop",
+      "desc": "Activa o desactiva."
+    },
+    {
+      "flag": "status",
+      "desc": "Estado."
+    },
+    {
+      "flag": "change",
+      "desc": "Cambia identidad."
+    }
+  ]
+}

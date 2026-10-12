@@ -1,0 +1,30 @@
+{
+  "id": "censys",
+  "title": "censys — Buscador de hosts y certificados",
+  "description": "Busca hosts, servicios y certificados mediante la plataforma Censys.",
+  "syntax": "censys search consulta",
+  "examples": [
+    {
+      "cmd": "censys search 'services.service_name: HTTP'",
+      "desc": "Busca por servicio."
+    },
+    {
+      "cmd": "censys view 8.8.8.8",
+      "desc": "Muestra una IP."
+    }
+  ],
+  "options": [
+    {
+      "flag": "search",
+      "desc": "Consulta de búsqueda."
+    },
+    {
+      "flag": "view",
+      "desc": "Ver un host."
+    },
+    {
+      "flag": "--index-type",
+      "desc": "Tipo de índice."
+    }
+  ]
+}

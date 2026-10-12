@@ -1,0 +1,34 @@
+{
+  "id": "metagoofil",
+  "title": "metagoofil — Extraer metadatos de documentos",
+  "description": "Recolecta documentos públicos de un dominio y extrae sus metadatos y usuarios.",
+  "syntax": "metagoofil -d dominio -t tipos -l limite",
+  "examples": [
+    {
+      "cmd": "metagoofil -d ejemplo.com -t pdf,doc -l 100",
+      "desc": "Extrae metadatos de documentos."
+    },
+    {
+      "cmd": "metagoofil -d ejemplo.com -t all -o salida",
+      "desc": "Todos los tipos con salida."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio."
+    },
+    {
+      "flag": "-t",
+      "desc": "Tipos de archivo."
+    },
+    {
+      "flag": "-l",
+      "desc": "Límite de resultados."
+    },
+    {
+      "flag": "-o",
+      "desc": "Directorio de salida."
+    }
+  ]
+}

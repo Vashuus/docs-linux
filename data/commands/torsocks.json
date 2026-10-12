@@ -1,0 +1,30 @@
+{
+  "id": "torsocks",
+  "title": "torsocks — Enrutar comandos por Tor",
+  "description": "Ejecuta cualquier comando forzándolo a salir por la red Tor.",
+  "syntax": "torsocks comando [args]",
+  "examples": [
+    {
+      "cmd": "torsocks curl https://check.torproject.org",
+      "desc": "Comprueba si usa Tor."
+    },
+    {
+      "cmd": "torsocks ssh usuario@host",
+      "desc": "SSH a través de Tor."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(comando)",
+      "desc": "Comando a ejecutar por Tor."
+    },
+    {
+      "flag": "-i",
+      "desc": "Modo aislado."
+    },
+    {
+      "flag": "--shell",
+      "desc": "Abre un shell por Tor."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "openvpn",
+  "title": "openvpn — Cliente/servidor VPN",
+  "description": "Establece conexiones VPN mediante OpenVPN.",
+  "syntax": "sudo openvpn [opciones] archivo.ovpn",
+  "examples": [
+    {
+      "cmd": "sudo openvpn --config cliente.ovpn",
+      "desc": "Conecta a una VPN."
+    },
+    {
+      "cmd": "sudo openvpn --config cliente.ovpn --daemon",
+      "desc": "Ejecuta en segundo plano."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--config",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "--daemon",
+      "desc": "Segundo plano."
+    },
+    {
+      "flag": "--auth-user-pass",
+      "desc": "Pide credenciales."
+    }
+  ]
+}

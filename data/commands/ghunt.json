@@ -1,0 +1,30 @@
+{
+  "id": "ghunt",
+  "title": "ghunt — OSINT de cuentas Google",
+  "description": "Investiga cuentas de Google a partir de un correo electrónico.",
+  "syntax": "ghunt email correo@gmail.com",
+  "examples": [
+    {
+      "cmd": "ghunt email correo@gmail.com",
+      "desc": "Investiga una cuenta de Google."
+    },
+    {
+      "cmd": "ghunt login",
+      "desc": "Autentica con cookies."
+    }
+  ],
+  "options": [
+    {
+      "flag": "email",
+      "desc": "Investiga un correo."
+    },
+    {
+      "flag": "login",
+      "desc": "Autenticación."
+    },
+    {
+      "flag": "drive",
+      "desc": "Extrae del Drive."
+    }
+  ]
+}

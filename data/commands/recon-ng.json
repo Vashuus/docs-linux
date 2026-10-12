@@ -1,0 +1,38 @@
+{
+  "id": "recon-ng",
+  "title": "recon-ng — Framework de OSINT",
+  "description": "Framework modular de reconocimiento web con muchos módulos de OSINT.",
+  "syntax": "recon-ng (consola)",
+  "examples": [
+    {
+      "cmd": "recon-ng",
+      "desc": "Abre la consola."
+    },
+    {
+      "cmd": "marketplace install all",
+      "desc": "Instala los módulos."
+    },
+    {
+      "cmd": "db insert domains",
+      "desc": "Inserta un dominio."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(consola)",
+      "desc": "Entorno interactivo."
+    },
+    {
+      "flag": "marketplace",
+      "desc": "Módulos."
+    },
+    {
+      "flag": "db",
+      "desc": "Base de datos del workspace."
+    },
+    {
+      "flag": "run",
+      "desc": "Ejecuta un módulo."
+    }
+  ]
+}

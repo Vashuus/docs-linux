@@ -489,6 +489,34 @@
     ]
   },
   {
+    "id": "osint",
+    "name": "Anonimato y OSINT",
+    "icon": "mask",
+    "commands": [
+      "tor",
+      "torsocks",
+      "proxychains",
+      "anonsurf",
+      "dnscrypt-proxy",
+      "openvpn",
+      "wg",
+      "sherlock",
+      "maigret",
+      "holehe",
+      "recon-ng",
+      "spiderfoot",
+      "maltego",
+      "shodan",
+      "censys",
+      "metagoofil",
+      "ghunt",
+      "snscrape",
+      "h8mail",
+      "blackbird",
+      "whatsmyname"
+    ]
+  },
+  {
     "id": "scripts",
     "name": "Scripts",
     "icon": "script",

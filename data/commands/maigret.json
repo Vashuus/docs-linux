@@ -1,0 +1,34 @@
+{
+  "id": "maigret",
+  "title": "maigret — OSINT de nombres de usuario",
+  "description": "Recopila un dossier sobre un nombre de usuario en muchas webs.",
+  "syntax": "maigret usuario",
+  "examples": [
+    {
+      "cmd": "maigret usuario",
+      "desc": "Genera un informe del nick."
+    },
+    {
+      "cmd": "maigret usuario --html",
+      "desc": "Informe en HTML."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--html",
+      "desc": "Informe HTML."
+    },
+    {
+      "flag": "--pdf",
+      "desc": "Informe PDF."
+    },
+    {
+      "flag": "--tags",
+      "desc": "Filtra por etiquetas."
+    },
+    {
+      "flag": "--timeout",
+      "desc": "Tiempo de espera."
+    }
+  ]
+}

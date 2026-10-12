@@ -1,0 +1,30 @@
+{
+  "id": "dnscrypt-proxy",
+  "title": "dnscrypt-proxy — DNS cifrado",
+  "description": "Proxy local de DNS cifrado (DNSCrypt/DoH) para privacidad.",
+  "syntax": "sudo dnscrypt-proxy [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo dnscrypt-proxy -config dnscrypt-proxy.toml",
+      "desc": "Inicia con configuración."
+    },
+    {
+      "cmd": "dnscrypt-proxy -resolve ejemplo.com",
+      "desc": "Resuelve un dominio."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-config",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "-resolve",
+      "desc": "Resuelve un nombre."
+    },
+    {
+      "flag": "-check",
+      "desc": "Comprueba la configuración."
+    }
+  ]
+}

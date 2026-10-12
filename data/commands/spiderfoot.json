@@ -1,0 +1,38 @@
+{
+  "id": "spiderfoot",
+  "title": "spiderfoot — Automatizar OSINT",
+  "description": "Automatiza el reconocimiento OSINT sobre IPs, dominios, correos y nombres.",
+  "syntax": "sf.py -s objetivo -m all",
+  "examples": [
+    {
+      "cmd": "sf.py -s ejemplo.com -m all",
+      "desc": "Ejecuta todos los módulos."
+    },
+    {
+      "cmd": "sf.py -l 127.0.0.1:5001",
+      "desc": "Interfaz web."
+    },
+    {
+      "cmd": "sfcli.py -s objetivo",
+      "desc": "Cliente de línea de comandos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-s",
+      "desc": "Objetivo."
+    },
+    {
+      "flag": "-m",
+      "desc": "Módulos."
+    },
+    {
+      "flag": "-l",
+      "desc": "Escucha en interfaz web."
+    },
+    {
+      "flag": "-o",
+      "desc": "Formato de salida."
+    }
+  ]
+}

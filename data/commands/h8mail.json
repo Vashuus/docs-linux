@@ -1,0 +1,34 @@
+{
+  "id": "h8mail",
+  "title": "h8mail — OSINT de correos filtrados",
+  "description": "Busca un correo en filtraciones y brechas de datos conocidas.",
+  "syntax": "h8mail -t correo@ejemplo.com",
+  "examples": [
+    {
+      "cmd": "h8mail -t correo@ejemplo.com",
+      "desc": "Busca el correo en filtraciones."
+    },
+    {
+      "cmd": "h8mail -t correos.txt",
+      "desc": "Varios correos desde archivo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-t",
+      "desc": "Correo o archivo."
+    },
+    {
+      "flag": "-c",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    },
+    {
+      "flag": "-q",
+      "desc": "Modo rápido."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sherlock",
+  "title": "sherlock — Buscar usuarios en redes",
+  "description": "Rastrea un nombre de usuario en cientos de redes sociales.",
+  "syntax": "sherlock usuario",
+  "examples": [
+    {
+      "cmd": "sherlock usuario",
+      "desc": "Busca el nick en muchas redes."
+    },
+    {
+      "cmd": "sherlock usuario1 usuario2 --csv",
+      "desc": "Varios usuarios con salida CSV."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--csv",
+      "desc": "Salida CSV."
+    },
+    {
+      "flag": "--site",
+      "desc": "Limita a un sitio."
+    },
+    {
+      "flag": "--timeout",
+      "desc": "Tiempo de espera."
+    },
+    {
+      "flag": "--tor",
+      "desc": "Usa Tor."
+    }
+  ]
+}

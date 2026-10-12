@@ -1,0 +1,30 @@
+{
+  "id": "snscrape",
+  "title": "snscrape — Scraping de redes sociales",
+  "description": "Extrae publicaciones y perfiles de redes sociales sin usar APIs oficiales.",
+  "syntax": "snscrape twitter-user usuario",
+  "examples": [
+    {
+      "cmd": "snscrape twitter-user elonmusk",
+      "desc": "Tweets de un usuario."
+    },
+    {
+      "cmd": "snscrape twitter-search 'pentesting'",
+      "desc": "Búsqueda de tweets."
+    }
+  ],
+  "options": [
+    {
+      "flag": "twitter-user",
+      "desc": "Tweets de usuario."
+    },
+    {
+      "flag": "twitter-search",
+      "desc": "Búsqueda."
+    },
+    {
+      "flag": "--max-results",
+      "desc": "Máximo de resultados."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "tor",
+  "title": "tor — Red de anonimato Tor",
+  "description": "Enruta el tráfico a través de la red Tor para anonimizar la conexión.",
+  "syntax": "tor [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo tor",
+      "desc": "Inicia el servicio Tor (SOCKS 9050)."
+    },
+    {
+      "cmd": "tor --hash-password mispass",
+      "desc": "Genera el hash de contraseña del control."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--SocksPort",
+      "desc": "Puerto SOCKS."
+    },
+    {
+      "flag": "-f",
+      "desc": "Archivo torrc."
+    },
+    {
+      "flag": "--hash-password",
+      "desc": "Genera hash de control."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "whatsmyname",
+  "title": "whatsmyname — Enumerar usuario en sitios",
+  "description": "Comprueba la existencia de un nombre de usuario en muchas plataformas web.",
+  "syntax": "whatsmyname -u usuario",
+  "examples": [
+    {
+      "cmd": "whatsmyname -u usuario",
+      "desc": "Enumera el usuario."
+    },
+    {
+      "cmd": "whatsmyname -u usuario -o salida.csv",
+      "desc": "Con salida a archivo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida CSV."
+    },
+    {
+      "flag": "-l",
+      "desc": "Lista de sitios."
+    }
+  ]
+}

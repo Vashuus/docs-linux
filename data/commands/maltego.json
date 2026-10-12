@@ -1,0 +1,26 @@
+{
+  "id": "maltego",
+  "title": "maltego — Análisis de vínculos (OSINT)",
+  "description": "Herramienta gráfica de análisis de vínculos y relaciones OSINT.",
+  "syntax": "maltego",
+  "examples": [
+    {
+      "cmd": "maltego",
+      "desc": "Abre la interfaz gráfica."
+    },
+    {
+      "cmd": "(transforms)",
+      "desc": "Configura transforms en la GUI."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(GUI)",
+      "desc": "Entorno gráfico."
+    },
+    {
+      "flag": "transforms",
+      "desc": "Consultas a fuentes OSINT."
+    }
+  ]
+}

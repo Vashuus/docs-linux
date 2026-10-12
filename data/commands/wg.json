@@ -1,0 +1,38 @@
+{
+  "id": "wg",
+  "title": "wg — Túneles WireGuard",
+  "description": "Configura y gestiona túneles VPN con WireGuard.",
+  "syntax": "wg [comando] [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo wg show",
+      "desc": "Muestra el estado de los túneles."
+    },
+    {
+      "cmd": "sudo wg-quick up wg0",
+      "desc": "Levanta una interfaz."
+    },
+    {
+      "cmd": "sudo wg-quick down wg0",
+      "desc": "La baja."
+    }
+  ],
+  "options": [
+    {
+      "flag": "show",
+      "desc": "Estado."
+    },
+    {
+      "flag": "genkey",
+      "desc": "Genera clave privada."
+    },
+    {
+      "flag": "pubkey",
+      "desc": "Deriva la pública."
+    },
+    {
+      "flag": "wg-quick",
+      "desc": "Atajo de configuración."
+    }
+  ]
+}

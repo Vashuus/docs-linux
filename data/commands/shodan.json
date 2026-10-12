@@ -1,0 +1,38 @@
+{
+  "id": "shodan",
+  "title": "shodan — Buscador de dispositivos expuestos",
+  "description": "Busca dispositivos y servicios expuestos en Internet vía Shodan.",
+  "syntax": "shodan [comando] [opciones]",
+  "examples": [
+    {
+      "cmd": "shodan search apache",
+      "desc": "Busca servicios Apache expuestos."
+    },
+    {
+      "cmd": "shodan host 8.8.8.8",
+      "desc": "Información de una IP."
+    },
+    {
+      "cmd": "shodan init APIKEY",
+      "desc": "Configura la API key."
+    }
+  ],
+  "options": [
+    {
+      "flag": "search",
+      "desc": "Busca."
+    },
+    {
+      "flag": "host",
+      "desc": "Info de una IP."
+    },
+    {
+      "flag": "init",
+      "desc": "Configura la API key."
+    },
+    {
+      "flag": "--facets",
+      "desc": "Estadísticas."
+    }
+  ]
+}
