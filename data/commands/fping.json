@@ -1,0 +1,34 @@
+{
+  "id": "fping",
+  "title": "fping — Ping a múltiples hosts",
+  "description": "Comprueba la disponibilidad de muchos hosts a la vez.",
+  "syntax": "fping [opciones] hosts...",
+  "examples": [
+    {
+      "cmd": "fping -a -g 192.168.1.0/24",
+      "desc": "Lista hosts vivos de una red."
+    },
+    {
+      "cmd": "fping -f hosts.txt",
+      "desc": "Lee hosts de un archivo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "Muestra solo los activos."
+    },
+    {
+      "flag": "-g",
+      "desc": "Genera lista desde CIDR."
+    },
+    {
+      "flag": "-f",
+      "desc": "Lee de fichero."
+    },
+    {
+      "flag": "-q",
+      "desc": "Silencioso."
+    }
+  ]
+}

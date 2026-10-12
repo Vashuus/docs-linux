@@ -1,0 +1,30 @@
+{
+  "id": "waybackurls",
+  "title": "waybackurls — URLs del Wayback Machine",
+  "description": "Extrae URLs archivadas de un dominio desde el Wayback Machine.",
+  "syntax": "waybackurls dominio",
+  "examples": [
+    {
+      "cmd": "echo ejemplo.com | waybackurls",
+      "desc": "Lista URLs archivadas."
+    },
+    {
+      "cmd": "waybackurls ejemplo.com > urls.txt",
+      "desc": "Guarda el resultado."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(arg)",
+      "desc": "Dominio a consultar."
+    },
+    {
+      "flag": "-dates",
+      "desc": "Incluye fechas."
+    },
+    {
+      "flag": "-no-subs",
+      "desc": "No incluye subdominios."
+    }
+  ]
+}

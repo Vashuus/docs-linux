@@ -1,0 +1,30 @@
+{
+  "id": "showmount",
+  "title": "showmount — Exportaciones NFS",
+  "description": "Muestra los directorios exportados por un servidor NFS.",
+  "syntax": "showmount [opciones] host",
+  "examples": [
+    {
+      "cmd": "showmount -e 192.168.1.10",
+      "desc": "Lista exportaciones."
+    },
+    {
+      "cmd": "showmount -a 192.168.1.10",
+      "desc": "Muestra montajes activos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-e",
+      "desc": "Lista exportaciones."
+    },
+    {
+      "flag": "-a",
+      "desc": "Montajes activos."
+    },
+    {
+      "flag": "-d",
+      "desc": "Directorios montados."
+    }
+  ]
+}

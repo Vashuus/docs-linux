@@ -1,0 +1,34 @@
+{
+  "id": "eyewitness",
+  "title": "eyewitness — Capturas de sitios",
+  "description": "Toma capturas de pantalla y recopila información de una lista de sitios web.",
+  "syntax": "eyewitness [opciones] -f urls.txt",
+  "examples": [
+    {
+      "cmd": "eyewitness -f urls.txt",
+      "desc": "Captura una lista de URLs."
+    },
+    {
+      "cmd": "eyewitness -f urls.txt --web",
+      "desc": "Reporte en navegador."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-f",
+      "desc": "Archivo con URLs."
+    },
+    {
+      "flag": "--web",
+      "desc": "Abre reporte HTML."
+    },
+    {
+      "flag": "--timeout",
+      "desc": "Tiempo de espera."
+    },
+    {
+      "flag": "-d",
+      "desc": "Directorio de salida."
+    }
+  ]
+}

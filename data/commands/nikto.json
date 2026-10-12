@@ -1,0 +1,38 @@
+{
+  "id": "nikto",
+  "title": "nikto — Escáner de vulnerabilidades web",
+  "description": "Analiza servidores web en busca de archivos peligrosos, versiones obsoletas y configuraciones inseguras.",
+  "syntax": "nikto [opciones] -h host",
+  "examples": [
+    {
+      "cmd": "nikto -h https://ejemplo.com",
+      "desc": "Escaneo básico."
+    },
+    {
+      "cmd": "nikto -h ejemplo.com -ssl -Tuning 123",
+      "desc": "Con SSL y ajuste de pruebas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-h",
+      "desc": "Host objetivo."
+    },
+    {
+      "flag": "-ssl",
+      "desc": "Fuerza SSL."
+    },
+    {
+      "flag": "-Tuning",
+      "desc": "Selección de pruebas."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    },
+    {
+      "flag": "-p",
+      "desc": "Puerto."
+    }
+  ]
+}

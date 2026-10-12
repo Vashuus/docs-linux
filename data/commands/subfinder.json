@@ -1,0 +1,34 @@
+{
+  "id": "subfinder",
+  "title": "subfinder — Descubrir subdominios",
+  "description": "Enumerador pasivo de subdominios con muchas fuentes.",
+  "syntax": "subfinder -d dominio",
+  "examples": [
+    {
+      "cmd": "subfinder -d ejemplo.com",
+      "desc": "Enumera subdominios."
+    },
+    {
+      "cmd": "subfinder -d ejemplo.com -all -silent",
+      "desc": "Todas las fuentes, salida limpia."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio objetivo."
+    },
+    {
+      "flag": "-all",
+      "desc": "Usa todas las fuentes."
+    },
+    {
+      "flag": "-silent",
+      "desc": "Solo resultados."
+    },
+    {
+      "flag": "-o",
+      "desc": "Archivo de salida."
+    }
+  ]
+}

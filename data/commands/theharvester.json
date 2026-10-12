@@ -1,0 +1,34 @@
+{
+  "id": "theharvester",
+  "title": "theharvester — Recolectar correos y subdominios",
+  "description": "Busca correos, subdominios, hosts y nombres desde fuentes públicas.",
+  "syntax": "theHarvester -d dominio -b fuente",
+  "examples": [
+    {
+      "cmd": "theHarvester -d ejemplo.com -b bing",
+      "desc": "Recolecta desde Bing."
+    },
+    {
+      "cmd": "theHarvester -d ejemplo.com -b all -l 500",
+      "desc": "Todas las fuentes con límite."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio objetivo."
+    },
+    {
+      "flag": "-b",
+      "desc": "Fuente de datos (bing, google, all...)."
+    },
+    {
+      "flag": "-l",
+      "desc": "Límite de resultados."
+    },
+    {
+      "flag": "-f",
+      "desc": "Salida a archivo."
+    }
+  ]
+}

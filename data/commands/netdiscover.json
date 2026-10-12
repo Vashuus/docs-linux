@@ -1,0 +1,34 @@
+{
+  "id": "netdiscover",
+  "title": "netdiscover — Descubrir hosts de la red local",
+  "description": "Detecta dispositivos en la red local mediante peticiones ARP.",
+  "syntax": "netdiscover [opciones]",
+  "examples": [
+    {
+      "cmd": "netdiscover -r 192.168.1.0/24",
+      "desc": "Escaneo ARP de un rango."
+    },
+    {
+      "cmd": "netdiscover -i eth0",
+      "desc": "Escucha pasivamente en una interfaz."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-r",
+      "desc": "Rango a escanear."
+    },
+    {
+      "flag": "-i",
+      "desc": "Interfaz."
+    },
+    {
+      "flag": "-p",
+      "desc": "Modo pasivo."
+    },
+    {
+      "flag": "-l",
+      "desc": "Fichero con rangos."
+    }
+  ]
+}

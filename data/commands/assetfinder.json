@@ -1,0 +1,30 @@
+{
+  "id": "assetfinder",
+  "title": "assetfinder — Encontrar dominios y subdominios",
+  "description": "Descubre dominios y subdominios relacionados con uno dado.",
+  "syntax": "assetfinder [opciones] dominio",
+  "examples": [
+    {
+      "cmd": "assetfinder ejemplo.com",
+      "desc": "Lista dominios relacionados."
+    },
+    {
+      "cmd": "assetfinder --subs-only ejemplo.com",
+      "desc": "Solo subdominios."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--subs-only",
+      "desc": "Solo subdominios."
+    },
+    {
+      "flag": "-subs-only",
+      "desc": "Alias."
+    },
+    {
+      "flag": "(args)",
+      "desc": "Uno o más dominios."
+    }
+  ]
+}

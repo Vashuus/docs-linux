@@ -1,0 +1,34 @@
+{
+  "id": "snmpwalk",
+  "title": "snmpwalk — Recorrer SNMP",
+  "description": "Recorre el árbol MIB de un dispositivo SNMP extrayendo su información.",
+  "syntax": "snmpwalk -v 2c -c comunidad host",
+  "examples": [
+    {
+      "cmd": "snmpwalk -v 2c -c public 192.168.1.1",
+      "desc": "Recorre MIB con comunidad public."
+    },
+    {
+      "cmd": "snmpwalk -v 2c -c public 192.168.1.1 system",
+      "desc": "Consulta solo el subárbol system."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-v",
+      "desc": "Versión de SNMP."
+    },
+    {
+      "flag": "-c",
+      "desc": "Comunidad."
+    },
+    {
+      "flag": "-O",
+      "desc": "Opciones de salida."
+    },
+    {
+      "flag": "(oid)",
+      "desc": "OID de inicio."
+    }
+  ]
+}

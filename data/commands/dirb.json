@@ -1,0 +1,34 @@
+{
+  "id": "dirb",
+  "title": "dirb — Fuerza bruta de directorios",
+  "description": "Busca directorios y archivos ocultos en servidores web usando diccionarios.",
+  "syntax": "dirb URL [diccionario]",
+  "examples": [
+    {
+      "cmd": "dirb https://ejemplo.com",
+      "desc": "Fuerza bruta con el diccionario por defecto."
+    },
+    {
+      "cmd": "dirb https://ejemplo.com /usr/share/wordlists/dirb/big.txt",
+      "desc": "Con diccionario propio."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "User-Agent."
+    },
+    {
+      "flag": "-X",
+      "desc": "Extensiones."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    },
+    {
+      "flag": "-S",
+      "desc": "Modo silencioso."
+    }
+  ]
+}

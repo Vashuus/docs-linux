@@ -1,0 +1,38 @@
+{
+  "id": "ldapsearch",
+  "title": "ldapsearch — Consultas LDAP",
+  "description": "Realiza búsquedas en servidores LDAP/Active Directory.",
+  "syntax": "ldapsearch -x -H ldap://host -b base",
+  "examples": [
+    {
+      "cmd": "ldapsearch -x -H ldap://192.168.1.10 -b dc=ejemplo,dc=com",
+      "desc": "Búsqueda anónima."
+    },
+    {
+      "cmd": "ldapsearch -x -D cn=admin,dc=ejemplo,dc=com -W -b base",
+      "desc": "Con bind y contraseña."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-x",
+      "desc": "Autenticación simple."
+    },
+    {
+      "flag": "-H",
+      "desc": "URI del servidor."
+    },
+    {
+      "flag": "-b",
+      "desc": "Base de búsqueda."
+    },
+    {
+      "flag": "-D",
+      "desc": "DN de bind."
+    },
+    {
+      "flag": "-W",
+      "desc": "Pide contraseña."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "nbtscan",
+  "title": "nbtscan — Escaneo NetBIOS",
+  "description": "Escanea rangos buscando nombres NetBIOS de equipos Windows.",
+  "syntax": "nbtscan 192.168.1.0/24",
+  "examples": [
+    {
+      "cmd": "nbtscan 192.168.1.0/24",
+      "desc": "Escanea un rango."
+    },
+    {
+      "cmd": "nbtscan -v 192.168.1.0/24",
+      "desc": "Salida detallada."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-v",
+      "desc": "Verboso."
+    },
+    {
+      "flag": "-r",
+      "desc": "Usa puerto 137."
+    },
+    {
+      "flag": "-h",
+      "desc": "Muestra ayuda."
+    }
+  ]
+}

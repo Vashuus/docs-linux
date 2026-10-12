@@ -1,0 +1,50 @@
+{
+  "id": "nmap",
+  "title": "nmap — Escáner de puertos y red",
+  "description": "Descubre hosts, puertos abiertos, servicios y versiones en una red.",
+  "syntax": "nmap [opciones] objetivo",
+  "examples": [
+    {
+      "cmd": "nmap 192.168.1.1",
+      "desc": "Escaneo básico de los 1000 puertos más comunes."
+    },
+    {
+      "cmd": "nmap -sV -sC 192.168.1.1",
+      "desc": "Detecta versiones y ejecuta scripts por defecto."
+    },
+    {
+      "cmd": "nmap -p- 192.168.1.1",
+      "desc": "Escanea los 65535 puertos."
+    },
+    {
+      "cmd": "nmap -sn 192.168.1.0/24",
+      "desc": "Descubre hosts activos sin escanear puertos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-sS",
+      "desc": "Escaneo SYN (sigiloso)."
+    },
+    {
+      "flag": "-sV",
+      "desc": "Detecta versiones de servicio."
+    },
+    {
+      "flag": "-sC",
+      "desc": "Ejecuta los scripts por defecto."
+    },
+    {
+      "flag": "-p",
+      "desc": "Rango de puertos."
+    },
+    {
+      "flag": "-O",
+      "desc": "Detecta el sistema operativo."
+    },
+    {
+      "flag": "-A",
+      "desc": "Modo agresivo (OS, versiones, scripts, traceroute)."
+    }
+  ]
+}

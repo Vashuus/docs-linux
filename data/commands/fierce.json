@@ -1,0 +1,34 @@
+{
+  "id": "fierce",
+  "title": "fierce — Reconocimiento DNS ligero",
+  "description": "Localiza direcciones IP y nombres de host no contiguos de un dominio.",
+  "syntax": "fierce [opciones] --domain dominio",
+  "examples": [
+    {
+      "cmd": "fierce --domain ejemplo.com",
+      "desc": "Reconocimiento de un dominio."
+    },
+    {
+      "cmd": "fierce --domain ejemplo.com --wide",
+      "desc": "Escaneo amplio de rangos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--domain",
+      "desc": "Dominio objetivo."
+    },
+    {
+      "flag": "--wide",
+      "desc": "Escaneo amplio."
+    },
+    {
+      "flag": "--dns-servers",
+      "desc": "Servidores DNS."
+    },
+    {
+      "flag": "--traverse",
+      "desc": "Recorre IPs vecinas."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "dnsrecon",
+  "title": "dnsrecon — Reconocimiento DNS",
+  "description": "Automatiza el reconocimiento DNS: transferencias de zona, fuerza bruta de subdominios y más.",
+  "syntax": "dnsrecon [opciones] -d dominio",
+  "examples": [
+    {
+      "cmd": "dnsrecon -d ejemplo.com",
+      "desc": "Reconocimiento estándar."
+    },
+    {
+      "cmd": "dnsrecon -d ejemplo.com -t axfr",
+      "desc": "Intenta transferencia de zona."
+    },
+    {
+      "cmd": "dnsrecon -d ejemplo.com -D lista.txt -t brt",
+      "desc": "Fuerza bruta de subdominios."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio objetivo."
+    },
+    {
+      "flag": "-t",
+      "desc": "Tipo de escaneo (axfr, brt, std...)."
+    },
+    {
+      "flag": "-D",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-n",
+      "desc": "Servidor DNS a usar."
+    }
+  ]
+}

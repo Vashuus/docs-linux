@@ -1,0 +1,34 @@
+{
+  "id": "httpx",
+  "title": "httpx — Toolkit HTTP",
+  "description": "Sonda hosts y muestra tecnologías, títulos, códigos de estado y más.",
+  "syntax": "httpx [opciones]",
+  "examples": [
+    {
+      "cmd": "cat hosts.txt | httpx -title -status-code",
+      "desc": "Sondea con título y estado."
+    },
+    {
+      "cmd": "httpx -u https://ejemplo.com -tech-detect",
+      "desc": "Detecta tecnologías."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-title",
+      "desc": "Muestra el título."
+    },
+    {
+      "flag": "-status-code",
+      "desc": "Código de estado."
+    },
+    {
+      "flag": "-tech-detect",
+      "desc": "Detecta tecnologías."
+    },
+    {
+      "flag": "-silent",
+      "desc": "Salida limpia."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "masscan",
+  "title": "masscan — Escaneo masivo de puertos",
+  "description": "Escáner ultrarrápido capaz de barrer grandes rangos de Internet en poco tiempo.",
+  "syntax": "masscan [opciones] rangos",
+  "examples": [
+    {
+      "cmd": "masscan 10.0.0.0/8 -p80,443",
+      "desc": "Escanea HTTP/HTTPS en una red grande."
+    },
+    {
+      "cmd": "masscan 0.0.0.0/0 -p443 --rate 100000",
+      "desc": "Escaneo masivo a alta velocidad."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-p",
+      "desc": "Puertos a escanear."
+    },
+    {
+      "flag": "--rate",
+      "desc": "Paquetes por segundo."
+    },
+    {
+      "flag": "--exclude",
+      "desc": "Excluye rangos."
+    },
+    {
+      "flag": "-oX",
+      "desc": "Salida XML."
+    }
+  ]
+}

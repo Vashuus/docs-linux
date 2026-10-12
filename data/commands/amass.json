@@ -1,0 +1,42 @@
+{
+  "id": "amass",
+  "title": "amass — Enumeración de subdominios y OSINT",
+  "description": "Mapea la superficie de ataque de una organización mediante OSINT y DNS.",
+  "syntax": "amass enum -d dominio",
+  "examples": [
+    {
+      "cmd": "amass enum -d ejemplo.com",
+      "desc": "Enumera subdominios."
+    },
+    {
+      "cmd": "amass enum -passive -d ejemplo.com",
+      "desc": "Solo fuentes pasivas."
+    },
+    {
+      "cmd": "amass intel -whois -d ejemplo.com",
+      "desc": "Reconocimiento por WHOIS."
+    }
+  ],
+  "options": [
+    {
+      "flag": "enum",
+      "desc": "Enumeración activa/pasiva."
+    },
+    {
+      "flag": "intel",
+      "desc": "Inteligencia pasiva."
+    },
+    {
+      "flag": "-d",
+      "desc": "Dominio."
+    },
+    {
+      "flag": "-passive",
+      "desc": "Sin tocar el objetivo."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    }
+  ]
+}

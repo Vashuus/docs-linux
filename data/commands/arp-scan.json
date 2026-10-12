@@ -1,0 +1,34 @@
+{
+  "id": "arp-scan",
+  "title": "arp-scan — Escaneo ARP de la red",
+  "description": "Envía peticiones ARP para listar dispositivos y sus direcciones MAC.",
+  "syntax": "sudo arp-scan [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo arp-scan --localnet",
+      "desc": "Escanea la red local."
+    },
+    {
+      "cmd": "sudo arp-scan -I eth0 192.168.1.0/24",
+      "desc": "Escaneo por interfaz."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--localnet",
+      "desc": "La red local."
+    },
+    {
+      "flag": "-I",
+      "desc": "Interfaz de red."
+    },
+    {
+      "flag": "--interface",
+      "desc": "Igual que -I."
+    },
+    {
+      "flag": "-l",
+      "desc": "Lee rangos de un archivo."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "feroxbuster",
+  "title": "feroxbuster — Descubrimiento de contenido",
+  "description": "Escáner recursivo y rápido de contenido web escrito en Rust.",
+  "syntax": "feroxbuster -u URL -w lista",
+  "examples": [
+    {
+      "cmd": "feroxbuster -u https://ejemplo.com -w lista.txt",
+      "desc": "Descubrimiento recursivo."
+    },
+    {
+      "cmd": "feroxbuster -u https://ejemplo.com -w lista.txt -x php,html",
+      "desc": "Con extensiones."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-x",
+      "desc": "Extensiones."
+    },
+    {
+      "flag": "-d",
+      "desc": "Profundidad."
+    },
+    {
+      "flag": "-t",
+      "desc": "Hilos."
+    }
+  ]
+}

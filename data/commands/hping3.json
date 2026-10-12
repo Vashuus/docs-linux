@@ -1,0 +1,38 @@
+{
+  "id": "hping3",
+  "title": "hping3 — Ping TCP/UDP/IP personalizable",
+  "description": "Genera paquetes personalizados para probar filtros, MTU y técnicas de escaneo.",
+  "syntax": "sudo hping3 [opciones] objetivo",
+  "examples": [
+    {
+      "cmd": "sudo hping3 -S -p 80 192.168.1.1",
+      "desc": "Envía SYN al puerto 80."
+    },
+    {
+      "cmd": "sudo hping3 --flood 192.168.1.1",
+      "desc": "Inunda de paquetes (test de carga)."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-S",
+      "desc": "Flag SYN."
+    },
+    {
+      "flag": "-A",
+      "desc": "Flag ACK."
+    },
+    {
+      "flag": "-p",
+      "desc": "Puerto destino."
+    },
+    {
+      "flag": "-c",
+      "desc": "Número de paquetes."
+    },
+    {
+      "flag": "-f",
+      "desc": "Fragmenta."
+    }
+  ]
+}

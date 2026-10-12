@@ -1,0 +1,34 @@
+{
+  "id": "wpscan",
+  "title": "wpscan — Escáner de WordPress",
+  "description": "Audita instalaciones de WordPress: versiones, plugins, temas y usuarios.",
+  "syntax": "wpscan --url URL",
+  "examples": [
+    {
+      "cmd": "wpscan --url https://ejemplo.com",
+      "desc": "Escaneo básico."
+    },
+    {
+      "cmd": "wpscan --url https://ejemplo.com --enumerate vp,u",
+      "desc": "Enumera plugins vulnerables y usuarios."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--url",
+      "desc": "URL de WordPress."
+    },
+    {
+      "flag": "--enumerate",
+      "desc": "Qué enumerar."
+    },
+    {
+      "flag": "--api-token",
+      "desc": "Token de WPScan."
+    },
+    {
+      "flag": "--passwords",
+      "desc": "Diccionario."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "enum4linux",
+  "title": "enum4linux — Enumerar SMB/Samba",
+  "description": "Enumera información de sistemas Windows/Samba: usuarios, grupos y recursos compartidos.",
+  "syntax": "enum4linux [opciones] objetivo",
+  "examples": [
+    {
+      "cmd": "enum4linux 192.168.1.10",
+      "desc": "Enumeración completa."
+    },
+    {
+      "cmd": "enum4linux -a -u user -p pass 192.168.1.10",
+      "desc": "Con credenciales."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "Todas las comprobaciones."
+    },
+    {
+      "flag": "-u",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "-p",
+      "desc": "Contraseña."
+    },
+    {
+      "flag": "-U",
+      "desc": "Usuarios."
+    },
+    {
+      "flag": "-S",
+      "desc": "Recursos compartidos."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "dirsearch",
+  "title": "dirsearch — Escanear rutas web",
+  "description": "Descubre rutas, directorios y archivos en servidores web.",
+  "syntax": "dirsearch -u URL",
+  "examples": [
+    {
+      "cmd": "dirsearch -u https://ejemplo.com",
+      "desc": "Escaneo por defecto."
+    },
+    {
+      "cmd": "dirsearch -u https://ejemplo.com -e php,html -w lista.txt",
+      "desc": "Con extensiones y lista."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "-e",
+      "desc": "Extensiones."
+    },
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-r",
+      "desc": "Recursivo."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "onesixtyone",
+  "title": "onesixtyone — Escaneo SNMP",
+  "description": "Escanea muchos hosts buscando comunidades SNMP débiles.",
+  "syntax": "onesixtyone [opciones] host comunidad",
+  "examples": [
+    {
+      "cmd": "onesixtyone 192.168.1.0/24 public",
+      "desc": "Escaneo de comunidad común."
+    },
+    {
+      "cmd": "onesixtyone -c comunidades.txt 192.168.1.1",
+      "desc": "Prueba varias comunidades."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-c",
+      "desc": "Archivo de comunidades."
+    },
+    {
+      "flag": "-i",
+      "desc": "Archivo de hosts."
+    },
+    {
+      "flag": "-w",
+      "desc": "Tiempo de espera."
+    }
+  ]
+}

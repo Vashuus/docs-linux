@@ -1,0 +1,34 @@
+{
+  "id": "sublist3r",
+  "title": "sublist3r — Enumerar subdominios",
+  "description": "Enumera subdominios usando motores de búsqueda y otras fuentes.",
+  "syntax": "sublist3r -d dominio",
+  "examples": [
+    {
+      "cmd": "sublist3r -d ejemplo.com",
+      "desc": "Enumera subdominios."
+    },
+    {
+      "cmd": "sublist3r -d ejemplo.com -b -p 80,443",
+      "desc": "Con fuerza bruta y puertos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio objetivo."
+    },
+    {
+      "flag": "-b",
+      "desc": "Habilita fuerza bruta."
+    },
+    {
+      "flag": "-p",
+      "desc": "Puertos a comprobar."
+    },
+    {
+      "flag": "-o",
+      "desc": "Archivo de salida."
+    }
+  ]
+}

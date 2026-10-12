@@ -1,0 +1,34 @@
+{
+  "id": "whatweb",
+  "title": "whatweb — Identificar tecnologías web",
+  "description": "Reconoce CMS, servidores, frameworks y versiones de un sitio.",
+  "syntax": "whatweb [opciones] URL",
+  "examples": [
+    {
+      "cmd": "whatweb https://ejemplo.com",
+      "desc": "Identifica las tecnologías."
+    },
+    {
+      "cmd": "whatweb -a 3 https://ejemplo.com",
+      "desc": "Nivel de agresividad alto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "Nivel de agresividad."
+    },
+    {
+      "flag": "-v",
+      "desc": "Modo verboso."
+    },
+    {
+      "flag": "--log-json",
+      "desc": "Salida JSON."
+    },
+    {
+      "flag": "-U",
+      "desc": "User-Agent."
+    }
+  ]
+}

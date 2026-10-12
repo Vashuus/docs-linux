@@ -1,0 +1,34 @@
+{
+  "id": "smbclient",
+  "title": "smbclient — Cliente SMB",
+  "description": "Accede a recursos compartidos SMB/CIFS de forma similar a FTP.",
+  "syntax": "smbclient [opciones] //host/recurso",
+  "examples": [
+    {
+      "cmd": "smbclient -L //192.168.1.10 -N",
+      "desc": "Lista recursos sin credenciales."
+    },
+    {
+      "cmd": "smbclient //192.168.1.10/share -U user",
+      "desc": "Conecta a un recurso."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-L",
+      "desc": "Lista recursos."
+    },
+    {
+      "flag": "-N",
+      "desc": "Sin contraseña."
+    },
+    {
+      "flag": "-U",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "-c",
+      "desc": "Comandos a ejecutar."
+    }
+  ]
+}

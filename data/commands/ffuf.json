@@ -1,0 +1,38 @@
+{
+  "id": "ffuf",
+  "title": "ffuf — Fuzzing web rápido",
+  "description": "Fuzzer web muy veloz para directorios, parámetros, vhosts y más.",
+  "syntax": "ffuf -u URL/FUZZ -w lista",
+  "examples": [
+    {
+      "cmd": "ffuf -u https://ejemplo.com/FUZZ -w lista.txt",
+      "desc": "Fuzzing de rutas."
+    },
+    {
+      "cmd": "ffuf -u https://ejemplo.com/?q=FUZZ -w lista.txt",
+      "desc": "Fuzzing de parámetros."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL con el marcador FUZZ."
+    },
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-mc",
+      "desc": "Códigos a mostrar."
+    },
+    {
+      "flag": "-fc",
+      "desc": "Códigos a filtrar."
+    },
+    {
+      "flag": "-H",
+      "desc": "Cabecera."
+    }
+  ]
+}

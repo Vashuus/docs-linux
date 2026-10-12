@@ -1,0 +1,34 @@
+{
+  "id": "dnsenum",
+  "title": "dnsenum — Enumeración DNS",
+  "description": "Enumera registros DNS, zonas y subdominios de un dominio.",
+  "syntax": "dnsenum [opciones] dominio",
+  "examples": [
+    {
+      "cmd": "dnsenum ejemplo.com",
+      "desc": "Enumera DNS de un dominio."
+    },
+    {
+      "cmd": "dnsenum --threads 20 --enum -f lista.txt ejemplo.com",
+      "desc": "Con diccionario y más hilos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--enum",
+      "desc": "Enumeración completa."
+    },
+    {
+      "flag": "-f",
+      "desc": "Fichero de subdominios."
+    },
+    {
+      "flag": "--threads",
+      "desc": "Número de hilos."
+    },
+    {
+      "flag": "-r",
+      "desc": "Recursión de zonas."
+    }
+  ]
+}

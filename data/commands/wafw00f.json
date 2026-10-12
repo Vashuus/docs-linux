@@ -1,0 +1,34 @@
+{
+  "id": "wafw00f",
+  "title": "wafw00f — Detectar WAF",
+  "description": "Detecta la presencia y el tipo de Web Application Firewall.",
+  "syntax": "wafw00f URL",
+  "examples": [
+    {
+      "cmd": "wafw00f https://ejemplo.com",
+      "desc": "Detecta el WAF."
+    },
+    {
+      "cmd": "wafw00f -a https://ejemplo.com",
+      "desc": "Prueba todos los WAF."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-a",
+      "desc": "Prueba todos los WAF."
+    },
+    {
+      "flag": "-v",
+      "desc": "Verboso."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    },
+    {
+      "flag": "-f",
+      "desc": "Archivo con URLs."
+    }
+  ]
+}

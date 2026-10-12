@@ -1,0 +1,34 @@
+{
+  "id": "gobuster",
+  "title": "gobuster — Fuerza bruta de dirs/DNS",
+  "description": "Descubre rutas web, subdominios y vhosts mediante fuerza bruta.",
+  "syntax": "gobuster dir -u URL -w lista",
+  "examples": [
+    {
+      "cmd": "gobuster dir -u https://ejemplo.com -w /usr/share/wordlists/dirb/common.txt",
+      "desc": "Descubre directorios."
+    },
+    {
+      "cmd": "gobuster dns -d ejemplo.com -w lista.txt",
+      "desc": "Descubre subdominios."
+    }
+  ],
+  "options": [
+    {
+      "flag": "dir / dns / vhost",
+      "desc": "Modo de operación."
+    },
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-x",
+      "desc": "Extensiones."
+    }
+  ]
+}
