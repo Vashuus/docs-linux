@@ -1,0 +1,34 @@
+{
+  "id": "aireplay-ng",
+  "title": "aireplay-ng — Inyectar paquetes WiFi",
+  "description": "Inyecta paquetes para desautenticar clientes o acelerar capturas.",
+  "syntax": "sudo aireplay-ng [opciones] interfaz",
+  "examples": [
+    {
+      "cmd": "sudo aireplay-ng -0 5 -a MAC wlan0mon",
+      "desc": "Envío de desautenticaciones."
+    },
+    {
+      "cmd": "sudo aireplay-ng -3 -b MAC wlan0mon",
+      "desc": "Ataque de ARP replay."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-0",
+      "desc": "Desautenticación."
+    },
+    {
+      "flag": "-3",
+      "desc": "ARP replay."
+    },
+    {
+      "flag": "-a",
+      "desc": "MAC del AP."
+    },
+    {
+      "flag": "-c",
+      "desc": "MAC del cliente."
+    }
+  ]
+}

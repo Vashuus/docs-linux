@@ -1,0 +1,30 @@
+{
+  "id": "wifiphisher",
+  "title": "wifiphisher — Phishing WiFi",
+  "description": "Automatiza ataques de phishing WiFi con portales cautivos falsos.",
+  "syntax": "sudo wifiphisher [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo wifiphisher",
+      "desc": "Ataque interactivo por menú."
+    },
+    {
+      "cmd": "sudo wifiphisher -e 'WiFi Gratis' -p firmware-upgrade",
+      "desc": "Con escenario concreto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-e",
+      "desc": "ESSID del AP falso."
+    },
+    {
+      "flag": "-p",
+      "desc": "Escenario de phishing."
+    },
+    {
+      "flag": "--noap",
+      "desc": "No crear AP."
+    }
+  ]
+}

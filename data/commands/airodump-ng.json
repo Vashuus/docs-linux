@@ -1,0 +1,34 @@
+{
+  "id": "airodump-ng",
+  "title": "airodump-ng — Capturar tráfico WiFi",
+  "description": "Captura paquetes inalámbricos y lista redes y clientes.",
+  "syntax": "sudo airodump-ng [opciones] interfaz",
+  "examples": [
+    {
+      "cmd": "sudo airodump-ng wlan0mon",
+      "desc": "Escanea redes y clientes."
+    },
+    {
+      "cmd": "sudo airodump-ng -c 6 --bssid MAC -w cap wlan0mon",
+      "desc": "Captura de un AP concreto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-c",
+      "desc": "Canal."
+    },
+    {
+      "flag": "--bssid",
+      "desc": "MAC del AP."
+    },
+    {
+      "flag": "-w",
+      "desc": "Prefijo de captura."
+    },
+    {
+      "flag": "--band",
+      "desc": "Bandas."
+    }
+  ]
+}

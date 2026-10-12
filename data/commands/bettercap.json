@@ -1,0 +1,30 @@
+{
+  "id": "bettercap",
+  "title": "bettercap — MITM y monitoreo de red",
+  "description": "Framework de reconocimiento y ataques man-in-the-middle sobre redes y WiFi.",
+  "syntax": "sudo bettercap [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo bettercap -iface eth0",
+      "desc": "Inicia con una interfaz."
+    },
+    {
+      "cmd": "sudo bettercap -eval 'net.probe on; net.sniff on'",
+      "desc": "Escanea y sniffa."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-iface",
+      "desc": "Interfaz de red."
+    },
+    {
+      "flag": "-eval",
+      "desc": "Ejecuta comandos."
+    },
+    {
+      "flag": "-caplet",
+      "desc": "Script de caplet."
+    }
+  ]
+}

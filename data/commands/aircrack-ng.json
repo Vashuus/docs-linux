@@ -1,0 +1,34 @@
+{
+  "id": "aircrack-ng",
+  "title": "aircrack-ng — Cracking de redes WiFi",
+  "description": "Recupera la clave de redes WiFi a partir de capturas de handshake.",
+  "syntax": "aircrack-ng [opciones] captura",
+  "examples": [
+    {
+      "cmd": "aircrack-ng -w rockyou.txt captura.cap",
+      "desc": "Crackea usando diccionario."
+    },
+    {
+      "cmd": "aircrack-ng -b BSSID captura.cap",
+      "desc": "Selecciona el AP por BSSID."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-b",
+      "desc": "BSSID del AP."
+    },
+    {
+      "flag": "-e",
+      "desc": "ESSID."
+    },
+    {
+      "flag": "-0",
+      "desc": "Modo WEP."
+    }
+  ]
+}

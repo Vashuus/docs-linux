@@ -1,0 +1,34 @@
+{
+  "id": "airmon-ng",
+  "title": "airmon-ng — Modo monitor de la tarjeta",
+  "description": "Activa y gestiona el modo monitor de interfaces inalámbricas.",
+  "syntax": "sudo airmon-ng [comando] interfaz",
+  "examples": [
+    {
+      "cmd": "sudo airmon-ng start wlan0",
+      "desc": "Activa el modo monitor."
+    },
+    {
+      "cmd": "sudo airmon-ng stop wlan0mon",
+      "desc": "Desactiva el modo monitor."
+    },
+    {
+      "cmd": "sudo airmon-ng check kill",
+      "desc": "Mata procesos que interfieren."
+    }
+  ],
+  "options": [
+    {
+      "flag": "start",
+      "desc": "Activa modo monitor."
+    },
+    {
+      "flag": "stop",
+      "desc": "Desactiva el modo monitor."
+    },
+    {
+      "flag": "check",
+      "desc": "Busca procesos conflictivos."
+    }
+  ]
+}

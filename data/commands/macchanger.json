@@ -1,0 +1,38 @@
+{
+  "id": "macchanger",
+  "title": "macchanger — Cambiar dirección MAC",
+  "description": "Consulta y modifica (falsifica) la dirección MAC de una interfaz.",
+  "syntax": "sudo macchanger [opciones] interfaz",
+  "examples": [
+    {
+      "cmd": "macchanger -s eth0",
+      "desc": "Muestra la MAC actual."
+    },
+    {
+      "cmd": "sudo macchanger -r eth0",
+      "desc": "MAC aleatoria."
+    },
+    {
+      "cmd": "sudo macchanger -p eth0",
+      "desc": "Restaura la original."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-s",
+      "desc": "Muestra la MAC."
+    },
+    {
+      "flag": "-r",
+      "desc": "MAC aleatoria."
+    },
+    {
+      "flag": "-A",
+      "desc": "MAC de fabricante aleatorio."
+    },
+    {
+      "flag": "-p",
+      "desc": "Restaura la original."
+    }
+  ]
+}

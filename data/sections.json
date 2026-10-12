@@ -462,6 +462,33 @@
     ]
   },
   {
+    "id": "wireless",
+    "name": "Redes inalámbricas y MITM",
+    "icon": "wifi",
+    "commands": [
+      "aircrack-ng",
+      "airmon-ng",
+      "airodump-ng",
+      "aireplay-ng",
+      "airbase-ng",
+      "wifite",
+      "reaver",
+      "bully",
+      "wash",
+      "pixiewps",
+      "bettercap",
+      "ettercap",
+      "mitmproxy",
+      "arpspoof",
+      "macchanger",
+      "kismet",
+      "wifiphisher",
+      "hostapd-wpe",
+      "cowpatty",
+      "hcxdumptool"
+    ]
+  },
+  {
     "id": "scripts",
     "name": "Scripts",
     "icon": "script",

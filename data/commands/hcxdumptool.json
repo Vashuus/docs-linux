@@ -1,0 +1,34 @@
+{
+  "id": "hcxdumptool",
+  "title": "hcxdumptool — Capturar PMKID/handshakes",
+  "description": "Captura PMKID y handshakes de forma moderna y pasiva.",
+  "syntax": "sudo hcxdumptool -i interfaz -o salida.pcapng",
+  "examples": [
+    {
+      "cmd": "sudo hcxdumptool -i wlan0mon -o captura.pcapng",
+      "desc": "Captura PMKID/handshakes."
+    },
+    {
+      "cmd": "sudo hcxdumptool -i wlan0mon --active_beacon",
+      "desc": "Con beacons activos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-i",
+      "desc": "Interfaz."
+    },
+    {
+      "flag": "-o",
+      "desc": "Archivo de salida."
+    },
+    {
+      "flag": "--active_beacon",
+      "desc": "Beacons activos."
+    },
+    {
+      "flag": "-c",
+      "desc": "Canal."
+    }
+  ]
+}

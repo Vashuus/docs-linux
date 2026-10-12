@@ -1,0 +1,34 @@
+{
+  "id": "bully",
+  "title": "bully — Ataque WPS alternativo",
+  "description": "Alternativa a Reaver para ataques WPS, a veces más estable.",
+  "syntax": "sudo bully [opciones] interfaz MAC",
+  "examples": [
+    {
+      "cmd": "sudo bully wlan0mon MAC",
+      "desc": "Ataque WPS."
+    },
+    {
+      "cmd": "sudo bully -b MAC -c 6 wlan0mon",
+      "desc": "Con canal explícito."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-b",
+      "desc": "BSSID."
+    },
+    {
+      "flag": "-c",
+      "desc": "Canal."
+    },
+    {
+      "flag": "-v",
+      "desc": "Verboso."
+    },
+    {
+      "flag": "-d",
+      "desc": "Retardo."
+    }
+  ]
+}

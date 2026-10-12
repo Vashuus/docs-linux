@@ -1,0 +1,30 @@
+{
+  "id": "hostapd-wpe",
+  "title": "hostapd-wpe — AP falso para credenciales WPA",
+  "description": "Punto de acceso falso WPA-Enterprise para capturar credenciales.",
+  "syntax": "sudo hostapd-wpe archivo.conf",
+  "examples": [
+    {
+      "cmd": "sudo hostapd-wpe hostapd-wpe.conf",
+      "desc": "Inicia el AP malicioso."
+    },
+    {
+      "cmd": "(config)",
+      "desc": "Configura ESSID y canal en el archivo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(config)",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "-B",
+      "desc": "Modo daemon."
+    },
+    {
+      "flag": "-d",
+      "desc": "Depuración."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "pixiewps",
+  "title": "pixiewps — Explotar WPS (Pixie Dust)",
+  "description": "Explota la debilidad Pixie Dust para obtener el PIN WPS sin esperar.",
+  "syntax": "pixiewps [opciones]",
+  "examples": [
+    {
+      "cmd": "pixiewps -e PKR -r EHASH1 -s EHASH2 ...",
+      "desc": "Ejecuta el ataque con los valores capturados."
+    },
+    {
+      "cmd": "sudo reaver -i wlan0mon -b MAC -K 1",
+      "desc": "Se suele usar con Reaver."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-e",
+      "desc": "Public Key Recipient."
+    },
+    {
+      "flag": "-r",
+      "desc": "PKE (Hash1)."
+    },
+    {
+      "flag": "-s",
+      "desc": "E-Hash1."
+    },
+    {
+      "flag": "-z",
+      "desc": "E-Hash2."
+    }
+  ]
+}

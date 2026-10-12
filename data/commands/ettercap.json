@@ -1,0 +1,34 @@
+{
+  "id": "ettercap",
+  "title": "ettercap — Sniffing y MITM clásico",
+  "description": "Suite clásica de sniffing y ataques man-in-the-middle.",
+  "syntax": "sudo ettercap [opciones] -T -M modo",
+  "examples": [
+    {
+      "cmd": "sudo ettercap -T -M arp:remote /victima/ /gateway/",
+      "desc": "MITM por ARP en texto."
+    },
+    {
+      "cmd": "sudo ettercap -G",
+      "desc": "Interfaz gráfica."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-T",
+      "desc": "Modo texto."
+    },
+    {
+      "flag": "-G",
+      "desc": "Interfaz gráfica."
+    },
+    {
+      "flag": "-M",
+      "desc": "Método MITM."
+    },
+    {
+      "flag": "-i",
+      "desc": "Interfaz."
+    }
+  ]
+}

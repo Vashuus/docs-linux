@@ -1,0 +1,30 @@
+{
+  "id": "kismet",
+  "title": "kismet — Detector de redes inalámbricas",
+  "description": "Detector pasivo de redes inalámbricas y dispositivos.",
+  "syntax": "sudo kismet [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo kismet",
+      "desc": "Inicia el detector."
+    },
+    {
+      "cmd": "sudo kismet -c wlan0mon",
+      "desc": "Con interfaz en modo monitor."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-c",
+      "desc": "Fuente de captura."
+    },
+    {
+      "flag": "--no-ncurses",
+      "desc": "Sin interfaz ncurses."
+    },
+    {
+      "flag": "-f",
+      "desc": "Archivo de configuración."
+    }
+  ]
+}

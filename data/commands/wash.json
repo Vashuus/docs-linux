@@ -1,0 +1,30 @@
+{
+  "id": "wash",
+  "title": "wash — Detectar WPS",
+  "description": "Detecta puntos de acceso con WPS habilitado.",
+  "syntax": "sudo wash -i interfaz",
+  "examples": [
+    {
+      "cmd": "sudo wash -i wlan0mon",
+      "desc": "Lista APs con WPS."
+    },
+    {
+      "cmd": "sudo wash -i wlan0mon -s",
+      "desc": "Muestra solo los vulnerables."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-i",
+      "desc": "Interfaz."
+    },
+    {
+      "flag": "-s",
+      "desc": "Solo vulnerables."
+    },
+    {
+      "flag": "-C",
+      "desc": "Ignora FCS."
+    }
+  ]
+}

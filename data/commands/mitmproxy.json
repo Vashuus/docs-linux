@@ -1,0 +1,38 @@
+{
+  "id": "mitmproxy",
+  "title": "mitmproxy — Proxy MITM interactivo",
+  "description": "Proxy HTTP/HTTPS interactivo para interceptar, inspeccionar y modificar tráfico.",
+  "syntax": "mitmproxy [opciones]",
+  "examples": [
+    {
+      "cmd": "mitmproxy",
+      "desc": "Interfaz interactiva del proxy."
+    },
+    {
+      "cmd": "mitmdump -w captura.flows",
+      "desc": "Guarda el tráfico."
+    },
+    {
+      "cmd": "mitmweb",
+      "desc": "Interfaz web."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-p",
+      "desc": "Puerto de escucha."
+    },
+    {
+      "flag": "-w",
+      "desc": "Guardar."
+    },
+    {
+      "flag": "-r",
+      "desc": "Leer."
+    },
+    {
+      "flag": "--mode",
+      "desc": "Modo del proxy."
+    }
+  ]
+}

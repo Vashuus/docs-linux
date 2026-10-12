@@ -1,0 +1,34 @@
+{
+  "id": "wifite",
+  "title": "wifite — Automatizar ataques WiFi",
+  "description": "Automatiza la auditoría WiFi: detección, captura y cracking.",
+  "syntax": "sudo wifite [opciones]",
+  "examples": [
+    {
+      "cmd": "sudo wifite",
+      "desc": "Ataque automático a todas las redes."
+    },
+    {
+      "cmd": "sudo wifite --wpa --dict rockyou.txt",
+      "desc": "Solo WPA con diccionario."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--wpa",
+      "desc": "Solo redes WPA."
+    },
+    {
+      "flag": "--wep",
+      "desc": "Solo WEP."
+    },
+    {
+      "flag": "--dict",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "--kill",
+      "desc": "Mata procesos conflictivos."
+    }
+  ]
+}

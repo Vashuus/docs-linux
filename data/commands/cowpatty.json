@@ -1,0 +1,34 @@
+{
+  "id": "cowpatty",
+  "title": "cowpatty — Ataque WPA offline",
+  "description": "Realiza el ataque offline contra handshakes WPA-PSK.",
+  "syntax": "cowpatty [opciones] -f diccionario -r captura -s ESSID",
+  "examples": [
+    {
+      "cmd": "cowpatty -f rockyou.txt -r captura.cap -s 'MiWiFi'",
+      "desc": "Crackea el handshake."
+    },
+    {
+      "cmd": "cowpatty -c -r captura.cap",
+      "desc": "Comprueba el handshake."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-f",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-r",
+      "desc": "Captura."
+    },
+    {
+      "flag": "-s",
+      "desc": "ESSID."
+    },
+    {
+      "flag": "-c",
+      "desc": "Verifica el handshake."
+    }
+  ]
+}
