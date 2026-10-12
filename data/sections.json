@@ -375,6 +375,34 @@
     ]
   },
   {
+    "id": "passwords",
+    "name": "Fuerza bruta y cracking",
+    "icon": "key",
+    "commands": [
+      "john",
+      "hashcat",
+      "hydra",
+      "medusa",
+      "ncrack",
+      "patator",
+      "crunch",
+      "cewl",
+      "cupp",
+      "hash-identifier",
+      "hashid",
+      "unshadow",
+      "ophcrack",
+      "fcrackzip",
+      "pdfcrack",
+      "rarcrack",
+      "zip2john",
+      "ssh2john",
+      "keepass2john",
+      "findmyhash",
+      "samdump2"
+    ]
+  },
+  {
     "id": "scripts",
     "name": "Scripts",
     "icon": "script",

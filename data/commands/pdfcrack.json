@@ -1,0 +1,34 @@
+{
+  "id": "pdfcrack",
+  "title": "pdfcrack — Crackear PDF",
+  "description": "Recupera la contraseña de archivos PDF cifrados.",
+  "syntax": "pdfcrack [opciones] archivo.pdf",
+  "examples": [
+    {
+      "cmd": "pdfcrack -f archivo.pdf -w pass.txt",
+      "desc": "Diccionario."
+    },
+    {
+      "cmd": "pdfcrack -f archivo.pdf -c 1234567890",
+      "desc": "Fuerza bruta con charset."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-f",
+      "desc": "Archivo PDF."
+    },
+    {
+      "flag": "-w",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-c",
+      "desc": "Conjunto de caracteres."
+    },
+    {
+      "flag": "-n",
+      "desc": "Longitud mínima."
+    }
+  ]
+}

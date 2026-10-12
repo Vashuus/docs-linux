@@ -1,0 +1,30 @@
+{
+  "id": "cupp",
+  "title": "cupp — Generador de diccionarios personalizado",
+  "description": "Crea diccionarios a partir de datos personales de la víctima.",
+  "syntax": "cupp -i",
+  "examples": [
+    {
+      "cmd": "cupp -i",
+      "desc": "Menú interactivo de datos personales."
+    },
+    {
+      "cmd": "cupp -w salida.txt",
+      "desc": "Usa un perfil guardado."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-i",
+      "desc": "Modo interactivo."
+    },
+    {
+      "flag": "-w",
+      "desc": "Perfil guardado."
+    },
+    {
+      "flag": "-l",
+      "desc": "Añade palabras extra."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fcrackzip",
+  "title": "fcrackzip — Crackear ZIP",
+  "description": "Recupera contraseñas de archivos ZIP cifrados.",
+  "syntax": "fcrackzip [opciones] archivo.zip",
+  "examples": [
+    {
+      "cmd": "fcrackzip -u -D -p pass.txt archivo.zip",
+      "desc": "Diccionario con verificación."
+    },
+    {
+      "cmd": "fcrackzip -b -c a1 -l 1-6 archivo.zip",
+      "desc": "Fuerza bruta."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-D",
+      "desc": "Modo diccionario."
+    },
+    {
+      "flag": "-p",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "-b",
+      "desc": "Fuerza bruta."
+    },
+    {
+      "flag": "-c",
+      "desc": "Conjunto de caracteres."
+    },
+    {
+      "flag": "-l",
+      "desc": "Longitudes."
+    }
+  ]
+}

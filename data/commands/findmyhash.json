@@ -1,0 +1,30 @@
+{
+  "id": "findmyhash",
+  "title": "findmyhash — Buscar hashes en línea",
+  "description": "Busca hashes en bases de datos de cracking online.",
+  "syntax": "findmyhash ALGO -h hash",
+  "examples": [
+    {
+      "cmd": "findmyhash MD5 -h 5f4dcc3b5aa765d61d8327deb882cf99",
+      "desc": "Busca un MD5."
+    },
+    {
+      "cmd": "findmyhash SHA1 -h hash",
+      "desc": "Busca un SHA1."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(algo)",
+      "desc": "Algoritmo del hash."
+    },
+    {
+      "flag": "-h",
+      "desc": "Valor del hash."
+    },
+    {
+      "flag": "-f",
+      "desc": "Archivo con hashes."
+    }
+  ]
+}

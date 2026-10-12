@@ -1,0 +1,34 @@
+{
+  "id": "ncrack",
+  "title": "ncrack — Cracker de autenticación remota",
+  "description": "Audita credenciales de servicios de red como SSH, RDP, FTP y VNC.",
+  "syntax": "ncrack [opciones] -U users.txt -P pass.txt servicio://host",
+  "examples": [
+    {
+      "cmd": "ncrack -U users.txt -P pass.txt ssh://192.168.1.10",
+      "desc": "Fuerza bruta SSH."
+    },
+    {
+      "cmd": "ncrack -p 3389 rdp://192.168.1.10 -U users.txt -P pass.txt",
+      "desc": "RDP."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-U / -P",
+      "desc": "Listas de usuario/contraseña."
+    },
+    {
+      "flag": "-p",
+      "desc": "Puerto."
+    },
+    {
+      "flag": "-T",
+      "desc": "Temporización."
+    },
+    {
+      "flag": "--user",
+      "desc": "Usuario único."
+    }
+  ]
+}

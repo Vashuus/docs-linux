@@ -1,0 +1,38 @@
+{
+  "id": "medusa",
+  "title": "medusa — Fuerza bruta paralela",
+  "description": "Fuerza bruta de autenticación rápida y modular sobre múltiples protocolos.",
+  "syntax": "medusa [opciones] -h host -u user -P pass.txt -M módulo",
+  "examples": [
+    {
+      "cmd": "medusa -h 192.168.1.10 -u admin -P pass.txt -M ssh",
+      "desc": "Fuerza bruta SSH."
+    },
+    {
+      "cmd": "medusa -h 192.168.1.10 -U users.txt -P pass.txt -M ftp",
+      "desc": "FTP con listas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-h",
+      "desc": "Host."
+    },
+    {
+      "flag": "-u / -U",
+      "desc": "Usuario o lista."
+    },
+    {
+      "flag": "-P",
+      "desc": "Lista de contraseñas."
+    },
+    {
+      "flag": "-M",
+      "desc": "Módulo de protocolo."
+    },
+    {
+      "flag": "-t",
+      "desc": "Hilos."
+    }
+  ]
+}

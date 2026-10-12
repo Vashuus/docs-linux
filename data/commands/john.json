@@ -1,0 +1,42 @@
+{
+  "id": "john",
+  "title": "john — Cracker de contraseñas (John the Ripper)",
+  "description": "Recupera contraseñas de hashes mediante diccionario, reglas o fuerza bruta.",
+  "syntax": "john [opciones] hashfile",
+  "examples": [
+    {
+      "cmd": "john hashes.txt",
+      "desc": "Crackea con el modo por defecto."
+    },
+    {
+      "cmd": "john --wordlist=rockyou.txt hashes.txt",
+      "desc": "Ataque por diccionario."
+    },
+    {
+      "cmd": "john --show hashes.txt",
+      "desc": "Muestra las ya crackeadas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--wordlist",
+      "desc": "Diccionario."
+    },
+    {
+      "flag": "--format",
+      "desc": "Tipo de hash."
+    },
+    {
+      "flag": "--rules",
+      "desc": "Aplica reglas."
+    },
+    {
+      "flag": "--show",
+      "desc": "Muestra resultados."
+    },
+    {
+      "flag": "--incremental",
+      "desc": "Fuerza bruta."
+    }
+  ]
+}

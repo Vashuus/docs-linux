@@ -1,0 +1,30 @@
+{
+  "id": "rarcrack",
+  "title": "rarcrack — Crackear RAR/ZIP/7z",
+  "description": "Fuerza bruta sencilla contra archivos RAR, ZIP y 7z.",
+  "syntax": "rarcrack [opciones] archivo",
+  "examples": [
+    {
+      "cmd": "rarcrack archivo.rar --threads 4",
+      "desc": "Crackea un RAR."
+    },
+    {
+      "cmd": "rarcrack --type zip archivo.zip",
+      "desc": "Especifica el tipo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "--threads",
+      "desc": "Número de hilos."
+    },
+    {
+      "flag": "--type",
+      "desc": "Tipo de archivo."
+    },
+    {
+      "flag": "--charset",
+      "desc": "Caracteres a probar."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "keepass2john",
+  "title": "keepass2john — Extraer hash de KeePass",
+  "description": "Convierte una base KeePass en un hash para John.",
+  "syntax": "keepass2john base.kdbx > hash.txt",
+  "examples": [
+    {
+      "cmd": "keepass2john pass.kdbx > hash.txt",
+      "desc": "Extrae el hash."
+    },
+    {
+      "cmd": "john hash.txt",
+      "desc": "Crackea la base."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(archivo)",
+      "desc": "Base KeePass (.kdbx)."
+    },
+    {
+      "flag": "(stdout)",
+      "desc": "Hash para John."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "samdump2",
+  "title": "samdump2 — Volcar hashes SAM",
+  "description": "Extrae hashes de contraseñas de Windows desde archivos SAM/SYSTEM.",
+  "syntax": "samdump2 SYSTEM SAM",
+  "examples": [
+    {
+      "cmd": "samdump2 SYSTEM SAM > hashes.txt",
+      "desc": "Extrae hashes de Windows."
+    },
+    {
+      "cmd": "samdump2 -o hashes.txt SYSTEM SAM",
+      "desc": "Con archivo de salida."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-o",
+      "desc": "Archivo de salida."
+    },
+    {
+      "flag": "-d",
+      "desc": "Nivel de depuración."
+    },
+    {
+      "flag": "SYSTEM",
+      "desc": "Archivo SYSTEM."
+    },
+    {
+      "flag": "SAM",
+      "desc": "Archivo SAM."
+    }
+  ]
+}

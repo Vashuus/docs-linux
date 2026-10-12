@@ -1,0 +1,26 @@
+{
+  "id": "hash-identifier",
+  "title": "hash-identifier — Identificar tipo de hash",
+  "description": "Identifica el algoritmo probable de un hash dado.",
+  "syntax": "hash-identifier",
+  "examples": [
+    {
+      "cmd": "echo 'hash' | hash-identifier",
+      "desc": "Identifica un hash por stdin."
+    },
+    {
+      "cmd": "hash-identifier",
+      "desc": "Modo interactivo."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(interactivo)",
+      "desc": "Pega el hash para identificarlo."
+    },
+    {
+      "flag": "(stdin)",
+      "desc": "Acepta hash por tubería."
+    }
+  ]
+}

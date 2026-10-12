@@ -1,0 +1,34 @@
+{
+  "id": "ophcrack",
+  "title": "ophcrack — Cracker de hashes Windows",
+  "description": "Rompe contraseñas de Windows mediante tablas rainbow.",
+  "syntax": "ophcrack [opciones] hashes",
+  "examples": [
+    {
+      "cmd": "ophcrack -g -t tablas -f hashes.txt",
+      "desc": "Modo con tablas."
+    },
+    {
+      "cmd": "ophcrack -d /path/tablas",
+      "desc": "Indica directorio de tablas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-t",
+      "desc": "Directorio de tablas."
+    },
+    {
+      "flag": "-f",
+      "desc": "Archivo de hashes."
+    },
+    {
+      "flag": "-g",
+      "desc": "Modo gráfico (GUI)."
+    },
+    {
+      "flag": "-d",
+      "desc": "Directorio de tablas."
+    }
+  ]
+}

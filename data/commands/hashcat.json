@@ -1,0 +1,42 @@
+{
+  "id": "hashcat",
+  "title": "hashcat — Cracker de hashes por GPU",
+  "description": "Potente cracker de contraseñas que aprovecha GPU para altísimas velocidades.",
+  "syntax": "hashcat [opciones] hash wordlist",
+  "examples": [
+    {
+      "cmd": "hashcat -m 0 -a 0 hashes.txt rockyou.txt",
+      "desc": "MD5 con diccionario."
+    },
+    {
+      "cmd": "hashcat -m 1000 -a 3 hashes.txt ?a?a?a?a",
+      "desc": "NTLM por máscara."
+    },
+    {
+      "cmd": "hashcat --show -m 0 hashes.txt",
+      "desc": "Muestra crackeadas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-m",
+      "desc": "Modo de hash."
+    },
+    {
+      "flag": "-a",
+      "desc": "Modo de ataque."
+    },
+    {
+      "flag": "--force",
+      "desc": "Fuerza la ejecución."
+    },
+    {
+      "flag": "--show",
+      "desc": "Resultados previos."
+    },
+    {
+      "flag": "-o",
+      "desc": "Salida."
+    }
+  ]
+}

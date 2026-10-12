@@ -1,0 +1,34 @@
+{
+  "id": "patator",
+  "title": "patator — Fuerza bruta modular",
+  "description": "Framework de fuerza bruta modular y configurable para muchos servicios.",
+  "syntax": "patator módulo opciones",
+  "examples": [
+    {
+      "cmd": "patator ssh_login host=192.168.1.10 user=admin password=FILE0 0=pass.txt",
+      "desc": "Fuerza bruta SSH."
+    },
+    {
+      "cmd": "patator http_fuzz url=http://ejemplo.com/login method=POST",
+      "desc": "Fuzzing HTTP."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(módulo)",
+      "desc": "Tipo de ataque."
+    },
+    {
+      "flag": "host=",
+      "desc": "Host objetivo."
+    },
+    {
+      "flag": "user=",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "password=",
+      "desc": "Contraseña o archivo."
+    }
+  ]
+}

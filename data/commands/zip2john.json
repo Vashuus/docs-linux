@@ -1,0 +1,26 @@
+{
+  "id": "zip2john",
+  "title": "zip2john — Extraer hash de ZIP",
+  "description": "Convierte un ZIP cifrado en un hash para John the Ripper.",
+  "syntax": "zip2john archivo.zip > hash.txt",
+  "examples": [
+    {
+      "cmd": "zip2john secreto.zip > hash.txt",
+      "desc": "Extrae el hash del ZIP."
+    },
+    {
+      "cmd": "john hash.txt",
+      "desc": "Crackea el hash extraído."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(archivo)",
+      "desc": "ZIP de entrada."
+    },
+    {
+      "flag": "(stdout)",
+      "desc": "Hash para John."
+    }
+  ]
+}

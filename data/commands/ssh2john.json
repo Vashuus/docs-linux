@@ -1,0 +1,26 @@
+{
+  "id": "ssh2john",
+  "title": "ssh2john — Extraer hash de clave SSH",
+  "description": "Convierte una clave privada SSH en un hash para John.",
+  "syntax": "ssh2john id_rsa > hash.txt",
+  "examples": [
+    {
+      "cmd": "ssh2john id_rsa > hash.txt",
+      "desc": "Genera el hash de la clave."
+    },
+    {
+      "cmd": "john hash.txt",
+      "desc": "Crackea la passphrase."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(archivo)",
+      "desc": "Clave privada SSH."
+    },
+    {
+      "flag": "(stdout)",
+      "desc": "Hash para John."
+    }
+  ]
+}

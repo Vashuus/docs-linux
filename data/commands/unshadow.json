@@ -1,0 +1,30 @@
+{
+  "id": "unshadow",
+  "title": "unshadow — Combinar passwd y shadow",
+  "description": "Une /etc/passwd y /etc/shadow en un formato descifrable por John.",
+  "syntax": "unshadow passwd shadow > salida",
+  "examples": [
+    {
+      "cmd": "unshadow /etc/passwd /etc/shadow > hashes.txt",
+      "desc": "Crea hashes para John."
+    },
+    {
+      "cmd": "unshadow passwd.bak shadow.bak > hashes.txt",
+      "desc": "Con copias de seguridad."
+    }
+  ],
+  "options": [
+    {
+      "flag": "passwd",
+      "desc": "Archivo de cuentas."
+    },
+    {
+      "flag": "shadow",
+      "desc": "Archivo de hashes."
+    },
+    {
+      "flag": "(stdout)",
+      "desc": "Resultado combinado."
+    }
+  ]
+}

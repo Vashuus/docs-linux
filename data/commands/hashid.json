@@ -1,0 +1,30 @@
+{
+  "id": "hashid",
+  "title": "hashid — Identificar tipo de hash (HashID)",
+  "description": "Identifica el algoritmo de un hash con mayor base de firmas.",
+  "syntax": "hashid [opciones] hash",
+  "examples": [
+    {
+      "cmd": "hashid 5f4dcc3b5aa765d61d8327deb882cf99",
+      "desc": "Identifica el hash."
+    },
+    {
+      "cmd": "hashid -m hash",
+      "desc": "Muestra el modo de hashcat."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-m",
+      "desc": "Modo hashcat."
+    },
+    {
+      "flag": "-j",
+      "desc": "Modo John."
+    },
+    {
+      "flag": "-e",
+      "desc": "Modo extendido."
+    }
+  ]
+}

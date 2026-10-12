@@ -1,0 +1,34 @@
+{
+  "id": "cewl",
+  "title": "cewl — Diccionario desde un sitio web",
+  "description": "Genera listas de palabras recopilando el texto de un sitio web.",
+  "syntax": "cewl [opciones] URL",
+  "examples": [
+    {
+      "cmd": "cewl https://ejemplo.com -w palabras.txt",
+      "desc": "Genera diccionario del sitio."
+    },
+    {
+      "cmd": "cewl https://ejemplo.com -d 3 -m 6 -w palabras.txt",
+      "desc": "Con profundidad y longitud mínima."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Profundidad de rastreo."
+    },
+    {
+      "flag": "-m",
+      "desc": "Longitud mínima."
+    },
+    {
+      "flag": "-w",
+      "desc": "Archivo de salida."
+    },
+    {
+      "flag": "-e",
+      "desc": "Incluye emails."
+    }
+  ]
+}

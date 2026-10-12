@@ -1,0 +1,38 @@
+{
+  "id": "hydra",
+  "title": "hydra — Fuerza bruta de logins",
+  "description": "Ataque de fuerza bruta contra multitud de protocolos de autenticación.",
+  "syntax": "hydra [opciones] -l user -P pass.txt objetivo servicio",
+  "examples": [
+    {
+      "cmd": "hydra -l admin -P pass.txt ssh://192.168.1.10",
+      "desc": "Fuerza bruta SSH."
+    },
+    {
+      "cmd": "hydra -L users.txt -P pass.txt ftp://192.168.1.10",
+      "desc": "FTP con listas."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-l / -L",
+      "desc": "Usuario o lista."
+    },
+    {
+      "flag": "-p / -P",
+      "desc": "Contraseña o lista."
+    },
+    {
+      "flag": "-t",
+      "desc": "Tareas paralelas."
+    },
+    {
+      "flag": "-f",
+      "desc": "Para al encontrar una."
+    },
+    {
+      "flag": "-s",
+      "desc": "Puerto."
+    }
+  ]
+}
