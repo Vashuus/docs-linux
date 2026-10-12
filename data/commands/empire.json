@@ -1,0 +1,34 @@
+{
+  "id": "empire",
+  "title": "empire — Framework de post-explotación",
+  "description": "Framework para gestionar agentes PowerShell/Python en post-explotación.",
+  "syntax": "empire",
+  "examples": [
+    {
+      "cmd": "empire",
+      "desc": "Abre la consola."
+    },
+    {
+      "cmd": "uselistener http",
+      "desc": "Configura un listener HTTP."
+    }
+  ],
+  "options": [
+    {
+      "flag": "uselistener",
+      "desc": "Crea un listener."
+    },
+    {
+      "flag": "usestager",
+      "desc": "Crea un stager."
+    },
+    {
+      "flag": "agents",
+      "desc": "Lista agentes."
+    },
+    {
+      "flag": "interact",
+      "desc": "Interactúa con un agente."
+    }
+  ]
+}

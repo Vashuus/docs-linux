@@ -1,0 +1,38 @@
+{
+  "id": "responder",
+  "title": "responder — Envenenamiento LLMNR/NBT-NS",
+  "description": "Envenena LLMNR, NBT-NS y mDNS para capturar hashes de credenciales en redes Windows.",
+  "syntax": "sudo responder -I interfaz",
+  "examples": [
+    {
+      "cmd": "sudo responder -I eth0",
+      "desc": "Escucha y envenena en una interfaz."
+    },
+    {
+      "cmd": "sudo responder -I eth0 -rdwv",
+      "desc": "Con análisis y proxy WPAD."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-I",
+      "desc": "Interfaz de red."
+    },
+    {
+      "flag": "-r",
+      "desc": "Responde a consultas NBT-NS."
+    },
+    {
+      "flag": "-d",
+      "desc": "Responde a consultas DHCP."
+    },
+    {
+      "flag": "-w",
+      "desc": "Proxy WPAD."
+    },
+    {
+      "flag": "-v",
+      "desc": "Verboso."
+    }
+  ]
+}

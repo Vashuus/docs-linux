@@ -1,0 +1,30 @@
+{
+  "id": "wmiexec",
+  "title": "wmiexec — Ejecución remota WMI",
+  "description": "Ejecuta comandos remotamente en Windows usando WMI.",
+  "syntax": "wmiexec.py dominio/user:pass@host",
+  "examples": [
+    {
+      "cmd": "wmiexec.py user:pass@192.168.1.10",
+      "desc": "Shell semi-interactiva vía WMI."
+    },
+    {
+      "cmd": "wmiexec.py user:pass@host whoami",
+      "desc": "Ejecuta un comando concreto."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(target)",
+      "desc": "host o user:pass@host."
+    },
+    {
+      "flag": "-hashes",
+      "desc": "Pass-the-hash."
+    },
+    {
+      "flag": "-quiet",
+      "desc": "Sin banner."
+    }
+  ]
+}

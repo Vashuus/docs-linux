@@ -1,0 +1,26 @@
+{
+  "id": "veil",
+  "title": "veil — Generar payloads evasivos",
+  "description": "Genera payloads que evaden antivirus a partir de plantillas y encoders.",
+  "syntax": "veil",
+  "examples": [
+    {
+      "cmd": "veil",
+      "desc": "Abre el menú interactivo."
+    },
+    {
+      "cmd": "veil -t Evasion",
+      "desc": "Carga el módulo de evasión."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(menú)",
+      "desc": "Selección de payloads."
+    },
+    {
+      "flag": "-t",
+      "desc": "Tipo de módulo."
+    }
+  ]
+}

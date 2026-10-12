@@ -1,0 +1,34 @@
+{
+  "id": "bloodhound",
+  "title": "bloodhound — Mapeo de Active Directory",
+  "description": "Mapea rutas de ataque y relaciones en Active Directory mediante grafos.",
+  "syntax": "bloodhound-python -d dominio -u user -p pass -ns DC -c all",
+  "examples": [
+    {
+      "cmd": "bloodhound-python -d ejemplo.com -u user -p pass -ns 192.168.1.10 -c all",
+      "desc": "Recolecta datos de AD."
+    },
+    {
+      "cmd": "bloodhound",
+      "desc": "Abre la interfaz gráfica."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-d",
+      "desc": "Dominio."
+    },
+    {
+      "flag": "-u / -p",
+      "desc": "Credenciales."
+    },
+    {
+      "flag": "-ns",
+      "desc": "Servidor de nombres."
+    },
+    {
+      "flag": "-c",
+      "desc": "Colecciones a recopilar."
+    }
+  ]
+}

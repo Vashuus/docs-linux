@@ -1,0 +1,34 @@
+{
+  "id": "ligolo-ng",
+  "title": "ligolo-ng — Pivoting avanzado",
+  "description": "Túneles de red y pivoting mediante una interfaz tun, sin proxy chain ni SOCKS.",
+  "syntax": "ligolo-ng (proxy y agent)",
+  "examples": [
+    {
+      "cmd": "proxy -selfcert -laddr 0.0.0.0:11601",
+      "desc": "Inicia el proxy de Ligolo."
+    },
+    {
+      "cmd": "agent -connect 10.0.0.1:11601 -ignore-cert",
+      "desc": "Conecta el agente."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-selfcert",
+      "desc": "Certificado autogenerado."
+    },
+    {
+      "flag": "-laddr",
+      "desc": "Dirección de escucha."
+    },
+    {
+      "flag": "-connect",
+      "desc": "Proxy al que conectarse."
+    },
+    {
+      "flag": "session",
+      "desc": "Gestiona sesiones."
+    }
+  ]
+}

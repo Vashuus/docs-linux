@@ -1,0 +1,34 @@
+{
+  "id": "msfconsole",
+  "title": "msfconsole — Consola de Metasploit",
+  "description": "Framework de explotación con miles de exploits, payloads y módulos auxiliares.",
+  "syntax": "msfconsole [opciones]",
+  "examples": [
+    {
+      "cmd": "msfconsole -q",
+      "desc": "Abre la consola en silencio."
+    },
+    {
+      "cmd": "msfconsole -r script.rc",
+      "desc": "Ejecuta un script de recursos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-q",
+      "desc": "Sin banner."
+    },
+    {
+      "flag": "-r",
+      "desc": "Recursos a ejecutar."
+    },
+    {
+      "flag": "-x",
+      "desc": "Ejecuta comandos y sale."
+    },
+    {
+      "flag": "-n",
+      "desc": "Sin base de datos."
+    }
+  ]
+}

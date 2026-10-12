@@ -1,0 +1,38 @@
+{
+  "id": "mimikatz",
+  "title": "mimikatz — Extraer credenciales de Windows",
+  "description": "Extrae contraseñas, hashes y tickets de memoria en Windows.",
+  "syntax": "mimikatz.exe",
+  "examples": [
+    {
+      "cmd": "mimikatz # sekurlsa::logonpasswords",
+      "desc": "Extrae credenciales en claro."
+    },
+    {
+      "cmd": "mimikatz # lsadump::sam",
+      "desc": "Vuelca hashes SAM."
+    },
+    {
+      "cmd": "mimikatz # kerberos::golden /domain:...",
+      "desc": "Crea un golden ticket."
+    }
+  ],
+  "options": [
+    {
+      "flag": "sekurlsa::logonpasswords",
+      "desc": "Credenciales en memoria."
+    },
+    {
+      "flag": "lsadump::sam",
+      "desc": "Hashes SAM."
+    },
+    {
+      "flag": "kerberos::golden",
+      "desc": "Golden ticket."
+    },
+    {
+      "flag": "privilege::debug",
+      "desc": "Habilita privilegios."
+    }
+  ]
+}

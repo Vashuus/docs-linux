@@ -1,0 +1,30 @@
+{
+  "id": "routersploit",
+  "title": "routersploit — Explotación de routers/IoT",
+  "description": "Framework dedicado a explotar routers y dispositivos IoT.",
+  "syntax": "rsf",
+  "examples": [
+    {
+      "cmd": "rsf",
+      "desc": "Abre la consola."
+    },
+    {
+      "cmd": "rsfconsole",
+      "desc": "Alias de la consola."
+    }
+  ],
+  "options": [
+    {
+      "flag": "use",
+      "desc": "Selecciona un exploit."
+    },
+    {
+      "flag": "show options",
+      "desc": "Muestra opciones."
+    },
+    {
+      "flag": "run",
+      "desc": "Ejecuta el exploit."
+    }
+  ]
+}

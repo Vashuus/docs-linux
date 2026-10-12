@@ -1,0 +1,30 @@
+{
+  "id": "beef-xss",
+  "title": "beef-xss — Framework de explotación web (BeEF)",
+  "description": "Framework para explotar navegadores mediante hooks y ataques de cliente.",
+  "syntax": "beef-xss",
+  "examples": [
+    {
+      "cmd": "beef-xss",
+      "desc": "Inicia la interfaz de BeEF."
+    },
+    {
+      "cmd": "beef-xss -x",
+      "desc": "Inicia sin abrir navegador."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-x",
+      "desc": "No abre el navegador."
+    },
+    {
+      "flag": "-c",
+      "desc": "Archivo de configuración."
+    },
+    {
+      "flag": "(config)",
+      "desc": "En /etc/beef-xss/config.yaml."
+    }
+  ]
+}

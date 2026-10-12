@@ -1,0 +1,38 @@
+{
+  "id": "crackmapexec",
+  "title": "crackmapexec — Swiss-army SMB/AD (CME)",
+  "description": "Enumera, mueve datos y ejecuta comandos en redes SMB/Active Directory.",
+  "syntax": "crackmapexec smb objetivo [opciones]",
+  "examples": [
+    {
+      "cmd": "crackmapexec smb 192.168.1.0/24",
+      "desc": "Enumera hosts SMB."
+    },
+    {
+      "cmd": "crackmapexec smb 192.168.1.10 -u user -p pass --shares",
+      "desc": "Lista recursos con credenciales."
+    },
+    {
+      "cmd": "crackmapexec smb 192.168.1.10 -u user -p pass -x whoami",
+      "desc": "Ejecuta un comando."
+    }
+  ],
+  "options": [
+    {
+      "flag": "smb / ssh / winrm",
+      "desc": "Protocolo."
+    },
+    {
+      "flag": "-u / -p",
+      "desc": "Usuario y contraseña."
+    },
+    {
+      "flag": "--shares",
+      "desc": "Lista recursos."
+    },
+    {
+      "flag": "-x",
+      "desc": "Ejecuta comando."
+    }
+  ]
+}

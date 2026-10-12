@@ -1,0 +1,38 @@
+{
+  "id": "sliver",
+  "title": "sliver — C2 y post-explotación",
+  "description": "Framework de Command & Control (C2) con agentes multiplataforma (implantes).",
+  "syntax": "sliver-server / sliver",
+  "examples": [
+    {
+      "cmd": "sliver-server",
+      "desc": "Inicia el servidor C2."
+    },
+    {
+      "cmd": "sliver",
+      "desc": "Cliente interactivo."
+    },
+    {
+      "cmd": "generate --mtls host --os windows",
+      "desc": "Genera un implante."
+    }
+  ],
+  "options": [
+    {
+      "flag": "generate",
+      "desc": "Genera un implante."
+    },
+    {
+      "flag": "mtls / http / https",
+      "desc": "Tipo de listener."
+    },
+    {
+      "flag": "sessions",
+      "desc": "Lista sesiones."
+    },
+    {
+      "flag": "implants",
+      "desc": "Gestión de implantes."
+    }
+  ]
+}

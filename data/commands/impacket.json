@@ -1,0 +1,34 @@
+{
+  "id": "impacket",
+  "title": "impacket — Suites de protocolos de red",
+  "description": "Colección de scripts Python para trabajar con protocolos Windows (SMB, WMI, Kerberos...).",
+  "syntax": "impacket-<herramienta> [opciones]",
+  "examples": [
+    {
+      "cmd": "impacket-secretsdump dominio/user:pass@host",
+      "desc": "Vuelca hashes remotos."
+    },
+    {
+      "cmd": "impacket-psexec user:pass@host",
+      "desc": "Shell remota vía SMB."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(suite)",
+      "desc": "Conjunto de herramientas."
+    },
+    {
+      "flag": "secretsdump",
+      "desc": "Vuelca secretos."
+    },
+    {
+      "flag": "psexec",
+      "desc": "Ejecuta comandos."
+    },
+    {
+      "flag": "smbclient.py",
+      "desc": "Cliente SMB."
+    }
+  ]
+}

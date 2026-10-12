@@ -1,0 +1,38 @@
+{
+  "id": "searchsploit",
+  "title": "searchsploit — Buscar exploits (Exploit-DB)",
+  "description": "Busca exploits conocidos en la base de datos local de Exploit-DB.",
+  "syntax": "searchsploit [opciones] término",
+  "examples": [
+    {
+      "cmd": "searchsploit apache 2.4",
+      "desc": "Busca exploits de Apache."
+    },
+    {
+      "cmd": "searchsploit -m 12345",
+      "desc": "Copia un exploit al directorio actual."
+    },
+    {
+      "cmd": "searchsploit -u",
+      "desc": "Actualiza la base de datos."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-m",
+      "desc": "Copia el exploit."
+    },
+    {
+      "flag": "-u",
+      "desc": "Actualiza la base."
+    },
+    {
+      "flag": "-x",
+      "desc": "Muestra el exploit."
+    },
+    {
+      "flag": "--nmap",
+      "desc": "Busca desde XML de nmap."
+    }
+  ]
+}

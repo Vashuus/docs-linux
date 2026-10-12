@@ -1,0 +1,42 @@
+{
+  "id": "sqlmap",
+  "title": "sqlmap — Detección y explotación SQLi",
+  "description": "Automatiza la detección y explotación de inyecciones SQL.",
+  "syntax": "sqlmap -u URL [opciones]",
+  "examples": [
+    {
+      "cmd": "sqlmap -u 'http://ejemplo.com/?id=1' --batch",
+      "desc": "Comprueba y explota SQLi."
+    },
+    {
+      "cmd": "sqlmap -u URL --dbs",
+      "desc": "Lista las bases de datos."
+    },
+    {
+      "cmd": "sqlmap -u URL -D db -T tabla --dump",
+      "desc": "Vuelca una tabla."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "--dbs",
+      "desc": "Lista bases de datos."
+    },
+    {
+      "flag": "--dump",
+      "desc": "Vuelca datos."
+    },
+    {
+      "flag": "--batch",
+      "desc": "Sin preguntas."
+    },
+    {
+      "flag": "--risk / --level",
+      "desc": "Nivel de pruebas."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "meterpreter",
+  "title": "meterpreter — Payload interactivo de Metasploit",
+  "description": "Shell avanzada en memoria con multitud de módulos post-explotación.",
+  "syntax": "meterpreter > comando",
+  "examples": [
+    {
+      "cmd": "sysinfo",
+      "desc": "Información del sistema comprometido."
+    },
+    {
+      "cmd": "getuid",
+      "desc": "Usuario actual."
+    },
+    {
+      "cmd": "hashdump",
+      "desc": "Vuelca hashes de Windows."
+    },
+    {
+      "cmd": "shell",
+      "desc": "Abre una shell del sistema."
+    }
+  ],
+  "options": [
+    {
+      "flag": "sysinfo",
+      "desc": "Info del sistema."
+    },
+    {
+      "flag": "getuid",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "hashdump",
+      "desc": "Hashes."
+    },
+    {
+      "flag": "upload / download",
+      "desc": "Transferir archivos."
+    },
+    {
+      "flag": "screenshot",
+      "desc": "Captura de pantalla."
+    }
+  ]
+}

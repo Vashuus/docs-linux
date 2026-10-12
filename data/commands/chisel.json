@@ -1,0 +1,34 @@
+{
+  "id": "chisel",
+  "title": "chisel — Túneles TCP/UDP",
+  "description": "Crea túneles rápidos a través de HTTP para pivoting.",
+  "syntax": "chisel server|client [opciones]",
+  "examples": [
+    {
+      "cmd": "chisel server -p 8080 --reverse",
+      "desc": "Servidor con túnel reverso."
+    },
+    {
+      "cmd": "chisel client 10.0.0.1:8080 R:socks",
+      "desc": "Cliente que expone un SOCKS."
+    }
+  ],
+  "options": [
+    {
+      "flag": "server / client",
+      "desc": "Modo."
+    },
+    {
+      "flag": "-p",
+      "desc": "Puerto."
+    },
+    {
+      "flag": "--reverse",
+      "desc": "Permite túneles reversos."
+    },
+    {
+      "flag": "R:",
+      "desc": "Redirección remota."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "evil-winrm",
+  "title": "evil-winrm — Shell remota WinRM",
+  "description": "Obtiene una shell interactiva en Windows mediante WinRM.",
+  "syntax": "evil-winrm -i host -u user -p pass",
+  "examples": [
+    {
+      "cmd": "evil-winrm -i 192.168.1.10 -u admin -p pass",
+      "desc": "Conecta con credenciales."
+    },
+    {
+      "cmd": "evil-winrm -i host -u user -H NTMLhash",
+      "desc": "Con pass-the-hash."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-i",
+      "desc": "Host."
+    },
+    {
+      "flag": "-u",
+      "desc": "Usuario."
+    },
+    {
+      "flag": "-p",
+      "desc": "Contraseña."
+    },
+    {
+      "flag": "-H",
+      "desc": "Hash NTLM."
+    },
+    {
+      "flag": "-S",
+      "desc": "Usa SSL."
+    }
+  ]
+}

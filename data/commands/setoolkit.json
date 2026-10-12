@@ -1,0 +1,30 @@
+{
+  "id": "setoolkit",
+  "title": "setoolkit — Social-Engineer Toolkit (SET)",
+  "description": "Framework de ingeniería social: phishing, clonado de webs y payloads.",
+  "syntax": "sudo setoolkit",
+  "examples": [
+    {
+      "cmd": "sudo setoolkit",
+      "desc": "Abre el menú interactivo."
+    },
+    {
+      "cmd": "sudo setoolkit",
+      "desc": "Elige ataque de phishing en el menú."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(menú)",
+      "desc": "Selección interactiva de ataques."
+    },
+    {
+      "flag": "1)",
+      "desc": "Ataques de ingeniería social."
+    },
+    {
+      "flag": "2)",
+      "desc": "Vectores de penetración."
+    }
+  ]
+}

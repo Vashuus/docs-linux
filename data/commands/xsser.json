@@ -1,0 +1,34 @@
+{
+  "id": "xsser",
+  "title": "xsser — Explotación de XSS",
+  "description": "Detecta y explota vulnerabilidades de Cross-Site Scripting.",
+  "syntax": "xsser [opciones] -u URL",
+  "examples": [
+    {
+      "cmd": "xsser -u 'http://ejemplo.com/?q=test'",
+      "desc": "Busca XSS."
+    },
+    {
+      "cmd": "xsser -u URL --Fp payload.txt",
+      "desc": "Usa payloads propios."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "--Fp",
+      "desc": "Archivo de payloads."
+    },
+    {
+      "flag": "--cookie",
+      "desc": "Cookie."
+    },
+    {
+      "flag": "--auto",
+      "desc": "Modo automático."
+    }
+  ]
+}

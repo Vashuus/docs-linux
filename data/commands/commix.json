@@ -1,0 +1,34 @@
+{
+  "id": "commix",
+  "title": "commix — Explotación de Command Injection",
+  "description": "Automatiza la detección y explotación de inyecciones de comandos.",
+  "syntax": "commix -u URL [opciones]",
+  "examples": [
+    {
+      "cmd": "commix -u 'http://ejemplo.com/?ip=127.0.0.1'",
+      "desc": "Prueba inyección de comandos."
+    },
+    {
+      "cmd": "commix --url=URL --os-cmd=id",
+      "desc": "Ejecuta un comando."
+    }
+  ],
+  "options": [
+    {
+      "flag": "-u",
+      "desc": "URL objetivo."
+    },
+    {
+      "flag": "--os-cmd",
+      "desc": "Comando a ejecutar."
+    },
+    {
+      "flag": "--data",
+      "desc": "Datos POST."
+    },
+    {
+      "flag": "--cookie",
+      "desc": "Cookie."
+    }
+  ]
+}

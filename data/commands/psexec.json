@@ -1,0 +1,30 @@
+{
+  "id": "psexec",
+  "title": "psexec — Ejecución remota SMB",
+  "description": "Ejecuta comandos de forma remota en Windows a través de SMB.",
+  "syntax": "psexec.py dominio/user:pass@host",
+  "examples": [
+    {
+      "cmd": "psexec.py user:pass@192.168.1.10",
+      "desc": "Shell remota en el host."
+    },
+    {
+      "cmd": "psexec.py -hashes :NTLM user@host",
+      "desc": "Usa pass-the-hash."
+    }
+  ],
+  "options": [
+    {
+      "flag": "(target)",
+      "desc": "host o user:pass@host."
+    },
+    {
+      "flag": "-hashes",
+      "desc": "Pass-the-hash."
+    },
+    {
+      "flag": "-dc-ip",
+      "desc": "IP del controlador de dominio."
+    }
+  ]
+}
