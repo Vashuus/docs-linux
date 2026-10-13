@@ -405,6 +405,10 @@ export function initSearch({ root, items, onSelect }) {
   });
 
   panel.addEventListener("click", (e) => {
+    // Los clics internos no deben llegar al listener de document: render()
+    // reemplaza el innerHTML y el target quedaría desconectado, cerrando el panel.
+    e.stopPropagation();
+
     const more = e.target.closest("[data-more]");
     if (more) {
       const list = panel.querySelector(".search__results");

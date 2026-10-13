@@ -113,6 +113,14 @@ check("búsqueda sin acento encuentra texto acentuado", panel.querySelectorAll("
 check("aria-activedescendant apunta al resultado activo", input.getAttribute("aria-activedescendant") === "search-opt-0");
 check("las opciones exponen aria-selected", panel.querySelector(".search-result")?.getAttribute("aria-selected") === "true");
 
+setQuery("nmap");
+const chipRecon = panel.querySelector('.chip[data-filter="section"][data-value="recon"]');
+chipRecon.dispatchEvent(new window.Event("click", { bubbles: true }));
+check("el panel sigue abierto tras elegir un chip", !panel.hidden);
+check("el chip elegido queda activo", panel.querySelector('.chip.is-active[data-filter="section"][data-value="recon"]') !== null);
+panel.querySelector('.chip[data-filter="section"][data-value=""]').dispatchEvent(new window.Event("click", { bubbles: true }));
+check("se puede volver a 'Todas'", panel.querySelector('.chip.is-active[data-filter="section"][data-value=""]') !== null);
+
 const { highlight } = await import(pathToFileURL(path.join(SITE, "js/search.js")).href);
 check("highlight no corrompe entidades HTML", highlight("Command & Control", ["amp"]) === "Command &amp; Control");
 check("highlight resalta acentos en el texto", highlight("código de ejemplo", ["codigo"]).includes("<mark>código</mark>"));
