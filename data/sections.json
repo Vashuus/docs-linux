@@ -524,8 +524,6 @@
     "dir": "scripts",
     "commands": [
       "update-debian",
-      "update-fedora",
-      "update-arch",
       "journal-errors",
       "auth-fail-report",
       "log-size-report",
