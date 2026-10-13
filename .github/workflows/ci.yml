@@ -40,6 +40,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Sintaxis bash de todos los scripts
+        run: |
+          fail=0
+          for f in scripts/*.sh; do
+            bash -n "$f" || { echo "Error de sintaxis en $f"; fail=1; }
+          done
+          exit $fail
       - uses: ludeeus/action-shellcheck@2.0.0
         with:
           scandir: "./scripts"
