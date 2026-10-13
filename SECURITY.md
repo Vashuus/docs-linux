@@ -7,7 +7,8 @@ El riesgo principal son los **contenidos aportados por la comunidad**
 ## Cómo reportar
 No abras un issue público para vulnerabilidades. Escribí a:
 
-> **<CONTACTO>** (completar antes de publicar)
+> **Vashuus** — abrí un reporte privado en GitHub (pestaña *Security* → *Report a
+> vulnerability*) o escribí a `vashuus@users.noreply.github.com`.
 
 Incluí: descripción, pasos para reproducir, impacto y, si podés, una propuesta de
 solución. Respondemos dentro de los 7 días.

@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Reportar un problema de seguridad
-    url: https://github.com/<usuario>/<repo>/security/policy
+    url: https://github.com/Vashuus/docs-linux/security/policy
     about: No uses issues públicos para vulnerabilidades. Ver SECURITY.md.
