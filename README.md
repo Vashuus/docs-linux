@@ -32,9 +32,16 @@ recarga solo (browser-sync con volúmenes de solo lectura).
 Requiere Node.js 20+.
 
 ```bash
-npm install -g browser-sync@2.29.3
-browser-sync start --config browser-sync.config.js
+npm install
+npm run dev
 # Abrir http://localhost:8080
+```
+
+Chequeos locales:
+
+```bash
+npm run validate   # valida datos y SVG
+npm test           # smoke test del sitio (jsdom)
 ```
 
 ## Estructura del proyecto
@@ -58,13 +65,15 @@ Todo el contenido vive en `data/`:
 - **Script**: crear `data/scripts/<id>.json` y el archivo en `scripts/<id>.sh`.
 - **Icono**: ver los disponibles en `svg/icons.txt`.
 
-Reglas: el `id` debe coincidir con el nombre del archivo (`a-z0-9-`), y solo se
+Reglas: el `id` debe coincidir con el nombre del archivo (minúsculas `a-z0-9`
+y `.` o `-`, p.ej. `update-rc.d`), y solo se
 pueden referenciar archivos que existan en el repositorio.
 
 Antes de enviar cambios:
 
 ```bash
-node tools/validate.mjs
+npm run validate
+npm test
 ```
 
 ## Publicación

@@ -20,7 +20,8 @@ Un mantenedor lo revisa y, si corresponde, lo agrega.
 - Los iconos están en `svg/` (ver `svg/icons.txt` para los disponibles).
 
 ### Reglas
-- Un `id` = nombre del archivo: minúsculas, sin espacios ni acentos (`a-z0-9-`).
+- Un `id` = nombre del archivo: minúsculas, sin espacios ni acentos
+  (`a-z0-9` y `.` o `-`, p.ej. `update-rc.d`).
 - Referenciá solo archivos que existan en el repo (icono y script).
 - Los scripts deben ser **Bash compatible** cuando apliquen, con `set -euo pipefail`
   y sin comandos destructivos sin confirmación.
@@ -31,7 +32,7 @@ Un mantenedor lo revisa y, si corresponde, lo agrega.
   (sin `<script>`, sin `on*`, sin enlaces externos).
 
 ### Antes de abrir el PR
-1. Ejecutá el validador: `node tools/validate.mjs`
+1. Ejecutá las verificaciones: `npm run validate` y `npm test`
 2. Verificá localmente: `docker compose up` y abrí http://localhost:8090
 3. Completá la plantilla del PR.
 

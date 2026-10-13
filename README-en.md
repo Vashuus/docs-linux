@@ -32,9 +32,16 @@ automatically (browser-sync with read-only volumes).
 Requires Node.js 20+.
 
 ```bash
-npm install -g browser-sync@2.29.3
-browser-sync start --config browser-sync.config.js
+npm install
+npm run dev
 # Open http://localhost:8080
+```
+
+Local checks:
+
+```bash
+npm run validate   # validates data and SVG
+npm test           # site smoke test (jsdom)
 ```
 
 ## Project layout
@@ -58,13 +65,15 @@ Everything lives under `data/`:
 - **Script**: create `data/scripts/<id>.json` and the file in `scripts/<id>.sh`.
 - **Icon**: check the available ones in `svg/icons.txt`.
 
-Rules: the `id` must match the file name (`a-z0-9-`), and you may only reference
+Rules: the `id` must match the file name (lowercase `a-z0-9` plus `.` or `-`,
+e.g. `update-rc.d`), and you may only reference
 files that exist in the repository.
 
 Before submitting changes:
 
 ```bash
-node tools/validate.mjs
+npm run validate
+npm test
 ```
 
 ## Deployment
