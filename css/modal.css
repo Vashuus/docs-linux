@@ -128,6 +128,26 @@ body.modal-open {
   border-color: transparent;
 }
 
+.tag--rel {
+  font-weight: 600;
+  border-color: transparent;
+}
+
+.tag--rel-high {
+  color: #1a7f37;
+  background: rgba(46, 160, 67, 0.16);
+}
+
+.tag--rel-mid {
+  color: #9a6700;
+  background: rgba(210, 153, 34, 0.18);
+}
+
+.tag--rel-low {
+  color: #b62324;
+  background: rgba(248, 81, 73, 0.16);
+}
+
 .modal__reqs {
   list-style: none;
   display: flex;

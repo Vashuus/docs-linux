@@ -130,6 +130,14 @@ wheelEv.deltaX = 0;
 chipRow.dispatchEvent(wheelEv);
 check("la rueda del mouse desplaza la fila de chips", wheelEv.defaultPrevented);
 
+setQuery("journal-errors");
+const firstScript = panel.querySelector(".search-result");
+firstScript.dispatchEvent(new window.Event("click", { bubbles: true }));
+const relBadge = doc.querySelector("#modal .tag--rel");
+check("el modal muestra la confiabilidad del script", (relBadge?.textContent || "").includes("Confiabilidad ~"));
+check("la confiabilidad está entre 0 y 100", Number((relBadge?.textContent || "").match(/\d+/)?.[0]) >= 0 && Number((relBadge?.textContent || "").match(/\d+/)?.[0]) <= 100);
+doc.querySelector("#modal [data-close]")?.dispatchEvent(new window.Event("click", { bubbles: true }));
+
 const { highlight } = await import(pathToFileURL(path.join(SITE, "js/search.js")).href);
 check("highlight no corrompe entidades HTML", highlight("Command & Control", ["amp"]) === "Command &amp; Control");
 check("highlight resalta acentos en el texto", highlight("código de ejemplo", ["codigo"]).includes("<mark>código</mark>"));

@@ -12,6 +12,7 @@
     "lang": { "type": "string", "enum": ["bash", "sh", "zsh", "python"] },
     "type": { "type": "string" },
     "version": { "type": "string" },
+    "reliability": { "type": "integer", "minimum": 0, "maximum": 100 },
     "tags": { "type": "array", "items": { "type": "string" } },
     "requires": { "type": "array", "items": { "type": "string" } },
     "usage": { "type": "array", "items": { "type": "string" } },

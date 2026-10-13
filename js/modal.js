@@ -103,6 +103,8 @@ function buildLeft(s) {
     )
     .join("");
 
+  const rel = typeof s.reliability === "number" ? reliabilityBadge(s.reliability) : "";
+
   return `
     <div class="modal__icon">${sanitizeSvg(s.iconSvg)}</div>
     <h2 class="modal__title" id="modal-title">${escapeHtml(s.title)}</h2>
@@ -111,12 +113,18 @@ function buildLeft(s) {
     <div class="modal__details">
       <span class="tag tag--accent">v${escapeHtml(s.version || "1.0.0")}</span>
       <span class="tag">${escapeHtml(s.type || s.lang || "Script")}</span>
+      ${rel}
     </div>
 
     ${s.tags && s.tags.length ? `<h3 class="modal__h">Etiquetas</h3><div class="modal__tags">${tags}</div>` : ""}
     ${s.requires && s.requires.length ? `<h3 class="modal__h">Requisitos</h3><ul class="modal__reqs">${reqs}</ul>` : ""}
     ${s.usage && s.usage.length ? `<h3 class="modal__h">Formas de uso</h3><div class="modal__usage">${usage}</div>` : ""}
   `;
+}
+
+function reliabilityBadge(pct) {
+  const level = pct >= 90 ? "high" : pct >= 80 ? "mid" : "low";
+  return `<span class="tag tag--rel tag--rel-${level}" title="Confiabilidad estimada de funcionar correctamente en distintos entornos">Confiabilidad ~${pct}%</span>`;
 }
 
 function codeLines(code) {

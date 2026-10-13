@@ -56,6 +56,15 @@ function validate(value, schema, path) {
     }
   }
 
+  if (typeof value === "number") {
+    if (typeof schema.minimum === "number" && value < schema.minimum) {
+      err(`${path}: ${value} es menor que el minimo ${schema.minimum}`);
+    }
+    if (typeof schema.maximum === "number" && value > schema.maximum) {
+      err(`${path}: ${value} es mayor que el maximo ${schema.maximum}`);
+    }
+  }
+
   if (Array.isArray(value)) {
     if (schema.minItems && value.length < schema.minItems) {
       err(`${path}: se requieren al menos ${schema.minItems} elementos`);
