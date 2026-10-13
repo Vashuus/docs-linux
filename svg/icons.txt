@@ -1,0 +1,66 @@
+Catálogo de iconos — docs-linux
+===============================
+
+Cómo usarlos
+------------
+En el JSON de un script (data/scripts/<id>.json) poné:
+
+    "icon": "svg/<nombre>.svg"
+
+Reglas para iconos nuevos
+-------------------------
+- viewBox: 0 0 24 24
+- Trazo: fill="none" stroke="currentColor" stroke-width="1.7"
+- Solo colores vía currentColor (no colores fijos), para que funcionen en tema claro/oscuro.
+- PROHIBIDO: <script>, <foreignObject>, atributos on* (onload, onclick...),
+  enlaces externos (href/xlink:href a http), style con url(...)/javascript:.
+  El sitio sanitiza los SVG al mostrarlos, pero igual deben venir limpios.
+- Nombre en minúsculas, sin espacios ni acentos (a-z0-9-).
+
+Lista de iconos disponibles
+---------------------------
+arch         Arch Linux
+backup       Respaldos / archivos comprimidos
+bug          Explotación / vulnerabilidades
+centos       CentOS / RHEL
+cloud        Nube / VPS
+cpu          Procesador / carga de CPU
+cron         Tareas programadas / cron / systemd timers
+database     Bases de datos
+debian       Debian
+disk         Discos / particiones / montaje
+docker       Docker / contenedores
+download     Descargas
+fedora       Fedora
+fingerprint  Análisis forense / huellas
+firewall     Cortafuegos / iptables / nftables
+folder       Archivos y directorios
+git          Git / control de versiones
+key          Contraseñas / fuerza bruta / cracking
+linux        Linux genérico (kernel / sistema)
+log          Logs / registros
+mask         Anonimato / OSINT
+memory       Memoria RAM / swap
+mint         Linux Mint
+network      Redes / interfaces
+opensuse     openSUSE
+package      Gestión de paquetes
+python       Python
+radar        Reconocimiento / escaneo
+script       Script / automatización
+security     Seguridad / permisos / bloqueo
+server       Servidor / servicios
+service      Servicios / daemons
+shell        Shell / consola
+terminal     Terminal
+text         Texto / documentación
+tools        Herramientas / utilidades
+ubuntu       Ubuntu
+update       Actualizaciones / mantenimiento
+user         Usuarios y grupos
+wifi         Wi-Fi / redes inalámbricas
+
+¿Falta un icono?
+----------------
+Abrí un issue de "Nuevo icono" (o pedilo en un PR) indicando el nombre y para qué
+se usaría. Se revisa antes de publicarlo.
