@@ -121,6 +121,15 @@ check("el chip elegido queda activo", panel.querySelector('.chip.is-active[data-
 panel.querySelector('.chip[data-filter="section"][data-value=""]').dispatchEvent(new window.Event("click", { bubbles: true }));
 check("se puede volver a 'Todas'", panel.querySelector('.chip.is-active[data-filter="section"][data-value=""]') !== null);
 
+const chipRow = panel.querySelector(".search__chips");
+Object.defineProperty(chipRow, "scrollWidth", { value: 500, configurable: true });
+Object.defineProperty(chipRow, "clientWidth", { value: 100, configurable: true });
+const wheelEv = new window.Event("wheel", { bubbles: true, cancelable: true });
+wheelEv.deltaY = 40;
+wheelEv.deltaX = 0;
+chipRow.dispatchEvent(wheelEv);
+check("la rueda del mouse desplaza la fila de chips", wheelEv.defaultPrevented);
+
 const { highlight } = await import(pathToFileURL(path.join(SITE, "js/search.js")).href);
 check("highlight no corrompe entidades HTML", highlight("Command & Control", ["amp"]) === "Command &amp; Control");
 check("highlight resalta acentos en el texto", highlight("código de ejemplo", ["codigo"]).includes("<mark>código</mark>"));

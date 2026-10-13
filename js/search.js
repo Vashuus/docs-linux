@@ -404,6 +404,20 @@ export function initSearch({ root, items, onSelect }) {
     if (e.target.closest("[data-filter], [data-more]")) e.preventDefault();
   });
 
+  // La rueda del mouse desplaza horizontalmente la fila de chips cuando se desborda.
+  panel.addEventListener(
+    "wheel",
+    (e) => {
+      const row = e.target.closest(".search__chips");
+      if (!row) return;
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+      if (row.scrollWidth <= row.clientWidth) return;
+      row.scrollLeft += e.deltaY;
+      e.preventDefault();
+    },
+    { passive: false }
+  );
+
   panel.addEventListener("click", (e) => {
     // Los clics internos no deben llegar al listener de document: render()
     // reemplaza el innerHTML y el target quedaría desconectado, cerrando el panel.

@@ -155,12 +155,27 @@
   display: flex;
   gap: 6px;
   overflow-x: auto;
-  padding-bottom: 1px;
-  scrollbar-width: none;
+  padding-bottom: 7px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  overscroll-behavior-x: contain;
 }
 
 .search__chips::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+}
+
+.search__chips::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.search__chips::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.search__chips::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
 }
 
 .chip {
