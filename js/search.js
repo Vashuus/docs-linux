@@ -24,11 +24,70 @@ function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function highlight(text, terms) {
-  const safe = escapeHtml(text);
-  if (!terms.length) return safe;
-  const re = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "gi");
-  return safe.replace(re, "<mark>$1</mark>");
+/**
+ * Aplana un texto igual que norm() (minúsculas, sin acentos) pero conservando
+ * el mapeo hacia los caracteres originales, para poder resaltar sin romper
+ * entidades HTML ni perder los acentos al mostrar.
+ */
+function foldText(text) {
+  const chars = [...String(text)];
+  const folded = [];
+  const map = [];
+  for (let k = 0; k < chars.length; k++) {
+    const f = chars[k].normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    for (let j = 0; j < f.length; j++) map.push(k);
+    folded.push(f);
+  }
+  return { chars, folded: folded.join(""), map };
+}
+
+/**
+ * Resalta los términos dentro de un texto. Escapa carácter por carácter
+ * (nunca sobre el texto ya escapado) y busca sobre la versión aplanada, de
+ * modo que "codigo" también resalta "código".
+ */
+export function highlight(text, terms) {
+  const raw = String(text);
+  const needles = [];
+  for (const t of terms || []) {
+    const n = norm(t);
+    if (n && !needles.includes(n)) needles.push(n);
+  }
+  if (!needles.length) return escapeHtml(raw);
+
+  const { chars, folded, map } = foldText(raw);
+  const re = new RegExp(needles.map(escapeRegExp).join("|"), "g");
+  const matched = new Array(chars.length).fill(false);
+  let m;
+  while ((m = re.exec(folded))) {
+    if (!m[0]) {
+      re.lastIndex++;
+      continue;
+    }
+    for (let f = m.index; f < m.index + m[0].length; f++) matched[map[f]] = true;
+  }
+  if (!matched.some(Boolean)) return escapeHtml(raw);
+
+  // Las marcas combinantes no aportan al texto aplanado: si su base coincide,
+  // se resaltan junto con ella (ej. "ó" precompuesto o "o" + acento).
+  const hasFold = new Set(map);
+  for (let k = 1; k < chars.length; k++) {
+    if (matched[k - 1] && !hasFold.has(k)) matched[k] = true;
+  }
+
+  let html = "";
+  let buf = "";
+  let inMark = false;
+  for (let k = 0; k < chars.length; k++) {
+    if (matched[k] !== inMark) {
+      html += inMark ? `<mark>${buf}</mark>` : buf;
+      buf = "";
+      inMark = matched[k];
+    }
+    buf += escapeHtml(chars[k]);
+  }
+  html += inMark ? `<mark>${buf}</mark>` : buf;
+  return html;
 }
 
 /**
@@ -81,6 +140,7 @@ function matchesFilter(item, filter) {
     if (field === "id") return item._id === value;
     if (SECTION_FIELDS.includes(field)) return item._section === value || item._sectionId === value;
     if (TAG_FIELDS.includes(field)) return item._tagsList.some((t) => t === value);
+    return false;
   }
 
   return (
@@ -129,11 +189,12 @@ export function initSearch({ root, items, onSelect }) {
   const state = { q: "", section: null, type: "all" };
   let results = [];
   let activeIndex = -1;
+  let limit = MAX_RESULTS;
+  let lastKey = "";
 
   function score(item, terms) {
     let total = 0;
-    for (const t of terms) {
-      const term = norm(t);
+    for (const term of terms) {
       let s = 0;
       if (item._title === term) s += 100;
       else if (item._title.startsWith(term)) s += 60;
@@ -147,13 +208,14 @@ export function initSearch({ root, items, onSelect }) {
     return total;
   }
 
-  function compute() {
-    const { terms, filters } = parseQuery(state.q);
+  function compute(parsed) {
+    const { filters } = parsed;
     let list = items.filter((it) => {
       if (state.section && it.sectionId !== state.section) return false;
       if (state.type !== "all" && it.type !== state.type) return false;
       return filters.every((f) => matchesFilter(it, f));
     });
+    const terms = parsed.terms.map(norm).filter(Boolean);
     if (terms.length) {
       list = list
         .map((it) => ({ it, s: score(it, terms) }))
@@ -176,6 +238,7 @@ export function initSearch({ root, items, onSelect }) {
     panel.hidden = true;
     root.classList.remove("is-open");
     input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
     activeIndex = -1;
   }
 
@@ -211,7 +274,8 @@ export function initSearch({ root, items, onSelect }) {
   function resultHTML(item, i, terms) {
     const icon = item.type === "script" ? sanitizeSvg(item.iconSvg) : CMD_ICON;
     const badge = item.type === "script" ? "Script" : "Comando";
-    return `<button type="button" class="search-result${i === activeIndex ? " is-active" : ""}" role="option" data-index="${i}">
+    const on = i === activeIndex;
+    return `<button type="button" class="search-result${on ? " is-active" : ""}" role="option" id="search-opt-${i}" aria-selected="${on ? "true" : "false"}" data-index="${i}">
       <span class="search-result__icon">${icon}</span>
       <span class="search-result__main">
         <span class="search-result__title">${highlight(item.title, terms)}</span>
@@ -225,11 +289,17 @@ export function initSearch({ root, items, onSelect }) {
   }
 
   function render() {
-    const { terms } = parseQuery(state.q);
-    results = compute();
+    const parsed = parseQuery(state.q);
+    results = compute(parsed);
     activeIndex = results.length ? 0 : -1;
 
-    const shown = results.slice(0, MAX_RESULTS);
+    const key = `${state.q}\u0000${state.section || ""}\u0000${state.type}`;
+    if (key !== lastKey) {
+      limit = MAX_RESULTS;
+      lastKey = key;
+    }
+
+    const shown = results.slice(0, limit);
 
     let body;
     if (!results.length) {
@@ -238,7 +308,13 @@ export function initSearch({ root, items, onSelect }) {
         : "No hay resultados con estos filtros";
       body = `<div class="search__empty">${EMPTY_ICON}<span>${label}</span></div>`;
     } else {
-      body = `<div class="search__results" role="listbox">${shown.map((it, i) => resultHTML(it, i, terms)).join("")}</div>`;
+      const more =
+        results.length > shown.length
+          ? `<button type="button" class="search__more" data-more>Mostrar más · restan ${results.length - shown.length}</button>`
+          : "";
+      body = `<div class="search__results" role="listbox" id="search-results" aria-label="Resultados de búsqueda">${shown
+        .map((it, i) => resultHTML(it, i, parsed.terms))
+        .join("")}</div>${more}`;
     }
 
     const footer = results.length
@@ -251,16 +327,25 @@ export function initSearch({ root, items, onSelect }) {
       : "";
 
     panel.innerHTML = renderFilters() + body + footer;
-    panel.querySelector(".search-result.is-active")?.scrollIntoView({ block: "nearest" });
+    if (results.length) setActive(activeIndex);
+    else input.removeAttribute("aria-activedescendant");
     syncAffordance();
   }
 
   function setActive(i) {
     const nodes = panel.querySelectorAll(".search-result");
-    if (!nodes.length) return;
+    if (!nodes.length) {
+      input.removeAttribute("aria-activedescendant");
+      return;
+    }
     activeIndex = Math.max(0, Math.min(i, nodes.length - 1));
-    nodes.forEach((n, idx) => n.classList.toggle("is-active", idx === activeIndex));
+    nodes.forEach((n, idx) => {
+      const on = idx === activeIndex;
+      n.classList.toggle("is-active", on);
+      n.setAttribute("aria-selected", on ? "true" : "false");
+    });
     nodes[activeIndex].scrollIntoView({ block: "nearest" });
+    input.setAttribute("aria-activedescendant", nodes[activeIndex].id);
   }
 
   function select(i) {
@@ -291,6 +376,14 @@ export function initSearch({ root, items, onSelect }) {
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActive(activeIndex - 1);
+    } else if (e.key === "Home") {
+      e.preventDefault();
+      open();
+      setActive(0);
+    } else if (e.key === "End") {
+      e.preventDefault();
+      open();
+      setActive(Number.MAX_SAFE_INTEGER);
     } else if (e.key === "Enter") {
       e.preventDefault();
       select(activeIndex);
@@ -308,10 +401,22 @@ export function initSearch({ root, items, onSelect }) {
   });
 
   panel.addEventListener("mousedown", (e) => {
-    if (e.target.closest("[data-filter]")) e.preventDefault();
+    if (e.target.closest("[data-filter], [data-more]")) e.preventDefault();
   });
 
   panel.addEventListener("click", (e) => {
+    const more = e.target.closest("[data-more]");
+    if (more) {
+      const list = panel.querySelector(".search__results");
+      const top = list ? list.scrollTop : 0;
+      limit += MAX_RESULTS;
+      render();
+      const after = panel.querySelector(".search__results");
+      if (after) after.scrollTop = top;
+      if (document.activeElement !== input) input.focus();
+      return;
+    }
+
     const chip = e.target.closest("[data-filter]");
     if (chip) {
       const { filter, value } = chip.dataset;
@@ -335,6 +440,7 @@ export function initSearch({ root, items, onSelect }) {
     const active = document.activeElement;
     if (active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA" || active.isContentEditable)) return;
     if (header && header.classList.contains("is-hidden")) return;
+    if (document.body.classList.contains("modal-open")) return;
     e.preventDefault();
     input.focus();
   });

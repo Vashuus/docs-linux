@@ -41,6 +41,8 @@
         autocomplete="off"
         spellcheck="false"
         aria-label="Buscar"
+        role="combobox"
+        aria-haspopup="listbox"
         aria-expanded="false"
         aria-autocomplete="list"
         aria-controls="search-panel"
@@ -49,7 +51,7 @@
       <button class="search__clear" id="search-clear" type="button" aria-label="Limpiar búsqueda" hidden>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
       </button>
-      <div class="search__panel" id="search-panel" role="listbox" hidden></div>
+      <div class="search__panel" id="search-panel" hidden></div>
     </div>
 
     <div class="header__actions">

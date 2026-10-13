@@ -105,8 +105,26 @@ check("texto libre encuentra comandos", panel.querySelectorAll(".search-result")
 setQuery("#noexiste");
 check("#desconocido sin coincidencias", panel.querySelector(".search__empty") !== null);
 
+setQuery("#foo:recon");
+check("campo desconocido no devuelve resultados", panel.querySelector(".search__empty") !== null && panel.querySelectorAll(".search-result").length === 0);
+
+setQuery("codigo");
+check("búsqueda sin acento encuentra texto acentuado", panel.querySelectorAll(".search-result").length > 0);
+check("aria-activedescendant apunta al resultado activo", input.getAttribute("aria-activedescendant") === "search-opt-0");
+check("las opciones exponen aria-selected", panel.querySelector(".search-result")?.getAttribute("aria-selected") === "true");
+
+const { highlight } = await import(pathToFileURL(path.join(SITE, "js/search.js")).href);
+check("highlight no corrompe entidades HTML", highlight("Command & Control", ["amp"]) === "Command &amp; Control");
+check("highlight resalta acentos en el texto", highlight("código de ejemplo", ["codigo"]).includes("<mark>código</mark>"));
+check("highlight busca sin acento en texto acentuado", highlight("codigo", ["código"]).includes("<mark>codigo</mark>"));
+
 setQuery("");
 check("consulta vacía muestra resultados (cap 60)", panel.querySelectorAll(".search-result").length === 60);
+
+const moreBtn = panel.querySelector(".search__more");
+check("con >60 resultados aparece \"Mostrar más\"", moreBtn !== null);
+moreBtn.dispatchEvent(new window.Event("click", { bubbles: true }));
+check("\"Mostrar más\" amplía la lista", panel.querySelectorAll(".search-result").length === 120);
 
 console.log(`\n${failures === 0 ? "TODO OK" : failures + " fallo(s)"}`);
 process.exit(failures === 0 ? 0 : 1);
