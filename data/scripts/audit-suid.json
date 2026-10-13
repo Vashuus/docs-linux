@@ -1,0 +1,14 @@
+{
+  "id": "audit-suid",
+  "title": "Auditoría SUID/SGID",
+  "description": "Encuentra binarios con bits SUID/SGID y marca los que no son habituales del sistema, un vector de escalada de privilegios.",
+  "icon": "svg/security.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 95,
+  "tags": ["seguridad", "permisos", "auditoria", "servidor"],
+  "requires": ["find", "coreutils"],
+  "usage": ["sudo ./audit-suid.sh", "./audit-suid.sh -p /usr/local"],
+  "script": "scripts/audit-suid.sh"
+}

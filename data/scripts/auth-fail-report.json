@@ -1,0 +1,14 @@
+{
+  "id": "auth-fail-report",
+  "title": "Reporte de fallos SSH",
+  "description": "Cuenta los intentos de autenticación SSH fallidos por dirección IP, útil para detectar ataques de fuerza bruta.",
+  "icon": "svg/security.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 93,
+  "tags": ["seguridad", "ssh", "logs", "red", "servidor"],
+  "requires": ["systemd", "journalctl", "grep", "awk", "coreutils"],
+  "usage": ["./auth-fail-report.sh", "./auth-fail-report.sh --since \"7 days ago\" --top 10", "./auth-fail-report.sh --since \"2026-10-01\""],
+  "script": "scripts/auth-fail-report.sh"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "service-status",
+  "title": "Estado de servicios",
+  "description": "Resume las unidades de systemd y lista las fallidas, o informa active/enabled de los servicios indicados.",
+  "icon": "svg/service.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 95,
+  "tags": ["systemd", "servicios", "monitoreo", "servidor", "diagnostico"],
+  "requires": ["systemd", "systemctl"],
+  "usage": ["./service-status.sh", "./service-status.sh nginx ssh docker"],
+  "script": "scripts/service-status.sh"
+}

@@ -19,7 +19,8 @@ pacman -Su --noconfirm
 
 echo ">> Removing orphan packages..."
 if orphans=$(pacman -Qtdq 2>/dev/null) && [[ -n "${orphans}" ]]; then
-  pacman -Rns --noconfirm ${orphans}
+  mapfile -t pkgs <<< "${orphans}"
+  pacman -Rns --noconfirm "${pkgs[@]}"
 else
   echo "   No orphan packages found."
 fi

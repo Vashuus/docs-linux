@@ -1,0 +1,14 @@
+{
+  "id": "user-report",
+  "title": "Reporte de usuarios",
+  "description": "Lista las cuentas humanas, sus shells, último acceso y estado de contraseña, y marca las cuentas sin contraseña.",
+  "icon": "svg/user.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 95,
+  "tags": ["usuarios", "seguridad", "auditoria", "servidor"],
+  "requires": ["awk", "coreutils", "passwd"],
+  "usage": ["sudo ./user-report.sh", "./user-report.sh"],
+  "script": "scripts/user-report.sh"
+}

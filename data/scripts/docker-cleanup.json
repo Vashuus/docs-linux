@@ -1,0 +1,14 @@
+{
+  "id": "docker-cleanup",
+  "title": "Limpieza de Docker",
+  "description": "Elimina contenedores detenidos, redes, build cache e imágenes dangling. Corre en simulación por defecto y pide confirmación para volúmenes.",
+  "icon": "svg/docker.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 90,
+  "tags": ["docker", "contenedores", "mantenimiento", "limpieza", "servidor"],
+  "requires": ["docker", "coreutils"],
+  "usage": ["./docker-cleanup.sh", "./docker-cleanup.sh --apply", "./docker-cleanup.sh --apply --volumes"],
+  "script": "scripts/docker-cleanup.sh"
+}

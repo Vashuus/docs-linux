@@ -525,7 +525,23 @@
     "commands": [
       "update-debian",
       "update-fedora",
-      "update-arch"
+      "update-arch",
+      "journal-errors",
+      "auth-fail-report",
+      "log-size-report",
+      "docker-health",
+      "docker-cleanup",
+      "container-shell",
+      "user-report",
+      "audit-suid",
+      "find-world-writable",
+      "ssh-hardening-check",
+      "sysctl-hardening",
+      "ufw-baseline",
+      "service-status",
+      "disk-alert",
+      "cert-expiry-check",
+      "port-listen-report"
     ]
   }
 ]

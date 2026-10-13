@@ -1,0 +1,14 @@
+{
+  "id": "docker-health",
+  "title": "Salud de Docker",
+  "description": "Muestra el estado, los reinicios y el healthcheck de cada contenedor, más un resumen de consumo instantáneo.",
+  "icon": "svg/docker.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 95,
+  "tags": ["docker", "contenedores", "monitoreo", "servidor", "diagnostico"],
+  "requires": ["docker"],
+  "usage": ["./docker-health.sh"],
+  "script": "scripts/docker-health.sh"
+}

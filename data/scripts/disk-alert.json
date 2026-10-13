@@ -1,0 +1,14 @@
+{
+  "id": "disk-alert",
+  "title": "Alerta de disco/memoria",
+  "description": "Avisa si el uso de disco o la memoria libre cruzan el umbral. Sale con código 1, ideal para cron o monitorización.",
+  "icon": "svg/disk.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 94,
+  "tags": ["disco", "memoria", "monitoreo", "alertas", "servidor"],
+  "requires": ["coreutils", "procps"],
+  "usage": ["./disk-alert.sh", "./disk-alert.sh -d 90 -m 10"],
+  "script": "scripts/disk-alert.sh"
+}

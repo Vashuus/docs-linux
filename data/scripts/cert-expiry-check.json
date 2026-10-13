@@ -1,0 +1,14 @@
+{
+  "id": "cert-expiry-check",
+  "title": "Vencimiento de certificados",
+  "description": "Revisa certificados locales y/o de host remoto y avisa los que vencen pronto o ya vencieron.",
+  "icon": "svg/key.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 90,
+  "tags": ["tls", "certificados", "seguridad", "monitoreo", "servidor"],
+  "requires": ["openssl", "find", "coreutils"],
+  "usage": ["./cert-expiry-check.sh", "./cert-expiry-check.sh -d /etc/nginx/ssl -w 15", "./cert-expiry-check.sh --host github.com:443"],
+  "script": "scripts/cert-expiry-check.sh"
+}

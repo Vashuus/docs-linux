@@ -1,0 +1,14 @@
+{
+  "id": "ssh-hardening-check",
+  "title": "Auditoría de SSH",
+  "description": "Revisa las directivas clave de sshd_config (root, passwords, forwardings, intentos) y marca cuáles conviene endurecer.",
+  "icon": "svg/security.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 93,
+  "tags": ["seguridad", "ssh", "hardening", "auditoria", "servidor"],
+  "requires": ["openssh-server", "grep", "awk"],
+  "usage": ["sudo ./ssh-hardening-check.sh"],
+  "script": "scripts/ssh-hardening-check.sh"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "find-world-writable",
+  "title": "Archivos world-writable",
+  "description": "Busca archivos y directorios con escritura para cualquiera (world-writable), un riesgo común en directorios web y compartidos.",
+  "icon": "svg/folder.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 94,
+  "tags": ["seguridad", "permisos", "auditoria", "servidor"],
+  "requires": ["find", "coreutils"],
+  "usage": ["sudo ./find-world-writable.sh -p /var/www", "./find-world-writable.sh -p /tmp -n 50"],
+  "script": "scripts/find-world-writable.sh"
+}

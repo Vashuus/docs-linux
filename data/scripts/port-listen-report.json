@@ -1,0 +1,14 @@
+{
+  "id": "port-listen-report",
+  "title": "Puertos a la escucha",
+  "description": "Lista los sockets TCP/UDP en estado LISTEN con su proceso y PID, útil para saber qué está escuchando y en qué interfaz.",
+  "icon": "svg/network.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 92,
+  "tags": ["red", "puertos", "seguridad", "diagnostico", "servidor"],
+  "requires": ["iproute2", "coreutils"],
+  "usage": ["sudo ./port-listen-report.sh", "./port-listen-report.sh"],
+  "script": "scripts/port-listen-report.sh"
+}

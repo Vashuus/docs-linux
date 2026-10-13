@@ -1,0 +1,14 @@
+{
+  "id": "journal-errors",
+  "title": "Errores del journal",
+  "description": "Resume los errores y mensajes críticos del journal de systemd, filtrando por prioridad y arranque.",
+  "icon": "svg/log.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 96,
+  "tags": ["logs", "systemd", "diagnostico", "servidor", "mantenimiento"],
+  "requires": ["systemd", "journalctl", "coreutils"],
+  "usage": ["./journal-errors.sh", "./journal-errors.sh -b -n 100", "./journal-errors.sh -p 2"],
+  "script": "scripts/journal-errors.sh"
+}

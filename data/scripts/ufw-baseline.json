@@ -1,0 +1,14 @@
+{
+  "id": "ufw-baseline",
+  "title": "Firewall UFW base",
+  "description": "Deja UFW con deny incoming y allow outgoing, permitiendo el puerto SSH detectado. Simula por defecto y pide confirmación.",
+  "icon": "svg/firewall.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 86,
+  "tags": ["seguridad", "firewall", "red", "hardening", "servidor"],
+  "requires": ["ufw", "coreutils"],
+  "usage": ["./ufw-baseline.sh", "sudo ./ufw-baseline.sh --apply", "sudo ./ufw-baseline.sh --apply --ssh-port 2222"],
+  "script": "scripts/ufw-baseline.sh"
+}

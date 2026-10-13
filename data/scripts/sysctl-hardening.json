@@ -1,0 +1,14 @@
+{
+  "id": "sysctl-hardening",
+  "title": "Endurecer el kernel",
+  "description": "Aplica un set de parámetros sysctl de endurecimiento. Simula por defecto, filtra los no disponibles y guarda copia del archivo.",
+  "icon": "svg/tools.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 88,
+  "tags": ["seguridad", "hardening", "kernel", "sysctl", "servidor"],
+  "requires": ["sysctl", "systemd-sysctl"],
+  "usage": ["./sysctl-hardening.sh", "sudo ./sysctl-hardening.sh --apply"],
+  "script": "scripts/sysctl-hardening.sh"
+}

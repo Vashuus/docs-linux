@@ -1,0 +1,14 @@
+{
+  "id": "container-shell",
+  "title": "Shell en contenedor",
+  "description": "Abre una shell interactiva dentro de un contenedor Docker, detectando automáticamente bash o sh.",
+  "icon": "svg/terminal.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 93,
+  "tags": ["docker", "contenedores", "terminal", "servidor"],
+  "requires": ["docker"],
+  "usage": ["./container-shell.sh", "./container-shell.sh mi_app"],
+  "script": "scripts/container-shell.sh"
+}

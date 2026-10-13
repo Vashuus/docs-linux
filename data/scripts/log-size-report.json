@@ -1,0 +1,14 @@
+{
+  "id": "log-size-report",
+  "title": "Tamaño de los logs",
+  "description": "Lista los archivos y directorios de log más pesados y el total ocupado en /var/log o en el directorio indicado.",
+  "icon": "svg/log.svg",
+  "lang": "bash",
+  "type": "Shell / Bash",
+  "version": "1.0.0",
+  "reliability": 97,
+  "tags": ["logs", "disco", "mantenimiento", "servidor"],
+  "requires": ["coreutils", "find"],
+  "usage": ["./log-size-report.sh", "./log-size-report.sh -d /var/log/nginx -n 10"],
+  "script": "scripts/log-size-report.sh"
+}
