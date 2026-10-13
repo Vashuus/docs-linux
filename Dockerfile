@@ -1,6 +1,7 @@
 FROM node:20-alpine
 
-RUN npm install -g browser-sync@2.29.3
+RUN apk upgrade --no-cache \
+  && npm install -g browser-sync@2.29.3
 
 WORKDIR /app
 
